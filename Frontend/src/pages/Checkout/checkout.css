@@ -1,0 +1,321 @@
+.checkout{
+
+    position: relative;
+}
+
+
+.checkout-background{
+    height: 50vh;
+    width: 100vw;
+    background-image: linear-gradient(
+        to left,
+        rgba(0, 0, 0, 0.6),
+        rgba(0, 0, 0, 0.6)
+      ),
+      url("https://www.intrepidtravel.com/sites/intrepid/files/styles/1920w/public/elements/product/banner/YGOK-Intrepid%20Travel-KTB-kenya_masai-mara_cheetah_chasing-banner-ss-1920x500.jpg");
+  
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 50px;
+
+    
+}
+
+.checkout-name{
+    padding-top: 150px;
+    font-family: "Roboto";
+    font-weight: 900;
+    font-size: 40px;
+  
+    color: #ff4838;
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.checkout-billing{
+
+    margin: 30px 100px;
+    display: flex;
+    align-items: center;
+}
+.billing{
+
+    flex: 1;
+    background-color: #f8f8f8;
+    margin: 30px;
+
+}
+
+.billing-details{
+
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    color: #444;
+    height: 130vh;
+}
+
+.billing-details input{
+
+    margin: 10px;
+    width: 80%;
+    
+}
+
+.billing-names{
+
+    display: flex;
+    align-items: center;
+}
+.billing-names label{
+
+    font-weight: 900;
+}
+
+.billing-details h3{
+    font-size: 20px;
+    font-family: 'Roboto';
+    color: #444;
+}
+
+.additional-information{
+
+    flex:1;
+    background-color: #f8f8f8;
+    height: auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    height: 130vh;
+}
+
+.additional-information h3{
+    font-family: 'Roboto';
+    color: #444;
+    font-size: 20px;
+  
+}
+.additional-information textarea{
+
+    padding: 30px;
+    width: 60%;
+}
+.preview-order{
+    margin: 30px 0px;
+}
+
+.preview-order h3{
+
+    color: #444;
+    font-size: 20px;
+}
+.selected-tours-item{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px;
+    
+}
+
+.selected-tours-item h3{
+    font-size: 15px;
+}
+
+.selected-tours-item img{
+
+    height: 50px;
+    width: 50px;
+}
+
+.payment-options{
+
+    font-size: 15px;
+    font-weight: 900;
+    font-family: 'Roboto';
+    margin: 20px 0px;
+}
+.payment-options-item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 50%;
+}
+.payment-options-item img{
+    height: 50px;
+    width: 100px;
+    object-fit: contain;
+}
+.payment-options-item h2{
+
+    font-size: 15px;
+    font-weight: 900;
+}
+.pay{
+    border: none;
+    padding: 10px;
+    background-color: #1f2933;
+    color: #fff;
+    font-weight: 900;
+    width: 100%;
+    margin: 20px 0px;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .bank_transfer{
+
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  .bank_transfer-item{
+
+  height: auto;
+  padding: 10px;
+  width: 40%;
+  margin: 40%;
+  background-color: #fff;
+  }
+  .bank_transfer-input{
+    padding: 20px;
+    display: flex;
+    
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .bank_transfer-input h4{
+
+    font-weight: 900;
+    color: #444;
+    margin-bottom: 30px;
+  }
+
+  .bank_transfer-input label{
+
+    font-weight: 900;
+    color: #444;
+  }
+
+  .bank_transfer-input input{
+
+    width: 50%;
+    margin: 20px;
+    padding: 10px;
+  }
+
+  .bank_transfer-input button{
+
+    width: 50%;
+    background-color: #1f2933;
+    color: #fff;
+    font-weight: 900;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    margin: 20px;
+  }
+
+  .close{
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    margin: 10px;
+    
+  }
+
+  .close button{
+    border: none;
+    background-color: red;
+    color: #fff;
+    font-weight: 900;
+    cursor: pointer;
+    padding: 10px;
+  }
+
+  .pesapal{
+
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+  }
+
+  .pesapal img{
+
+    height: 300px;
+    width: 300px;
+    object-fit: contain;
+
+  }
+
+  .pesapal button{
+
+    border: none;
+    background-color: #ff4838;
+    color: #fff;
+    width: 40%;
+    padding: 10px;
+  }
+
+  a{
+
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .loading{
+
+    display:  flex;
+    
+  }
+
+  .bank_transfer-item span{
+
+    margin: 40px 50px;
+    color: #1f2933;
+    display: block;
+    font-size: 15px;
+    font-weight: 400;
+  }
+  .additional-information span{
+
+    margin: 30px;
+    color: #ff4838;
+    font-weight: 300;
+    font-size: 18px;
+  }
+
+  .invalid {
+    border: 2px solid red;
+  }
+  
+  .error-message{
+  
+    color: red;
+  }
+
+  @media (max-width: 1200px) {
+    .checkout-billing{
+
+      margin: 30px 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  }
+  

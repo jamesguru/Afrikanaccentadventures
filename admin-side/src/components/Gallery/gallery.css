@@ -1,0 +1,68 @@
+.container{
+
+    flex:4;
+
+    display: flex;
+
+}
+
+
+.info{
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+}
+
+
+.vid{
+
+    width:200px;
+
+    height:200px;
+}
+
+.info-gallery{
+
+    display: flex;
+
+    align-items: center;
+
+    
+     margin-left: 30px;
+}
+
+.title{
+
+    margin: 30px;
+}
+
+.delete{
+
+    border: none;
+
+    background-color: red;
+
+    color: white;
+
+
+    cursor: pointer;
+}
+
+.create{
+
+    border: none;
+
+    background-color: teal;
+
+    width: 100px;
+
+    color: white;
+
+    cursor: pointer;
+}
+

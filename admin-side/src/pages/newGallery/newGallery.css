@@ -1,0 +1,43 @@
+.container{
+
+    flex: 4;
+   
+
+    
+
+}
+
+
+
+.input-title{
+
+    padding:10px;
+    width:400px;
+
+    margin-top: 30px;
+}
+
+
+.input-desc{
+
+
+    margin:20px;
+
+    width:400px;
+
+    padding:70px;
+}
+
+
+button{
+
+    background-color: teal;
+
+    border: none;
+
+    padding: 5px;
+
+    color: white;
+
+    margin: 5px;
+}

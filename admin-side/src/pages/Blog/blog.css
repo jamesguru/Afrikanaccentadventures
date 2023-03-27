@@ -1,0 +1,87 @@
+.promo {
+    flex: 4;
+  
+    display: flex;
+  
+    margin: 20px;
+  }
+  
+  .title-promo {
+    display: flex;
+  
+    justify-content: center;
+  
+    align-items: center;
+  
+    margin: 20px;
+  }
+  
+  .button {
+    border: none;
+  
+    background-color: red;
+  
+    color: white;
+  
+    cursor: pointer;
+  }
+  
+  .desc {
+    margin: 20px;
+  
+    width: 30%;
+  }
+  
+  .promo-container img{
+  
+      margin-right: 30px;
+  }
+  .create-promo {
+    display: flex;
+  
+    flex-direction: column;
+  
+    justify-content: center;
+  
+    align-items: center;
+  
+    cursor: pointer;
+  }
+  
+  .title-input {
+    margin: 20px;
+    padding: 10px;
+    width: 100%;
+  }
+  
+  .desc-input {
+    padding: 40px;
+  
+    margin: 20px;
+  }
+  
+  .upload-button {
+    border: none;
+  
+    background-color: teal;
+  
+    color: white;
+  
+    padding: 10px;
+  }
+  .promo-detail{
+  
+      flex: 2;
+  
+  }
+  
+  .create-promo{
+      flex:1;
+  }
+
+
+  .create-promo input{
+
+    width: 100%;
+    
+  }

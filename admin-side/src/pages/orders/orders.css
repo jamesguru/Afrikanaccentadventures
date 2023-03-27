@@ -1,0 +1,106 @@
+.tableContainer {
+  flex: 4;
+  position: relative;
+}
+
+table {
+  border-collapse: separate;
+
+  border-spacing: 15px;
+}
+
+img {
+  object-fit: contain;
+}
+
+.product {
+  display: flex;
+
+  flex-direction: column;
+}
+
+tr {
+  border: 2px solid green;
+}
+
+td {
+  border: 2px;
+}
+
+.pending {
+  color: #fff;
+  background-color: #d1411e;
+  cursor: not-allowed;
+  width: 100px;
+}
+
+.confirmed {
+  color: #fff;
+  background-color: #d1411e;
+  width: 100px;
+  cursor: not-allowed;
+}
+
+.modal {
+  background-color: rgba(0, 0, 0, 0.6);
+  height: auto;
+  width: 100%;
+
+  z-index: 999;
+}
+
+.modal-model {
+  background-color: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 999;
+}
+
+.modal-packages{
+
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 30%;
+  background-color: #fff;
+}
+
+.close{
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin: 30px;
+}
+.close-icon{
+
+  font-size: 50px;
+  color: red;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.packages{
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.package-item{
+
+  display: flex;
+ 
+ flex-direction: column;
+}
+
+.action_btn{
+
+  width: 100px;
+}
+
+

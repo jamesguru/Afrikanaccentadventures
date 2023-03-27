@@ -1,0 +1,61 @@
+.container{
+
+    flex: 4;
+
+    
+}
+
+
+
+
+
+.info{
+
+    display: flex;
+
+   
+    
+    flex-direction: column;
+}
+
+.wrapper{
+
+    display: flex;
+
+    align-items: center;
+}
+
+
+img{
+
+    margin:10px;
+}
+
+
+.button-delete{
+
+    
+
+    border: none;
+
+    margin:10px;
+
+    background-color: tomato;
+
+    color: white;
+}
+
+.button-create{
+
+    
+
+    border: none;
+
+    margin-bottom:50px;
+
+    padding: 10px;
+
+    background-color: teal;
+
+    color: white;
+}

@@ -1,0 +1,133 @@
+.about-background {
+  height: 50vh;
+  width: 100vw;
+  background-image: linear-gradient(
+      to left,
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6)
+    ),
+    url("https://www.intrepidtravel.com/sites/intrepid/files/styles/1920w/public/elements/product/banner/YGOK-Intrepid%20Travel-KTB-kenya_masai-mara_cheetah_chasing-banner-ss-1920x500.jpg");
+}
+
+.about-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+.about-title h1 {
+  margin-top: 100px;
+  font-family: "Roboto";
+  font-weight: 900;
+
+  color: #ff4838;
+
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-upper {
+  display: flex;
+
+  justify-content: space-between;
+}
+.about-video {
+  flex: 1;
+  margin: 30px;
+}
+
+.about-video video {
+  height: 400px;
+  width: 500px;
+}
+
+.about-text {
+  flex: 1;
+}
+
+.black {
+  color: #2d373c;
+  font-size: 50px;
+  font-weight: 900;
+  font-family: "Roboto";
+}
+
+.red {
+  color: #ff4838;
+  font-size: 50px;
+  font-weight: 900;
+  font-family: "Roboto";
+}
+
+.about-stats {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 50px 0px;
+}
+
+.stats-item {
+  height: 150px;
+  width: 100px;
+  color: #2d373c;
+  font-family: "Roboto";
+  font-weight: 900;
+}
+
+.stats-item:first-child {
+  color: #ff4838;
+  font-family: "Roboto";
+}
+
+.why {
+  margin: 30px;
+}
+.why h1 {
+  width: 50%;
+}
+
+.why-detail {
+  display: flex;
+  align-items: center;
+}
+
+.reason-stats {
+  display: flex;
+
+  width: 80%;
+
+  border: 1px solid #ff4838;
+  margin: 30px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.stat {
+  margin-right: 30px;
+}
+
+.stat h1 {
+  font-family: "Roboto";
+  color: #ff4838;
+  font-weight: 900;
+}
+
+.stat span {
+  color: #ff4838;
+}
+
+.why-image {
+  display: flex;
+  flex-wrap: wrap;
+  width: 30%;
+  margin: 10px;
+}
+.why-activies-item img {
+  height: 350px;
+  width: 350px;
+  object-fit: cover;
+  margin: 10px;
+}

@@ -1,0 +1,41 @@
+.gorilla-trekking {
+}
+
+.gorilla-trekking-background {
+  height: 50vh;
+  width: 100vw;
+  background-image: linear-gradient(
+      to left,
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.3)
+    ),
+    url("https://res.cloudinary.com/dap91fhxh/image/upload/v1677758075/gorilla_rsmtct.jpg");
+
+  background-size: cover;
+  background-position: center;
+
+  margin-bottom: 50px;
+}
+
+.gorilla-trekking-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+.gorilla-trekking-title h1 {
+  margin-top: 100px;
+  font-family: "Roboto";
+  font-weight: 900;
+
+  color: #ff4838;
+ 
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.gorilla-trekking-desc {
+  margin: 30px 10%;
+}

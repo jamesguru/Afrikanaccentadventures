@@ -1,0 +1,42 @@
+.order-success {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 15%;
+  color: #444;
+}
+
+.order-success h2 {
+  font-family: "Roboto";
+  font-weight: 900;
+}
+
+.order-success img {
+  animation: inprogress 1s ease alternate infinite;
+  margin: 30px;
+}
+
+@keyframes inprogress {
+  from {
+    transform: scale(1);
+  }
+
+  to {
+    transform: scale(1.1);
+  }
+}
+
+.order-success button {
+  padding: 10px;
+  border: none;
+  font-weight: 900;
+  color: #444;
+  width: 20%;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}

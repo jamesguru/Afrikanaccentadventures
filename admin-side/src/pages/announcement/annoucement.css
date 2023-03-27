@@ -1,0 +1,41 @@
+.annoucement{
+
+    flex:4;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+}
+
+.current{
+
+
+    display: flex;
+
+    margin-bottom: 50px;
+
+    
+}
+
+h2{
+
+    margin-right: 30px;
+}
+
+.input{
+
+   
+
+}
+
+.add-input{
+
+    width: 460px;
+
+    padding: 7px;
+}
+

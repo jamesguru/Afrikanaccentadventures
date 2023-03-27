@@ -1,0 +1,124 @@
+.booking {
+  height: 180vh;
+  width: 100vw;
+}
+
+.book-image img {
+  height: 180vh;
+  width: 100%;
+  object-fit: cover;
+}
+
+.book {
+  color: #fff;
+  position: absolute;
+
+  top: 20%;
+  left: 5%;
+  height: auto;
+  width: 60%;
+  background-color: rgba(0, 0, 0, 0.4);
+
+  display: flex;
+}
+
+.book h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.book_item {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: auto;
+  padding: 10px;
+}
+
+.booking-input {
+  margin: 10px;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  outline: none;
+
+  font-weight: 900;
+}
+
+.booking-select {
+  margin: 20px;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  outline: none;
+
+  font-weight: 900;
+}
+
+.book_item label {
+  margin-left: 10px;
+  font-weight: 900;
+}
+
+.book_item button {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 900;
+  padding: 10px;
+  width: 80%;
+  border: none;
+  background-color: #d1411e;
+  cursor: pointer;
+  width: 80%;
+  margin: 20px;
+}
+
+.book-info {
+  font-weight: 900;
+  width: 20%;
+  margin: 20px;
+}
+
+.booking input,
+select {
+  padding: 10px;
+  margin: 10px;
+  width: 100%;
+}
+
+select {
+  padding: 10px;
+  margin: 10px;
+  width: 100%;
+}
+
+.invalid {
+  border: 2px solid red;
+}
+
+.error-message {
+  color: red;
+}
+
+@media (max-width: 1200px) {
+  .book {
+    width: 100%;
+    left: 0%;
+    right: 0%;
+    top: 28%;
+  }
+
+  .book input {
+    width: 80%;
+  }
+
+  .book select {
+    width: 80%;
+  }
+
+  .book-info {
+    display: none;
+  }
+}
+

@@ -1,0 +1,177 @@
+.newProduct {
+  flex: 4;
+}
+
+.addProductForm {
+  margin-top: 10px;
+}
+
+.addProductItem {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.addProductItem > label {
+  color: gray;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.addProductItem > input {
+  padding: 10px;
+}
+
+.addProductItem > select {
+  padding: 10px;
+}
+
+.addProductButton {
+  margin-top: 10px;
+  padding: 10px;
+
+  width: 100px;
+  border: none;
+  
+  background-color: teal;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+textarea{
+
+  padding: 30px;
+  margin: 30px 0px;
+  
+}
+.addProductItem input{
+
+  width: 70%;
+  padding: 15px;
+}
+
+.pricing-card{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.pricing-item{
+
+  display:flex;
+  flex-direction: column;
+  margin:10px;
+}
+.pricing-item span{
+
+  font-weight: 500;
+  margin: 10px 0px;
+}
+.pricing-item input{
+
+
+  padding: 10px;
+  width: 200px;
+}
+
+.itinenary{
+  color: green;
+  margin: 20px;
+  font-weight: 900;
+}
+label{
+
+  font-size: 20px;
+}
+button{
+
+  background-color: teal;
+width: 50%;
+  border: none;
+
+  padding: 5px;
+
+  color: white;
+
+  margin: 5px;
+}
+
+.addProductItem-category{
+
+  display: flex;
+
+  width: 80%;
+}
+
+.category-checkbox{
+
+  display: flex;
+  flex-direction: column;
+  
+  align-items: center;
+  margin: 30px;
+}
+
+.addcategory{
+
+  display: flex;
+  align-items: center;
+
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.accomodation{
+  display: flex;
+  flex-direction: column;
+}
+
+.accomodation-no{
+  color: teal;
+  font-weight: 900;
+}
+.transport-item span{
+  font-weight: 500;
+  font-size: 18px;
+  margin-left: 20px;
+}
+
+.inclusion-item{
+
+  display: flex;
+  align-items: center;
+  
+}
+.inclusion-item span{
+
+  font-weight: 600;
+  margin-left: 20px;
+}
+
+.feature-body{
+  display: flex;
+  flex-wrap: wrap;
+}
+.tour-feature{
+  display: flex;
+  margin: 20px;
+}
+.tour-feature input{
+margin: 10px;
+}
+
+.tour-feature span{
+  width: 200px;
+}
+
+.nightstops{
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+.nightstops button{
+  padding: 10px;
+  margin-top: 20px;
+}

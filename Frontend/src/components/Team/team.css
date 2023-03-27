@@ -1,0 +1,69 @@
+.team{
+
+    height: 100vh;
+    width: 100vw;
+    margin-bottom: 30px;
+}
+.team-header{
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin: 50px;
+    font-weight: 900;
+    color: #333;
+}
+
+.team-header h1{
+
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 900;
+margin: 50px;
+  color: #333;
+}
+
+.team-body{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0px 50px;
+}
+
+.team-item{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image{
+
+    margin-bottom: -50px;
+}
+
+.name{
+
+    background-color: #1f2933;
+    color: #fff;
+    padding: 10px;
+    width: 70%;
+    cursor: pointer;
+    transition:all 1s ease;
+}
+
+.name:hover{
+    transform: scale(1.1);
+}
+
+.image img{
+
+    height: 400px;
+    width: 300px;
+    object-fit: cover;
+   
+
+}

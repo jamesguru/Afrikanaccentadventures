@@ -1,0 +1,41 @@
+.group-holidays{}
+
+.group-holidays-background {
+    height: 50vh;
+    width: 100vw;
+    background-image: linear-gradient(
+        to left,
+        rgba(0, 0, 0, 0.3),
+        rgba(0, 0, 0, 0.3)
+      ),
+      url("https://res.cloudinary.com/dap91fhxh/image/upload/v1679467349/WhatsApp_Image_2023-03-21_at_23.28.39_kdcxpo.jpg");
+  
+    background-size: cover;
+    background-position: center;
+    
+    margin-bottom: 50px;
+  }
+  
+  .group-holidays-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+  }
+  
+  .group-holidays-title h1 {
+    margin-top: 100px;
+    font-family: "Roboto";
+    font-weight: 900;
+  
+    color: #ff4838;
+   
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .group-holidays-desc {
+    margin: 30px 10%;
+  }
+  

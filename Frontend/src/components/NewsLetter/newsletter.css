@@ -1,0 +1,160 @@
+.newsletter {
+  background-image: linear-gradient(
+      to left,
+      rgba(0, 0, 0, 0.8),
+      rgba(0, 0, 0, 0.8)
+    ),
+    url("https://cdn.pixabay.com/photo/2014/11/03/11/07/lion-515028_960_720.jpg");
+  height: 70vh;
+  background-size: cover;
+  background-position: center;
+  margin: 50px 0px;
+  display: flex;
+  align-items: center;
+  background-attachment: fixed;
+  position: relative;
+}
+.newsletter-detail {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 5%;
+  flex: 1;
+  margin-left: 50px;
+}
+
+.signup {
+  width: 60%;
+  color: #fff;
+  font-weight: bold;
+}
+.newleter-header {
+  font-weight: 900;
+  font-size: 50px;
+  color: aliceblue;
+  font-family: "Roboto";
+}
+
+.newsletter-input {
+  margin: 20px 0px;
+  background-color: #fff;
+  padding: 10px;
+  width: 50%;
+  display: flex;
+}
+.newsletter-input input {
+  border: none;
+  outline: none;
+}
+
+.newsletter-input button {
+  border: none;
+  background-color: #ff4838;
+  color: #fff;
+  font-weight: 900;
+  padding: 7px;
+  width: 40%;
+}
+
+.newsletter-span {
+  color: #ff4838;
+  font-family: "Roboto";
+}
+.newsletter-card {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.newletter-card-item {
+  height: 30%;
+  width: 30%;
+  border: 3px solid #ff4838;
+  margin: 20px;
+  font-weight: 900;
+  color: #fff;
+}
+
+.newsletter-card-item h1 {
+  color: #fff;
+}
+.newsletter-card-detail {
+  margin: 30px;
+}
+
+.newsletter-icon {
+  font-size: 40px;
+  color: #ff4838;
+}
+
+.newsletter-success {
+  position: absolute;
+
+  z-index: 999;
+  background-color: rgba(0, 0, 0, 0.4);
+  height: 100%;
+  width: 100%;
+}
+
+.success-item {
+  color: green;
+  background-color: #fff;
+
+  margin: 10% 20%;
+  padding: 20px;
+position: relative;
+  height: 60%;
+  width: 30%;
+}
+
+.success-item button{
+
+    display: flex;
+    justify-content: flex-end;
+    background-color: #ff4838;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    padding: 15px;
+    font-weight: 900;
+    top: 0;
+    right: 0;
+}
+
+
+@media (max-width: 1200px) {
+
+  .newsletter{
+
+    display: flex;
+    flex-direction: column-reverse;
+    height: auto;
+
+  }
+
+  .newleter-header {
+
+    font-size: 35px;
+  }
+
+  .newsletter-input {
+    margin: 20px 0px;
+    background-color: #fff;
+    padding: 10px;
+    width: 95%;
+    display: flex;
+  }
+
+  .newletter-card-item {
+    height: 40%;
+    width: 40%;
+    border: 3px solid #ff4838;
+    margin: 10px;
+    font-weight: 900;
+    color: #fff;
+  }
+
+}

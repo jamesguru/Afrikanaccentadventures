@@ -1,0 +1,13 @@
+
+.pricing{
+
+    display: flex;
+    flex-direction: column;
+}
+
+.pricing input{
+
+    margin: 10px 0px;
+    width: 350px;
+  }
+  

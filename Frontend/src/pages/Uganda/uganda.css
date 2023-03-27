@@ -1,0 +1,47 @@
+.uganda-background {
+  height: 50vh;
+  width: 100vw;
+  background-image: linear-gradient(
+      to left,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("https://www.intrepidtravel.com/sites/intrepid/files/styles/1920w/public/elements/product/banner/YGOK-Intrepid%20Travel-KTB-kenya_masai-mara_cheetah_chasing-banner-ss-1920x500.jpg");
+
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 100px;
+  }
+  
+  .uganda-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+  }
+  
+  .uganda-title h1 {
+    margin-top: 150px;
+    font-family: "Roboto";
+    font-weight: 900;
+  
+    color: #ff4838;
+
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .about-uganda{
+
+    margin: 0% 10%;
+  }
+
+  .uganda-tour-header{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 0px;
+  }

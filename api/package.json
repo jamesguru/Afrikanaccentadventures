@@ -1,0 +1,27 @@
+{
+  "name": "ecommerce_api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.2.2",
+    "cors": "^2.8.5",
+    "crypto-js": "^4.1.1",
+    "dotenv": "^14.2.0",
+    "express": "^4.17.2",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.1.7",
+    "pesapal": "^0.0.4",
+    "pesapaljs": "^1.0.0",
+    "stripe": "^8.199.0",
+    "superagent": "^8.0.9",
+    "unirest": "^0.6.0",
+    "uuid": "^9.0.0"
+  }
+}

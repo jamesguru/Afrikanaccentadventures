@@ -1,0 +1,38 @@
+.our-gallery {
+  margin: 50px;
+}
+
+.our-gallery h2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: center;
+  font-weight: 900;
+  font-family: "Roboto";
+
+  font-size: 45px;
+}
+
+.our-gallery span {
+  margin: 30px 20px;
+}
+.gallery-item {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.gallery-item img {
+  height: 30%;
+  width: 30%;
+  margin: 10px;
+  transition: all 1s ease;
+}
+
+
+
+.gallery-item img:hover {
+  transform: scale(1.3);
+  cursor: pointer;
+}

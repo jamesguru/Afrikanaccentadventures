@@ -1,0 +1,666 @@
+.package-background {
+  height: 50vh;
+  width: 100vw;
+  background-image: linear-gradient(
+      to left,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("https://www.intrepidtravel.com/sites/intrepid/files/styles/1920w/public/elements/product/banner/YGOK-Intrepid%20Travel-KTB-kenya_masai-mara_cheetah_chasing-banner-ss-1920x500.jpg");
+
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 100px;
+}
+
+.package-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+
+  font-size: 20px;
+}
+.pricing-button {
+  margin-left: 20px;
+  cursor: pointer;
+  background-color: #162b32;
+  padding: 10px;
+  color: #fff;
+  width: 200px;
+  border: none;
+}
+
+
+.pricing-text {
+  margin-right: 40px;
+  font-weight: 900;
+  color: #162b32;
+}
+
+.package-title h1 {
+  margin-top: 10%;
+  font-family: "Roboto";
+  font-weight: 900;
+
+  color: #ff4838;
+font-size: 35px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.invalid {
+  border: 2px solid red;
+}
+
+.error-message {
+  color: red;
+}
+
+.package-details {
+  display: flex;
+}
+
+.package-main {
+  flex: 2;
+  margin: 0px 30px;
+}
+
+.package-side {
+  flex: 1;
+}
+
+.top-desc {
+  display: flex;
+  
+  margin: 0px 20px;
+}
+
+.top-desc-item {
+  display: flex;
+  font-size: 15px;
+  align-items: center;
+}
+.desc-top {
+  margin: 15px;
+}
+.desc-top h3 {
+  font-size: 15px;
+  font-weight: 900;
+  color: #162b32;
+}
+.icon {
+  font-size: 20px;
+}
+
+.package-image img {
+  height: 30%;
+  object-fit: contain;
+  width: 70%;
+}
+.big_title {
+  font-size: 30px;
+  font-family: "Roboto";
+  color: #162b32;
+  font-weight: 900;
+  margin: 20px 0px;
+}
+
+.package-maindetails {
+  width: 60%;
+}
+.package-maindetails h2 {
+  color: #162b32;
+  font-family: "Roboto";
+  font-size: 25px;
+}
+
+.package-maindetails span {
+  width: 60%;
+}
+
+.package-table {
+  margin: 20px;
+  width: 50%;
+}
+
+table,
+th,
+td {
+  border: 1px solid #162b32;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border-color: #96d4d4;
+}
+
+.package-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #162b32;
+  color: #fff;
+  padding: 10px;
+  margin: 20px;
+}
+
+.package-header .red {
+  font-size: 30px;
+}
+
+.package-header h3 {
+  font-size: 20px;
+  font-family: "Roboto";
+}
+
+.package-input {
+  margin: 0px 30px;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+}
+.package-input label {
+  font-weight: 900;
+  display: block;
+}
+.package-input input {
+  margin: 20px 0px;
+  width: 90%;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.package-input select {
+  margin: 20px 0px;
+  border-radius: 10px;
+  margin-right: 20px;
+  padding: 10px;
+}
+
+.package-booking-btn {
+  background-color: #ff4838;
+  border: none;
+  padding: 10px;
+  font-weight: 900;
+  color: #fff;
+  font-size: 19px;
+  width: 100%;
+  cursor: pointer;
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+}
+
+.bottom-tab {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 30px 0px;
+  flex-direction: column;
+
+  z-index: 999;
+}
+
+.package-overview {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.package-schedule {
+  display: flex;
+
+  width: 100%;
+
+  flex-direction: column;
+}
+
+.schedule-item {
+  display: flex;
+  align-items: center;
+
+  margin: 10px;
+}
+
+.day-number {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #162b32;
+  color: #ff4838;
+  font-weight: 900;
+
+  transform: rotate(45deg);
+
+  margin: 20px;
+}
+
+.day-number span {
+  transform: rotate(0deg);
+}
+
+.price-item {
+  transform: rotate(0deg);
+}
+
+.package-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin: 0% 10%;
+}
+
+.day-overview {
+  width: 70%;
+}
+.package-gallery img {
+  height: 50%;
+  width: 50%;
+  object-fit: cover;
+  transition: all 1s ease;
+  cursor: pointer;
+}
+
+.package-gallery img:hover {
+  transform: scale(1.2);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.mb-3 {
+  width: 100%;
+
+  font-weight: 900;
+  font-size: 18px;
+}
+.tab {
+  margin-right: 30px;
+}
+
+.total-cost {
+  margin-right: 20px;
+}
+
+.handle-quantity {
+  margin: 30px 10px;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.add-icon {
+  background-color: #ff4838;
+  height: 100px;
+  width: 100px;
+  color: #fff;
+  font-weight: 900;
+  font-size: 25px;
+}
+
+.quantity {
+  margin: 0px 20px;
+}
+
+.remove-icon {
+  background-color: #ff4838;
+  height: 100px;
+  width: 100px;
+  color: #fff;
+  font-weight: 900;
+  font-size: 25px;
+}
+
+.package-hotel {
+  font-weight: 900;
+  width: 100%;
+}
+
+.form-fill-error {
+  background-color: red;
+  color: #fff;
+  margin: 20px;
+  padding: 5px;
+  font-size: 20px;
+}
+
+.package-map img {
+  height: 50%;
+  width: 50%;
+  object-fit: cover;
+  margin: 20px 0px;
+}
+.package-inclusions{
+  width: 80%;
+}
+.inclusions-item {
+  display: flex;
+  padding: 10px;
+}
+
+.inclusions-item span{
+
+  margin-left: 10px;
+}
+
+.icons{
+  font-size: 30px;
+  margin-right: 10px;
+}
+
+.inclusions-info {
+  margin-left: 70px;
+}
+
+.pricing-modal{
+
+  position: absolute;
+  top: 0;
+  right: 0;
+  height:300%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 999;
+}
+
+.pricing-container{
+
+  height: auto;
+  width: 60%;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+
+  margin: 5% 25%;
+  
+}
+
+.select-price{
+
+  width: 70%;
+  margin: 3%;
+  font-family: 'Poppins';
+  font-weight: bold;
+  color: #162b32;
+}
+
+.select-price:first-child{
+
+  font-size: 20px;
+  letter-spacing: 0.1em;
+ 
+  font-family: 'Roboto';
+}
+
+.space{
+  margin: 0px 20px;
+  font-weight: 900;
+  
+}
+.pricing-body{
+
+  width: 80%;
+  margin: 10px;
+}
+
+.pricing-people{
+  width: 80%;
+  margin: 10px;
+
+}
+
+.pricing-cell{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.pricing-cell button{
+  background-color: #162b32;
+  color: #fff;
+  border: none;
+  margin: 20px 0px;
+  cursor: pointer;
+  padding: 5px;
+  width: 100%;
+}
+
+.pricing-people span:first-child{
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.adults-number{
+
+  display: flex;
+  align-items: center;
+  margin: 20px 0px;
+}
+
+.handle-quantity span{
+  margin-right: 30px;
+  font-family: "Poppins";
+  font-size: 25px;
+  font-weight: 900;
+}
+
+.extra-room{
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.extra-room span{
+  margin: 5px 0px;
+  font-size: 18px;
+  font-family: "Poppins";
+  font-weight: 900;
+}
+
+.extra-room span:nth-child(2){
+
+  font-style: italic;
+  
+}
+.extra-room input{
+
+  padding: 20px;
+  font-size: 25px;
+}
+
+.proceed-text{
+
+  display: flex;
+  flex-direction: column;
+}
+
+.proceed-text span{
+  margin: 10px 0px;
+  font-size: 18px;
+  font-family: "Poppins";
+  font-weight: 900;
+  cursor: pointer;
+  transition: all 1s ease;
+}
+
+.package-pricing-btn{
+
+  width: 70%;
+  border: none;
+  padding: 10px;
+  background-color: #162b32;
+  color: #fff;
+  margin: 20px 0px;
+  font-size: 18px;
+  font-family: "Poppins";
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.proceed-text span:hover{
+
+  text-decoration: underline;
+}
+
+.select-dates{
+  color: red;
+  font-weight: 900;
+  font-family: 'Poppins';
+  margin-left: 20px;
+}
+
+.header-cell{
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-pills{
+
+  background-color: #162b32;
+color: #ff4838;
+padding: 20px;
+}
+
+.nav.nav-pills .nav-link.active {
+  background-color: #162b32;
+  color: #ff4838;
+  
+}
+
+.package-map{
+
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  margin: 30px;
+}
+
+.package-map img{
+  margin-right: 30px;
+}
+
+.nav.nav-pills .nav-link{
+  color: #fff;
+  
+}
+
+.feature-body{
+  display: flex;
+  
+  flex-wrap: wrap;
+}
+.feature-item{
+
+  display: flex;
+  margin: 10px;
+  
+}
+
+.image-route{
+  display: flex;
+}
+.feature-info{
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+}
+.feature-info span:last-child{
+  width: 200px;
+}
+.feature-header{
+
+  font-size: 20px;
+  font-weight: 700;
+}
+
+
+@media (max-width: 1200px) {
+
+  .package-title h1 {
+    margin-top: 40%;
+    font-family: "Roboto";
+    font-weight: 900;
+  
+    color: #ff4838;
+  font-size: 25px;
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .package-details {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .top-desc-item {
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+   
+  }
+
+  .package-image img {
+    height: 50%;
+    object-fit: contain;
+    width: 100%;
+  }
+
+  .package-main {
+    flex: 2;
+    margin: 0px 5px;
+  }
+
+  .package-maindetails {
+    width: 100%;
+  }
+  .package-maindetails span {
+    width: 90%;
+  }
+
+  .pricing-container{
+
+    width: 100%;
+    margin: 20% 0%;
+  }
+  .feature-body{
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/*.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+  color: orangered;
+  background-color: #fff;
+  border-color: none;
+}
+
+.nav-tabs {
+  border-bottom: none;
+}
+
+.nav-tabs .nav-link{
+
+background-color: orangered;
+}
+.nav-link{
+  background-color: #ff4838;
+}
+.nav-tabs .nav-link:hover{
+  color: gray
+} */

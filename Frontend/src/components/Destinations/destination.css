@@ -1,0 +1,186 @@
+.destination-container {
+  height: auto;
+  width: 100vw;
+}
+
+.destination-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 900;
+
+  color: #333;
+}
+
+.destination-container h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 900;
+
+  color: #333;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+}
+.destination-body {
+  display: flex;
+  margin: 0px 20px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.destination-item-kenya {
+  background-image: linear-gradient(
+      to left,
+      rgba(0, 0, 0, 0.1),
+      rgba(0, 0, 0, 0.1)
+    ),
+    url("https://res.cloudinary.com/dap91fhxh/image/upload/v1679467353/WhatsApp_Image_2023-03-21_at_23.28.36_iumxxh.jpg");
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  font-size: 25px;
+  font-weight: 900;
+  height: 500px;
+  margin: 10px;
+  width: 90%;
+}
+
+.destination-item-uganda {
+  background-image: linear-gradient(
+      to left,
+      rgba(0, 0, 0, 0.1),
+      rgba(0, 0, 0, 0.1)
+    ),
+    url("https://res.cloudinary.com/dap91fhxh/image/upload/v1677758073/boat-in-the-sea_q9c27c.jpg");
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  font-size: 25px;
+  font-weight: 900;
+  height: 500px;
+  margin: 10px;
+  width: 90%;
+}
+
+.destination-item-tanzania {
+  background-image: linear-gradient(
+      to left,
+      rgba(0, 0, 0, 0.1),
+      rgba(0, 0, 0, 0.1)
+    ),
+    url("https://res.cloudinary.com/dap91fhxh/image/upload/v1679467347/WhatsApp_Image_2023-03-21_at_23.28.41_2_rgxghd.jpg");
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  font-size: 25px;
+  font-weight: 900;
+  height: 500px;
+  margin: 10px;
+  width: 90%;
+}
+
+.destination-item-rwanda {
+  background-image: linear-gradient(
+      to left,
+      rgba(0, 0, 0, 0.1),
+      rgba(0, 0, 0, 0.1)
+    ),
+    url("https://res.cloudinary.com/dap91fhxh/image/upload/v1677758074/gorilla1_xgetee.jpg");
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  font-size: 25px;
+  font-weight: 900;
+  height: 500px;
+  margin: 10px;
+  width: 90%;
+}
+.destination-item-southafrica {
+  background-image: linear-gradient(
+      to left,
+      rgba(0, 0, 0, 0.1),
+      rgba(0, 0, 0, 0.1)
+    ),
+    url("https://res.cloudinary.com/dap91fhxh/image/upload/v1679467857/IMG-20230302-WA0015_floh2e.jpg");
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  font-size: 25px;
+  font-weight: 900;
+  height: 500px;
+  margin: 10px;
+  width: 90%;
+}
+
+.destination-item-victoriafalls {
+  background-image: linear-gradient(
+      to left,
+      rgba(0, 0, 0, 0.1),
+      rgba(0, 0, 0, 0.1)
+    ),
+    url("https://res.cloudinary.com/dap91fhxh/image/upload/v1677758076/helicopter_eddot1.jpg");
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  font-size: 25px;
+  font-weight: 900;
+  height: 500px;
+  margin: 10px;
+  width: 90%;
+}
+
+.destination-item-namimbia{
+  background-image: linear-gradient(
+      to left,
+      rgba(0, 0, 0, 0.1),
+      rgba(0, 0, 0, 0.1)
+    ),
+    url("https://res.cloudinary.com/dap91fhxh/image/upload/v1679653194/IMG-20230323-WA0006_q4csj1.jpg");
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  font-size: 25px;
+  font-weight: 900;
+  height: 500px;
+  margin: 10px;
+  width: 90%;
+}
+
+.destination-item-botswana {
+  background-image: linear-gradient(
+      to left,
+      rgba(0, 0, 0, 0.1),
+      rgba(0, 0, 0, 0.1)
+    ),
+    url("https://res.cloudinary.com/dap91fhxh/image/upload/v1679653194/IMG-20230323-WA0014_n3mcin.jpg");
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  font-size: 25px;
+  font-weight: 900;
+  height: 500px;
+  margin: 10px;
+  width: 90%;
+}
+
+.destination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50%;
+  text-decoration: none;
+  color: #fff;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}

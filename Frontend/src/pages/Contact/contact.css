@@ -1,0 +1,156 @@
+.contact-background {
+  height: 50vh;
+  width: 100vw;
+  background-image: linear-gradient(
+      to left,
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.3)
+    ),
+    url("https://www.intrepidtravel.com/sites/intrepid/files/styles/1920w/public/elements/product/banner/YGOK-Intrepid%20Travel-KTB-kenya_masai-mara_cheetah_chasing-banner-ss-1920x500.jpg");
+
+  background-size: cover;
+  background-position: center;
+
+  margin-bottom: 50px;
+}
+
+.contact-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+.contact-title h1 {
+  margin-top: 100px;
+  font-family: "Roboto";
+  font-weight: 900;
+
+  color: #ff4838;
+  
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-desc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-weight: 900;
+}
+.contact-desc h2 {
+  font-family: "Roboto";
+}
+.contact-enquiry {
+  display: flex;
+  align-items: center;
+  margin: 20px 17%;
+}
+.contact-item {
+  margin: 20px;
+}
+.contact-telephone {
+  background-color: #1f2933;
+  color: #fff;
+  padding: 20px;
+  font-size: 20px;
+}
+
+.contact-icon {
+  font-size: 35px;
+}
+
+.contact-item h2 {
+  font-family: "Roboto";
+  font-size: 20px;
+}
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0%;
+  background-color: transparent;
+  padding: 10px;
+  flex: 1;
+}
+
+.contact-form input,
+textarea {
+  width: 100%;
+  padding: 5px;
+  margin: 20px 0px;
+}
+
+.contact-form button {
+  background-color: #ff4838;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  font-weight: 900;
+  padding: 10px;
+  width: 100%;
+  margin: 20px 0px;
+}
+
+.contact-form-map {
+  display: flex;
+  align-items: center;
+}
+
+.contact-map {
+  flex: 1;
+  width: 80%;
+}
+
+@media (max-width: 1200px) {
+  .contact-form-map {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-map {
+    flex: 1;
+    width: 100%;
+  }
+
+  .contact-map {
+    flex: 1;
+    width: 100%;
+  }
+
+  .contact-form input,
+  textarea {
+    width: 100%;
+   
+    margin: 20px 0px;
+  }
+
+  .contact-enquiry {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 10%;
+  }
+  
+  .contact-desc span{
+
+    width: 90%;
+  }
+
+  .contact-title h1 {
+    margin-top: 180px;
+    font-family: "Roboto";
+    font-weight: 900;
+  
+    color: #ff4838;
+    
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+}

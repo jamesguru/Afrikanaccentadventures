@@ -1,0 +1,48 @@
+
+.partner h1{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 900;
+    font-size: 35px;
+   
+    color: #333;
+}
+.partner img{
+
+    height: 30%;
+    width: 80%;
+    margin: 10%;
+    object-fit: contain;
+    
+}
+
+.partners-image{
+
+    display: flex;
+    align-items: center;
+}
+
+.package-image img{
+
+    height: 30%;
+    object-fit: cover;
+    width: 30%;
+}
+
+.s-container{
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+
+    .package-image img{
+
+        height: 50%;
+        object-fit: cover;
+        width: 50%;
+    }
+}
+

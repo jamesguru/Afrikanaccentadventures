@@ -1,0 +1,48 @@
+.blogPage{
+    display: flex;
+    margin: 0% 10%;
+}
+
+.blogdetails{
+
+    display: flex;
+    flex-direction: column;
+  
+}
+
+.blogdetails img{
+
+    height: 500px;
+    width: 50%;
+    object-fit: cover;
+}
+
+.blogdetails span{
+    margin: 20px 0px;
+    width:50%
+}
+.other-blogs{
+    display: flex;
+    flex-direction: column;
+}
+
+.related_blog{
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0px;
+    cursor: pointer;
+}
+
+.related_blog img{
+
+    height: 300px;
+    width: 300px;
+
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+

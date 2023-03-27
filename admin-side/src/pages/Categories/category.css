@@ -1,0 +1,43 @@
+.category{
+
+    flex:4;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+}
+
+.current{
+
+
+    display: flex;
+
+    margin-bottom: 50px;
+
+    align-items: center;
+
+    flex-direction: column;
+
+    
+}
+
+h2{
+
+    margin-right: 30px;
+}
+
+
+
+.add-input{
+
+    width: 460px;
+
+    margin:20px;
+
+    padding: 3px;
+}
+

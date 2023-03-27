@@ -1,0 +1,18 @@
+.container{
+
+    flex: 4;
+}
+
+
+.button-upload{
+
+    border: none;
+
+    padding: 10px;
+
+    background-color: teal;
+
+    color: white;
+
+    cursor: pointer;
+}

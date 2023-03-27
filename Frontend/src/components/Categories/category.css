@@ -1,0 +1,173 @@
+.destination-container {
+  height: auto;
+  width: 100vw;
+}
+
+.destination-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 900;
+
+  color: #333;
+}
+
+.destination-container h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 900;
+
+  color: #333;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+}
+.destination-body {
+  display: flex;
+  margin: 0px 20px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.category-group-holidays {
+  background-image: linear-gradient(
+      to left,
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.2)
+    ),
+    url("https://res.cloudinary.com/dap91fhxh/image/upload/v1679467349/WhatsApp_Image_2023-03-21_at_23.28.39_kdcxpo.jpg");
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  font-size: 25px;
+  font-weight: 900;
+  height: 500px;
+  margin: 10px;
+  width: 90%;
+}
+
+.category-cultural-safaris {
+  background-image: linear-gradient(
+      to left,
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.2)
+    ),
+    url("https://res.cloudinary.com/dap91fhxh/image/upload/v1679467346/WhatsApp_Image_2023-03-21_at_23.28.37_rtxdx0.jpg");
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  font-size: 25px;
+  font-weight: 900;
+  height: 500px;
+  margin: 10px;
+  width: 90%;
+}
+
+.category-family-holidays {
+  background-image: linear-gradient(
+      to left,
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.2)
+    ),
+    url("https://res.cloudinary.com/dap91fhxh/image/upload/v1679653194/IMG-20230323-WA0009_fz7elm.jpg");
+  background-size: cover;
+
+  color: #fff;
+  font-size: 25px;
+  font-weight: 900;
+  height: 500px;
+  margin: 10px;
+  width: 90%;
+}
+
+.category-gorilla-trekking {
+  background-image: linear-gradient(
+      to left,
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.2)
+    ),
+    url("https://res.cloudinary.com/dap91fhxh/image/upload/v1677758074/gorilla1_xgetee.jpg");
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  font-size: 25px;
+  font-weight: 900;
+  height: 500px;
+  margin: 10px;
+  width: 90%;
+}
+
+.category-honey-moon{
+  background-image: linear-gradient(
+      to left,
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.2)
+    ),
+    url("https://res.cloudinary.com/dap91fhxh/image/upload/v1678261499/cruser13_n6acrv.jpg");
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  font-size: 25px;
+  font-weight: 900;
+  height: 500px;
+  margin: 10px;
+  width: 90%;
+}
+
+
+.category-luxury-safaris{
+  background-image: linear-gradient(
+      to left,
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.2)
+    ),
+    url("https://res.cloudinary.com/dap91fhxh/image/upload/v1679654849/luxury_holiday_s8xvxm.jpg");
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  font-size: 25px;
+  font-weight: 900;
+  height: 500px;
+  margin: 10px;
+  width: 90%;
+}
+
+.category-fly-in-safaris{
+  background-image: linear-gradient(
+    to left,
+    rgba(0, 0, 0, 0.2),
+    rgba(0, 0, 0, 0.2)
+  ),
+  url("https://res.cloudinary.com/dap91fhxh/image/upload/v1679656526/flying_tntqxl.jpg");
+background-size: cover;
+background-position: center;
+color: #fff;
+font-size: 25px;
+font-weight: 900;
+height: 500px;
+margin: 10px;
+width: 90%;
+}
+
+
+
+.destination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50%;
+  text-decoration: none;
+  color: #fff;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}

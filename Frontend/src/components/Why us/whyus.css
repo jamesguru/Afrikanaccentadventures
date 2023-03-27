@@ -1,0 +1,63 @@
+.whyus{
+
+    margin: 20px 30px;
+}
+
+.whyus-header{
+
+    margin: 2% 5%;
+}
+
+.whyus-body{
+
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin:5%;
+}
+
+.whyus-body-item{
+
+    display: flex;
+    align-items: center;
+    width: 30%;
+}
+
+.front-icon{
+
+    height: 70px;
+    margin: 20px;
+    width: 70px;
+    border: 2px solid #4444;
+    padding: 20px;
+    border-radius: 50%;
+    transition: all 1s ease;
+}
+
+.front-icon:hover{
+
+    cursor: pointer;
+    transform: rotate(180deg);
+   
+}
+
+.foot{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    
+}
+
+@media (max-width: 768px) {
+    .whyus-body-item{
+
+        display: flex;
+        flex-direction: column;
+       align-items: flex-start;
+        width: 100%;
+       
+    }
+
+}

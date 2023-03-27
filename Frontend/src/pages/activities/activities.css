@@ -1,0 +1,158 @@
+.activities-background {
+  height: 50vh;
+  width: 100vw;
+  background-image: linear-gradient(
+      to left,
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6)
+    ),
+    url("https://www.intrepidtravel.com/sites/intrepid/files/styles/1920w/public/elements/product/banner/YGOK-Intrepid%20Travel-KTB-kenya_masai-mara_cheetah_chasing-banner-ss-1920x500.jpg");
+
+  background-size: cover;
+  background-position: center;
+
+  margin-bottom: 50px;
+}
+
+.activities-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+}
+
+.activities-name {
+  padding-top: 150px;
+  font-family: "Roboto";
+  font-weight: 900;
+  color: #ff4838;
+  font-size: 40px;
+  font-family: "Roboto";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.activities-body {
+  margin: 0% 15%;
+}
+
+.activity-item {
+  display: flex;
+  padding: 20px 0px;
+}
+.activity-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.activity-image {
+}
+.activity-image img {
+  height: 350px;
+  width: 350px;
+  margin: 20px;
+  object-fit: cover;
+  transition: all 1s ease;
+  cursor: pointer;
+}
+
+.activity-image img:hover {
+  transform: scale(1.1);
+}
+
+.activity-header {
+  font-weight: 900;
+  font-size: 25px;
+  font-family: "Roboto";
+}
+.activity-explore {
+  background-color: #ff4838;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  color: #fff;
+  font-family: "Roboto";
+  font-weight: 900;
+  font-size: 18px;
+  margin-top: 20px;
+  width: 50%;
+}
+
+.activity-viewall {
+  background-color: #ff4838;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  color: #fff;
+  font-family: "Roboto";
+  font-weight: 900;
+  font-size: 18px;
+  margin: 20px;
+  width: 30%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 1200px) {
+  .activity-item {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .activity-explore {
+    background-color: #ff4838;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    color: #fff;
+    font-family: "Roboto";
+    font-weight: 900;
+    font-size: 18px;
+    margin-top: 20px;
+    width: 80%;
+  }
+  .activities-name {
+    padding-top: 200px;
+    font-family: "Roboto";
+    font-weight: 900;
+    color: #ff4838;
+    font-size: 30px;
+    font-family: "Roboto";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .activity-viewall {
+    background-color: #ff4838;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    color: #fff;
+    font-family: "Roboto";
+    font-weight: 900;
+    font-size: 18px;
+    margin: 20px;
+    width: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .activity-image img {
+    height: 100%;
+    width: 90%;
+
+    object-fit: cover;
+    transition: all 1s ease;
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 1200px) {
+
+  
+}

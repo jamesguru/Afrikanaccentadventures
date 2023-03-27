@@ -1,0 +1,42 @@
+.gallery-background {
+  height: 50vh;
+  width: 100vw;
+  background-image: linear-gradient(
+      to left,
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6)
+    ),
+    url("https://www.intrepidtravel.com/sites/intrepid/files/styles/1920w/public/elements/product/banner/YGOK-Intrepid%20Travel-KTB-kenya_masai-mara_cheetah_chasing-banner-ss-1920x500.jpg");
+
+  background-size: cover;
+  background-position: center;
+
+
+}
+
+.gallery-name h1 {
+  padding-top: 150px;
+  font-family: "Roboto";
+  font-weight: 900;
+  font-size: 40px;
+ color: #ff4838;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ 
+}
+
+.gallery {
+  height: auto;
+  width: 100vw;
+
+  display: flex;
+  flex-wrap: wrap;
+  margin: 50px 10px;
+}
+
+.gallery-image {
+  margin: 10px;
+  height: 30%;
+  width: 30%;
+}
