@@ -84,51 +84,12 @@ const NewActivities = () => {
     setCat(e.target.value.split(","));
   };
 
-  const handleAddItenenary = (e) => {
-    e.preventDefault();
-
-    if (day && Itinenary) {
-      const itinenaryItem = {
-        day,
-        Itinenary,
-      };
-
-      console.log(itinenaryItem);
-
-      ItinenaryDay.push(itinenaryItem);
-
-      setNumberofDays(ItinenaryDay.length);
-
-      toast.success(`You have added Itinenary ${ItinenaryDay.length}`, {
-        position: toast.POSITION.BOTTOM_CENTER,
-        autoClose: 2500,
-        hideProgressBar: false,
-        closeOnClick: true,
-        pauseOnHover: true,
-        draggable: true,
-        progress: undefined,
-      });
-
-      setDay("");
-      setItinenary("");
-    } else {
-      toast.warning(`Make sure you have fill in Itinenary`, {
-        position: toast.POSITION.BOTTOM_CENTER,
-        autoClose: 2500,
-        hideProgressBar: false,
-        closeOnClick: true,
-        pauseOnHover: true,
-        draggable: true,
-        progress: undefined,
-      });
-    }
-  };
-
   const handleInclusions = (e) => {
     e.preventDefault();
 
     if (inclusions) {
       Inclusions.push(inclusions);
+      console.log(Inclusions)
 
       toast.success(`Inclusions ${Inclusions.length} have been added.`, {
         position: toast.POSITION.BOTTOM_CENTER,
@@ -152,6 +113,7 @@ const NewActivities = () => {
       };
 
       Pricing.push(pricingItem);
+      console.log(Pricing)
 
       setNumberOfPricing(Pricing.length);
       setStartDatePricing("");
@@ -178,13 +140,6 @@ const NewActivities = () => {
         progress: undefined,
       });
     }
-  };
-
-  const handleAccomodation = (e) => {
-    setAccomodation(e.target.value.split(","));
-  };
-  const handleGallery = (e) => {
-    setGallery(e.target.value.split(","));
   };
 
   const handleUpload = async (e) => {
@@ -214,117 +169,7 @@ const NewActivities = () => {
       setUploading("uploading failed");
     }
   };
-  const handleUpload1 = async (e) => {
-    e.preventDefault();
-
-    const data = new FormData();
-
-    data.append("file", file2);
-    data.append("upload_preset", "uploads");
-
-    setUploading1("uploading");
-
-    try {
-      const uploadRes = await axios.post(
-        "https://api.cloudinary.com/v1_1/dap91fhxh/image/upload",
-        data
-      );
-
-      const { url } = uploadRes.data;
-
-      setImage1(url);
-
-      setUploading1("uploaded 100%");
-    } catch (error) {
-      console.log(error);
-
-      setUploading1("uploading failed");
-    }
-  };
-
-  const handleUpload2 = async (e) => {
-    e.preventDefault();
-
-    const data = new FormData();
-
-    data.append("file", file3);
-    data.append("upload_preset", "uploads");
-
-    setUploading2("uploading");
-
-    try {
-      const uploadRes = await axios.post(
-        "https://api.cloudinary.com/v1_1/dap91fhxh/image/upload",
-        data
-      );
-
-      const { url } = uploadRes.data;
-
-      setImage2(url);
-
-      setUploading2("uploaded 100%");
-    } catch (error) {
-      console.log(error);
-
-      setUploading2("uploading failed");
-    }
-  };
-
-  const handleUpload3 = async (e) => {
-    e.preventDefault();
-
-    const data = new FormData();
-
-    data.append("file", file4);
-    data.append("upload_preset", "uploads");
-
-    setUploading3("uploading");
-
-    try {
-      const uploadRes = await axios.post(
-        "https://api.cloudinary.com/v1_1/dap91fhxh/image/upload",
-        data
-      );
-
-      const { url } = uploadRes.data;
-
-      setImage3(url);
-
-      setUploading3("uploaded 100%");
-    } catch (error) {
-      console.log(error);
-
-      setUploading3("uploading failed");
-    }
-  };
-  const handleUpload4 = async (e) => {
-    e.preventDefault();
-
-    const data = new FormData();
-
-    data.append("file", file5);
-    data.append("upload_preset", "uploads");
-
-    setUploading4("uploading");
-
-    try {
-      const uploadRes = await axios.post(
-        "https://api.cloudinary.com/v1_1/dap91fhxh/image/upload",
-        data
-      );
-
-      const { url } = uploadRes.data;
-
-      setImage4(url);
-
-      setUploading4("uploaded 100%");
-    } catch (error) {
-      console.log(error);
-
-      setUploading4("uploading failed");
-    }
-  };
-
+ 
   const handleUploadVideo = (e) => {
     e.preventDefault();
 
@@ -372,20 +217,20 @@ const NewActivities = () => {
   };
 
   const handleClick = async (e) => {
+    e.preventDefault();
+
     const activity = {
       ...inputs,
       video: video,
       img: image,
       pricing: Pricing,
-      inclusions:Inclusions
+      inclusions: Inclusions,
     };
-
     console.log(activity);
 
     await publicRequest.post("/activities/", activity);
 
-    e.preventDefault();
-    toast.success(`Package has been successfully uploaded`, {
+    toast.success(`Activity has been successfully uploaded`, {
       position: toast.POSITION.BOTTOM_CENTER,
       autoClose: 2500,
       hideProgressBar: false,
@@ -484,7 +329,6 @@ const NewActivities = () => {
           />
         </div>
 
-      
         <div className="addProductItem">
           <label>Overview*</label>
           <textarea

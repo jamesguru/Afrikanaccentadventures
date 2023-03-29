@@ -22,17 +22,7 @@ const ActivitySchema = mongoose.Schema(
 
     active: { type: Boolean, default: true },
 
-    ratings: [
-      {
-        star: Number,
-
-        name: { type: String },
-
-        comment: { type: String },
-
-        postedBy: { type: String },
-      },
-    ],
+    
   },
 
   { timestamps: true }
