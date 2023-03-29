@@ -128,7 +128,7 @@ router.get("/", async (req, res) => {
         .limit(limit * 1)
         .skip((page - 1) * limit);
     } else {
-      Activities = await Activity.find().limit(6);
+      Activities = await Activity.find();
     }
 
     res.status(200).json(Activities);
