@@ -27,7 +27,7 @@ const Package = () => {
       <h2 className="package-head"> Best Sellers</h2>
 
       <div className="package-body">
-        {packages.slice(0,6)?.map((item, index) => (
+        {packages.slice(0,7)?.map((item, index) => (
           <div className="package-item">
             <div className="package-container">
               <img src={item.img} alt={item.title} className="package-img"/>
