@@ -26,7 +26,7 @@ const ShortSafari = () => {
       <h2 className="package-head">Short Safaris</h2>
 
       <div className="package-body">
-        {packages?.slice(0.6).map((item, index) => (
+        {packages?.slice(0,6).map((item, index) => (
           <div className="package-item">
             <div className="package-container">
               <img src={item.img} alt="" />

@@ -26,19 +26,20 @@ export default function ProductList() {
   }, [dispatch]);
 
   const handleDelete = () => {
-    console.log(packageID)
+    console.log(packageID);
     deleteProduct(packageID, dispatch);
-  
-   setOpen(false)
+
+    setOpen(false);
+
+    window.location.reload();
   };
   const handleCancel = () => {
-    setOpen(false)
+    setOpen(false);
   };
   const openPop = (id) => {
-console.log(id)
-    setOpen(true)
-    setPackageID(id)
-    
+    console.log(id);
+    setOpen(true);
+    setPackageID(id);
   };
 
   const columns = [
@@ -101,21 +102,20 @@ console.log(id)
         className="datagrid-cont"
       />
 
-      {
-        open &&
+      {open && (
         <div className="pop">
-        <div className="pop-over">
-          <div className="pop-item">
-            <span>Are you sure you want to delete this package?</span>
+          <div className="pop-over">
+            <div className="pop-item">
+              <span>Are you sure you want to delete this package?</span>
 
-            <div className="buttons">
-              <button onClick={handleCancel}>Cancel</button>
-              <button onClick={handleDelete}>Delete</button>
+              <div className="buttons">
+                <button onClick={handleCancel}>Cancel</button>
+                <button onClick={handleDelete}>Delete</button>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      }
+      )}
     </div>
   );
 }

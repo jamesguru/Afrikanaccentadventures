@@ -121,7 +121,6 @@ const PackageDetail = () => {
     if (action === "inc") {
       setAdults(adults + 1);
     }
-    console.log(adults);
   };
 
   const totalCost = (peopleNumber, childrenNumber) => {
@@ -246,13 +245,11 @@ const PackageDetail = () => {
                 <h3>Transport</h3>
 
                 <ul>
-                  <li>
-                    {" "}
-                    <span>Flight</span>
-                  </li>
-                  <li>
-                    <span>4 X 4 Land cruser</span>
-                  </li>
+                  {Package.transport?.map((transport) => (
+                    <li>
+                      <span>{transport}</span>
+                    </li>
+                  ))}
                 </ul>
               </div>
             </div>
@@ -406,49 +403,18 @@ const PackageDetail = () => {
                   alt=""
                 />
                 <div className="night-st">
-                   <h5>Night stops</h5>
-                  <div className="schedule-item">
-                   
-                    <div className="day-number">
-                     
-                      <div className="price-item">
-                        <span>Day 1</span>{" "}
+                  <span>Night stops</span>
+                  {Package.nightstops?.map((nightstop, index) => (
+                    <div className="schedule-item">
+                      <div className="day-number">
+                        <div className="price-item">
+                          <span>Day {index + 1}</span>{" "}
+                        </div>
                       </div>
+
+                      <div className="day-overview">{nightstop}</div>
                     </div>
-
-                    <div className="day-overview">Nakuru</div>
-                  </div>
-
-                  <div className="schedule-item">
-                    <div className="day-number">
-                      
-                      <div className="price-item">
-                        <span>Day 2</span>
-                      </div>
-                    </div>
-
-                    <div className="day-overview">Bogoria</div>
-                  </div>
-                  <div className="schedule-item">
-                    <div className="day-number">
-                      {" "}
-                      <div className="price-item">
-                        <span>Day 3</span>{" "}
-                      </div>
-                    </div>
-
-                    <div className="day-overview">Kisumu</div>
-                  </div>
-                  <div className="schedule-item">
-                    <div className="day-number">
-                      {" "}
-                      <div className="price-item">
-                        <span>Final Day</span>{" "}
-                      </div>
-                    </div>
-
-                    <div className="day-overview">Nairobi</div>
-                  </div>
+                  ))}
                 </div>
               </div>
 
@@ -457,64 +423,15 @@ const PackageDetail = () => {
               <div className="tour-feature">
                 <h3>Tour Features</h3>
                 <div className="feature-body">
-                  <div className="feature-item">
-                    <PetsRounded className="icon" />
-                    <div className="feature-info">
-                      <span className="feature-header">Mid-range tour</span>
-                      <span>
-                        This mid-range tour uses lodges and tented camps.
-                      </span>
+                  {Package.tourfeature?.map((tour) => (
+                    <div className="feature-item">
+                      <PetsRounded className="icon" />
+                      <div className="feature-info">
+                        <span className="feature-header">{tour.feature}</span>
+                        <span>{tour.desc}</span>
+                      </div>
                     </div>
-                  </div>
-                  <div className="feature-item">
-                    <PetsRounded className="icon" />
-                    <div className="feature-info">
-                      <span className="feature-header">Can be customized</span>
-                      <span>
-                        You can request minor changes to the accommodations and
-                        destinations of this tour.
-                      </span>
-                    </div>
-                  </div>
-                  <div className="feature-item">
-                    <PetsRounded className="icon" />
-                    <div className="feature-info">
-                      <span className="feature-header">Private tour</span>
-                      <span>
-                        This tour will be organized exclusively for you and
-                        won't be shared with others.
-                      </span>
-                    </div>
-                  </div>
-                  <div PetsRounded="feature-item">
-                    <PetsRounded className="icon" />
-                    <div className="feature-info">
-                      <span className="feature-header">
-                        Suitable for solo travelers
-                      </span>
-                      <span>Solo travelers can book this private tour.</span>
-                    </div>
-                  </div>
-                  <div className="feature-item">
-                    <PetsRounded className="icon" />
-                    <div className="feature-info">
-                      <span className="feature-header">Can start any day</span>
-                      <span>
-                        If availability permits, this tour can start on any day.
-                      </span>
-                    </div>
-                  </div>
-                  <div className="feature-item">
-                    <PetsRounded className="icon" />
-                    <div className="feature-info">
-                      <span className="feature-header">
-                        Suitable for all ages
-                      </span>
-                      <span>
-                        This tour is suitable for children of all ages.
-                      </span>
-                    </div>
-                  </div>
+                  ))}
                 </div>
               </div>
             </div>
@@ -737,23 +654,14 @@ const PackageDetail = () => {
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <td>1</td>
-                    <td>Lake Nakuru National Park</td>
-                    <td>Lake Nakuru Sopa Lodge</td>
-                    <td>Sarova Lion hill Game Lodge</td>
-                  </tr>
-                  <tr>
-                    <td>2</td>
-                    <td>Masai Mara Game Reserve</td>
-                    <td>Mara Sopa Lodge</td>
-                    <td>Mara Zebra Plains</td>
-                  </tr>
-                  <tr>
-                    <td>3</td>
-                    <td>Depart</td>
-                    <td></td>
-                  </tr>
+                  {Package.accomodation?.map((accomodation, index) => (
+                    <tr>
+                      <td>{index + 1}</td>
+                      <td>{accomodation.destination}</td>
+                      <td>{accomodation.accomodation}</td>
+                      <td>{accomodation.similarAccomodation}</td>
+                    </tr>
+                  ))}
                 </tbody>
               </Table>
             </div>
@@ -761,115 +669,43 @@ const PackageDetail = () => {
           <Tab eventKey="inclusions" title="Inclusions" className="tab">
             <div className="package-inclusions">
               <h3>Price Inclusions:</h3>
-              <div className="inclusions-item">
-                <BsCheckLg className="icon" />
 
-                <span>
-                  Arrival and departure airport transfers as per itinerary
-                </span>
-              </div>
-              <div className="inclusions-item">
-                <BsCheckLg className="icon" />
+              {Package.addedvalue?.map((inclusion, index) => (
+                <div className="inclusions-item">
+                  <BsCheckLg className="icon" />
 
-                <span>Bed and Breakfast accommodation in Nairobi</span>
-              </div>
-
-              <div className="inclusions-item">
-                <BsCheckLg className="icon" />
-
-                <span>
-                  Full Board accommodation in the Lodges/Camps whilst on safari
-                  as indicated on the itinerary
-                </span>
-              </div>
-              <div className="inclusions-item">
-                <BsCheckLg className="icon" />
-
-                <span>
-                  Transportation on 6-seater Safari minivans or 4x4 Land
-                  cruiser, driven by English-speaking driver/guide (exclusive
-                  use of vehicle)
-                </span>
-              </div>
-              <div className="inclusions-item">
-                <BsCheckLg className="icon" />
-
-                <span>All Park/Reserve entrance fees</span>
-              </div>
-              <div className="inclusions-item">
-                <BsCheckLg className="icon" />
-
-                <span>
-                  Services of our English-speaking guide or clients Relations
-                  officers for briefings in Nairobi
-                </span>
-              </div>
+                  <span>{inclusion}</span>
+                </div>
+              ))}
 
               <hr />
 
               <h3>Added Value:</h3>
-              <div className="inclusions-item">
-                <BsCheckLg className="icon" />
+             
+              
 
-                <span>Complimentary Afrikan Accent pen</span>
-              </div>
-              <div className="inclusions-item">
-                <BsCheckLg className="icon" />
+              
+             {Package.exclusions?.map((addedvalue,index) => (
+               <div className="inclusions-item">
+               <BsCheckLg className="icon" />
 
-                <span>
-                  Complimentary Afrikan Accent 1 litre mineral water per person
-                  per day
-                </span>
-              </div>
-
-              <div className="inclusions-item">
-                <BsCheckLg className="icon" />
-
-                <span>Complimentary Afrikan Accent Safari bag</span>
-              </div>
-              <div className="inclusions-item">
-                <BsCheckLg className="icon" />
-
-                <span>Complimentary Afrikan Accent Safari Hat</span>
-              </div>
+               <span>{addedvalue}</span>
+             </div>
+             ))}
 
               <hr />
 
               <h3>Price Exclusions:</h3>
 
-              <div className="inclusions-item">
+              {Package.exclusions?.map((exclusion) => (
+                <div className="inclusions-item">
                 <BsXLg className="icon" />
 
-                <span>Any optional activity.</span>
+                <span>{exclusion}</span>
               </div>
+              ))}
 
-              <div className="inclusions-item">
-                <BsXLg className="icon" />
-
-                <span>
-                  Personal Expenses such as Tips,Laundry and Telephone
-                </span>
-              </div>
-              <div className="inclusions-item">
-                <BsXLg className="icon" />
-
-                <span>Drinks (sodas, beer, wine, spirits...)</span>
-              </div>
-              <div className="inclusions-item">
-                <BsXLg className="icon" />
-
-                <span>Visa Fees (currently US$ 50 per person)</span>
-              </div>
-              <div className="inclusions-item">
-                <BsXLg className="icon" />
-
-                <span>Medical and travel insurance.</span>
-              </div>
-              <div className="inclusions-item">
-                <BsXLg className="icon" />
-
-                <span>Any other concept not indicated as included.</span>
-              </div>
+              
             </div>
           </Tab>
           <Tab eventKey="gallery" title="Gallery">

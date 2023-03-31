@@ -324,10 +324,7 @@ a {
   font-size: 25px;
 }
 
-.package-hotel {
-  font-weight: 900;
-  width: 100%;
-}
+
 
 .form-fill-error {
   background-color: red;
@@ -344,7 +341,10 @@ a {
   margin: 20px 0px;
 }
 .package-inclusions{
-  width: 80%;
+  width: 100%;
+overflow-y: scroll;
+  height: 500px;
+  padding: 20px;
 }
 .inclusions-item {
   display: flex;
@@ -585,6 +585,19 @@ padding: 20px;
 
   font-size: 20px;
   font-weight: 700;
+}
+
+.night-st{
+  height: 500px;
+  width: 50%;
+  overflow-y: scroll;
+}
+
+.night-st span{
+  font-size: 20px;
+  font-weight: 900;
+  font-family: "Roboto";
+  font-style: italic;
 }
 
 

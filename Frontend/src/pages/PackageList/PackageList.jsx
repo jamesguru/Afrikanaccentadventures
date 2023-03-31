@@ -179,7 +179,7 @@ const PackageList = () => {
                   <div className="package-info">
                     <div className="package-info-button">
                       <span>from ${item.originalPrice} Per person.</span>
-                      <Link to="/package/details">
+                      <Link to={`/package/${item._id}`}>
                         <button className="package-expore">Explore</button>
                       </Link>
                     </div>
@@ -206,7 +206,7 @@ const PackageList = () => {
                   <div className="package-info">
                     <div className="package-info-button">
                       <span>from ${item.originalPrice} Per person.</span>
-                      <Link to="/package/details">
+                      <Link to={`/package/${item._id}`}>
                         <button className="package-expore">Explore</button>
                       </Link>
                     </div>

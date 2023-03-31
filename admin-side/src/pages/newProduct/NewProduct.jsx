@@ -113,7 +113,7 @@ export default function NewProduct() {
         Itinenary,
       };
 
-      console.log(itinenaryItem);
+     
 
       ItinenaryDay.push(itinenaryItem);
 
@@ -178,7 +178,7 @@ export default function NewProduct() {
         },
         price6: {
           numberOfPeople: 6,
-          price: pricingPrice1,
+          price: pricingPrice6,
           room: room6,
         },
       };
@@ -193,6 +193,12 @@ export default function NewProduct() {
       setPricingPrice4(0);
       setPricingPrice5(0);
       setPricingPrice6(0);
+      setRoom1(0)
+      setRoom2(0)
+      setRoom3(0)
+      setRoom4(0)
+      setRoom5(0)
+      setRoom6(0)
 
       toast.success(`You have added pricing ${Pricing.length}`, {
         position: toast.POSITION.BOTTOM_CENTER,
@@ -497,10 +503,11 @@ export default function NewProduct() {
 
     };
 
-    console.log(Package);
+
     e.preventDefault();
 
     addProduct(Package, dispatch);
+
     toast.success(`Package has been successfully uploaded`, {
       position: toast.POSITION.BOTTOM_CENTER,
       autoClose: 2500,
@@ -510,6 +517,7 @@ export default function NewProduct() {
       draggable: true,
       progress: undefined,
     });
+    window.location.reload();
   };
 
   return (
