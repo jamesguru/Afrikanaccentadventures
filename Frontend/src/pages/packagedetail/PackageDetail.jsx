@@ -64,6 +64,8 @@ const PackageDetail = () => {
     getPackage();
   }, [id]);
 
+  console.log(Package);
+
   const handleClick = () => {
     if (price === 0) {
       setOpen(true);
@@ -188,6 +190,7 @@ const PackageDetail = () => {
   const handleExtraRoom = () => {
     setExtraRoom(!extraRoom);
   };
+  console.log(id);
 
   return (
     <div>
@@ -681,17 +684,14 @@ const PackageDetail = () => {
               <hr />
 
               <h3>Added Value:</h3>
-             
-              
 
-              
-             {Package.exclusions?.map((addedvalue,index) => (
-               <div className="inclusions-item">
-               <BsCheckLg className="icon" />
+              {Package.exclusions?.map((addedvalue, index) => (
+                <div className="inclusions-item">
+                  <BsCheckLg className="icon" />
 
-               <span>{addedvalue}</span>
-             </div>
-             ))}
+                  <span>{addedvalue}</span>
+                </div>
+              ))}
 
               <hr />
 
@@ -699,13 +699,11 @@ const PackageDetail = () => {
 
               {Package.exclusions?.map((exclusion) => (
                 <div className="inclusions-item">
-                <BsXLg className="icon" />
+                  <BsXLg className="icon" />
 
-                <span>{exclusion}</span>
-              </div>
+                  <span>{exclusion}</span>
+                </div>
               ))}
-
-              
             </div>
           </Tab>
           <Tab eventKey="gallery" title="Gallery">
