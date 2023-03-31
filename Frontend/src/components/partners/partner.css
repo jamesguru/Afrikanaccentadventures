@@ -29,6 +29,7 @@
     height: 30%;
     object-fit: cover;
     width: 30%;
+    object-fit: contain;
 }
 
 .s-container{
