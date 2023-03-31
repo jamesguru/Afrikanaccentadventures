@@ -5,9 +5,10 @@ const mongoose = require("mongoose");
 const dotenv = require("dotenv");
 
 const cors = require("cors");
-app.use(cors());
+
 
 const app = express();
+app.use(cors());
 const userRoute = require("./routes/user");
 const promoRoute = require("./routes/promo");
 const orderRoute = require("./routes/order");
