@@ -5,6 +5,7 @@ const mongoose = require("mongoose");
 const dotenv = require("dotenv");
 
 const cors = require("cors");
+app.use(cors());
 
 const app = express();
 const userRoute = require("./routes/user");
@@ -33,7 +34,7 @@ mongoose
   });
 
 app.use(express.json());
-app.use(cors());
+
 
 app.use("/api/carts", cartRoute);
 app.use("/api/newsletter", newsletterRoute);
