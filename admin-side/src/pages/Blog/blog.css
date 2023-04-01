@@ -3,7 +3,7 @@
   
     display: flex;
   
-    margin: 20px;
+    
   }
   
   .title-promo {
@@ -13,7 +13,7 @@
   
     align-items: center;
   
-    margin: 20px;
+    
   }
   
   .button {
@@ -27,7 +27,7 @@
   }
   
   .desc {
-    margin: 20px;
+   
   
     width: 30%;
   }
@@ -49,7 +49,7 @@
   }
   
   .title-input {
-    margin: 20px;
+    
     padding: 10px;
     width: 100%;
   }
@@ -57,7 +57,7 @@
   .desc-input {
     padding: 40px;
   
-    margin: 20px;
+    
   }
   
   .upload-button {
@@ -71,17 +71,31 @@
   }
   .promo-detail{
   
-      flex: 2;
+      flex: 1;
   
   }
   
-  .create-promo{
-      flex:1;
+  .create-blog{
+    flex: 2;
   }
 
 
-  .create-promo input{
+ .blog-input{
+  padding: 10px;
+  width:90%;
+ }
+ .metadescription{
 
-    width: 100%;
-    
-  }
+ 
+  padding: 40px;
+  width: 100%;
+ }
+ .blog-desc{
+  padding: 50px;
+  height: 500px;
+  width: 100%;
+ }
+ .blog-container{
+  display: flex;
+  flex-direction: column;
+ }

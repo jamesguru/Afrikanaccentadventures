@@ -94,6 +94,15 @@
   border: none;
   padding: 5px;
   border-bottom: 1px solid gray;
+  width: 500px;
+  
+  outline: none;
+}
+
+.productFormLeft > textarea{
+padding: 50px;
+height: 400px;
+
 }
 
 .productFormLeft >select{
@@ -101,8 +110,8 @@
 }
 
 .productUploadImg{
-  width: 100px;
-  height: 100px;
+  width: 250px;
+  height: 250px;
   border-radius: 10px;
   object-fit: cover;
   margin-right: 20px;
@@ -113,7 +122,10 @@
   flex-direction: column;
   justify-content: space-around;
 }
-
+.uploading{
+  color: teal;
+  font-weight: 900;
+}
 .productUpload{
   display: flex;
   align-items: center;
@@ -127,4 +139,8 @@
   color:white;
   font-weight: 600;
   cursor: pointer;
+}
+
+.publish-icon{
+  font-size: 60px;
 }

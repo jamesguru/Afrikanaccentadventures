@@ -60,7 +60,7 @@ export const userData = [
     },
     {
       name: "Mar",
-      "Sales": 5000,
+      "Sales": 8000,
     },
   ];
 

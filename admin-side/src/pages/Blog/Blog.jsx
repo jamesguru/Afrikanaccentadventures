@@ -98,7 +98,7 @@ const Blog = () => {
 
         {blogs.length &&
           blogs.map((singleBlog) => (
-            <div className="promo-container">
+            <div className="blog-container">
               <img
                 src={singleBlog.img}
                 alt=""
@@ -116,7 +116,7 @@ const Blog = () => {
           ))}
       </div>
 
-      <div className="create-promo">
+      <div className="create-blog">
         <h4 className="title-promo"> Create New Blog</h4>
 
         <div className="create-promo">
@@ -125,7 +125,7 @@ const Blog = () => {
           <h4 style={{ color: "green" }}>{uploading}</h4>
 
           <input
-            className="title-input"
+            className="blog-input"
             type="text"
             onChange={(e) => setTitle(e.target.value)}
             placeholder="Blog title"
@@ -136,6 +136,7 @@ const Blog = () => {
             style={{ margin: "20px" }}
             onChange={(e) => setMetaDesc(e.target.value)}
             placeholder="Blog meta description"
+            className="metadescription"
           ></textarea>
 
           <textarea
@@ -144,6 +145,7 @@ const Blog = () => {
             style={{ margin: "20px" }}
             onChange={(e) => setDesc(e.target.value)}
             placeholder="Blog description"
+            className="blog-desc"
           ></textarea>
 
           <button className="upload-button" onClick={handleUpload}>
