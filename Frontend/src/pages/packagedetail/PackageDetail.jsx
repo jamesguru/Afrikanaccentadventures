@@ -265,7 +265,6 @@ const PackageDetail = () => {
           <h1 className="big_title">{Package.title}</h1>
 
           <div className="package-maindetails">
-            <h2>Package Details</h2>
             <span>{Package.desc}</span>
           </div>
         </div>
@@ -409,8 +408,8 @@ const PackageDetail = () => {
                   <span>Night stops</span>
                   {Package.nightstops?.map((nightstop, index) => (
                     <div className="schedule-item">
-                      <div className="day-number">
-                        <div className="price-item">
+                      <div className="day-circle">
+                        <div className="price-circle">
                           <span>Day {index + 1}</span>{" "}
                         </div>
                       </div>
@@ -671,44 +670,46 @@ const PackageDetail = () => {
           </Tab>
           <Tab eventKey="inclusions" title="Inclusions" className="tab">
             <div className="package-inclusions">
-              <h3>Price Inclusions:</h3>
+              <div className="package-inclusions-item">
+                <h3>Price Inclusions:</h3>
 
-              {Package.addedvalue?.map((inclusion, index) => (
-                <div className="inclusions-item">
-                  <BsCheckLg className="icon" />
+                {Package.addedvalue?.map((inclusion, index) => (
+                  <div className="inclusions-item">
+                    <BsCheckLg className="icon" />
 
-                  <span>{inclusion}</span>
-                </div>
-              ))}
+                    <span>{inclusion}</span>
+                  </div>
+                ))}
+              </div>
 
-              <hr />
+              <div className="package-inclusions-item">
+                <h3>Added Value:</h3>
 
-              <h3>Added Value:</h3>
+                {Package.exclusions?.map((addedvalue, index) => (
+                  <div className="inclusions-item">
+                    <BsCheckLg className="icon" />
 
-              {Package.exclusions?.map((addedvalue, index) => (
-                <div className="inclusions-item">
-                  <BsCheckLg className="icon" />
+                    <span>{addedvalue}</span>
+                  </div>
+                ))}
+              </div>
 
-                  <span>{addedvalue}</span>
-                </div>
-              ))}
+              <div className="package-inclusions-item">
+                <h3>Price Exclusions:</h3>
 
-              <hr />
+                {Package.exclusions?.map((exclusion) => (
+                  <div className="inclusions-item">
+                    <BsXLg className="icon" />
 
-              <h3>Price Exclusions:</h3>
-
-              {Package.exclusions?.map((exclusion) => (
-                <div className="inclusions-item">
-                  <BsXLg className="icon" />
-
-                  <span>{exclusion}</span>
-                </div>
-              ))}
+                    <span>{exclusion}</span>
+                  </div>
+                ))}
+              </div>
             </div>
           </Tab>
           <Tab eventKey="gallery" title="Gallery">
             <div className="package-gallery">
-              <img src={Package.img1} alt="" />
+              <img src={Package.img1} alt=""/>
               <img src={Package.img2} alt="" />
               <img src={Package.img3} alt="" />
               <img src={Package.img4} alt="" />
