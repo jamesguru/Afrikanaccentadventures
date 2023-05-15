@@ -48,14 +48,14 @@ const Checkout = () => {
 
     await publicRequest
       .post("/pesapal/payment", {
-        Amount: "1",
+        Amount: `${order.total*130}`,
         Description: "E-book purchase",
         Type: "MERCHANT",
         Reference: "12erwe",
         PhoneNumber: `${inputs.phone}`,
       })
       .then((res) => {
-        console.log("HELLOOOOOOOO", res);
+        
 
         setLoading(true);
         setTimeout(() => {

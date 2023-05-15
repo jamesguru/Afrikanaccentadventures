@@ -66,6 +66,11 @@
   font-size: 25px;
   font-family: "Roboto";
 }
+
+.activity-overview{
+
+  text-align: justify;
+}
 .activity-explore {
   background-color: #ff4838;
   border: none;

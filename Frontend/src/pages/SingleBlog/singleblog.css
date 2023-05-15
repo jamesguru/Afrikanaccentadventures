@@ -1,12 +1,14 @@
 .blogPage{
     display: flex;
     margin: 0% 10%;
+    text-align: justify;
 }
 
 .blogdetails{
 
     display: flex;
     flex-direction: column;
+    text-align: justify;
   
 }
 

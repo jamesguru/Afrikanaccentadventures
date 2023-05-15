@@ -168,7 +168,7 @@ hr {
 
 .agree-policies {
   height: 100%;
-
+text-align: justify;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.8);
   position: absolute;
@@ -191,6 +191,7 @@ hr {
 .terms-conditions{
   cursor: pointer;
   text-decoration: underline;
+  
 }
 
 .tearms {
