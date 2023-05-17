@@ -1,6 +1,7 @@
 .booking {
   height: 180vh;
   width: 100vw;
+  text-align: justify;
 }
 
 .book-image img {
