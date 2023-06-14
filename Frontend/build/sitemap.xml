@@ -1,0 +1,439 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+   <url>
+
+      <loc>https://www.afrikanaccentadventures.com/</loc>
+
+      <lastmod>2023-06-14</lastmod>
+
+      <changefreq>monthly</changefreq>
+
+      <priority>0.9</priority>
+
+   </url>
+   <url>
+
+      <loc>https://www.afrikanaccentadventures.com/about</loc>
+
+      <lastmod>2023-06-14</lastmod>
+
+      <changefreq>monthly</changefreq>
+
+      <priority>0.8</priority>
+
+   </url>
+   <url>
+
+      <loc>https://www.afrikanaccentadventures.com/booking</loc>
+
+      <lastmod>2023-06-14</lastmod>
+
+      <changefreq>monthly</changefreq>
+
+      <priority>0.6</priority>
+
+   </url>
+   <url>
+
+      <loc>https://www.afrikanaccentadventures.com/gallery</loc>
+
+      <lastmod>2023-06-14</lastmod>
+
+      <changefreq>monthly</changefreq>
+
+      <priority>0.5</priority>
+
+   </url>
+    <url>
+
+      <loc>https://www.afrikanaccentadventures.com/wheretogo</loc>
+
+      <lastmod>2023-06-14</lastmod>
+
+      <changefreq>monthly</changefreq>
+
+      <priority>0.8</priority>
+
+   </url>
+   <url>
+
+      <loc>https://www.afrikanaccentadventures.com/activities</loc>
+
+      <lastmod>2023-06-14</lastmod>
+
+      <changefreq>monthly</changefreq>
+
+      <priority>0.6</priority>
+
+   </url>
+   <url>
+
+      <loc>https://www.afrikanaccentadventures.com/safaris</loc>
+
+      <lastmod>2023-06-14</lastmod>
+
+      <changefreq>monthly</changefreq>
+
+      <priority>0.8</priority>
+
+   </url>
+   <url>
+
+      <loc>https://www.afrikanaccentadventures.com/blog</loc>
+
+      <lastmod>2023-06-14</lastmod>
+
+      <changefreq>monthly</changefreq>
+
+      <priority>0.9</priority>
+
+   </url>
+   <url>
+
+      <loc>https://www.afrikanaccentadventures.com/package/:id</loc>
+
+      <lastmod>2023-06-14</lastmod>
+
+      <changefreq>monthly</changefreq>
+
+      <priority>0.5</priority>
+
+   </url>
+
+<url>
+
+      <loc>https://www.afrikanaccentadventures.com/activity/:id</loc>
+
+      <lastmod>2023-06-14</lastmod>
+
+      <changefreq>monthly</changefreq>
+
+      <priority>0.4</priority>
+
+   </url>
+
+<url>
+
+      <loc>https://www.afrikanaccentadventures.com/blogs/:id</loc>
+
+      <lastmod>2023-06-14</lastmod>
+
+      <changefreq>monthly</changefreq>
+
+      <priority>0.3</priority>
+
+   </url>
+<url>
+
+      <loc>https://www.afrikanaccentadventures.com/cart</loc>
+
+      <lastmod>2023-06-14</lastmod>
+
+      <changefreq>monthly</changefreq>
+
+      <priority>0.3</priority>
+
+   </url>
+
+<url>
+
+      <loc>https://www.afrikanaccentadventures.com/chackout</loc>
+
+      <lastmod>2023-06-14</lastmod>
+
+      <changefreq>monthly</changefreq>
+
+      <priority>0.4</priority>
+
+   </url>
+
+<url>
+
+      <loc>https://www.afrikanaccentadventures.com/destination/tanzania</loc>
+
+      <lastmod>2023-06-14</lastmod>
+
+      <changefreq>monthly</changefreq>
+
+      <priority>0.8</priority>
+
+   </url>
+<url>
+
+      <loc>https://www.afrikanaccentadventures.com/destination/kenya</loc>
+
+      <lastmod>2023-06-14</lastmod>
+
+      <changefreq>monthly</changefreq>
+
+      <priority>0.8</priority>
+
+   </url>
+<url>
+
+      <loc>https://www.afrikanaccentadventures.com/destination/uganda</loc>
+
+      <lastmod>2023-06-14</lastmod>
+
+      <changefreq>monthly</changefreq>
+
+      <priority>0.8</priority>
+
+   </url>
+<url>
+
+      <loc>https://www.afrikanaccentadventures.com/destination/namimbia</loc>
+
+      <lastmod>2023-06-14</lastmod>
+
+      <changefreq>monthly</changefreq>
+
+      <priority>0.8</priority>
+
+   </url>
+   <url>
+
+      <loc>https://www.afrikanaccentadventures.com/destination/southafrica</loc>
+
+      <lastmod>2023-06-14</lastmod>
+
+      <changefreq>monthly</changefreq>
+
+      <priority>0.8</priority>
+
+   </url>
+   <url>
+
+      <loc>https://www.afrikanaccentadventures.com/destination/southafrica</loc>
+
+      <lastmod>2023-06-14</lastmod>
+
+      <changefreq>monthly</changefreq>
+
+      <priority>0.8</priority>
+
+   </url>
+   <url>
+
+      <loc>https://www.afrikanaccentadventures.com/destination/botswana</loc>
+
+      <lastmod>2023-06-14</lastmod>
+
+      <changefreq>monthly</changefreq>
+
+      <priority>0.7</priority>
+
+   </url>
+   <url>
+
+      <loc>https://www.afrikanaccentadventures.com/design-your-own-safari</loc>
+
+      <lastmod>2023-06-14</lastmod>
+
+      <changefreq>monthly</changefreq>
+
+      <priority>0.8</priority>
+
+   </url>
+   <url>
+
+      <loc>https://www.afrikanaccentadventures.com/contact</loc>
+
+      <lastmod>2023-06-14</lastmod>
+
+      <changefreq>monthly</changefreq>
+
+      <priority>0.3</priority>
+
+   </url>
+   <url>
+
+      <loc>https://www.afrikanaccentadventures.com/cultural-safaris</loc>
+
+      <lastmod>2023-06-14</lastmod>
+
+      <changefreq>monthly</changefreq>
+
+      <priority>0.8</priority>
+
+   </url>
+   <url>
+
+      <loc>https://www.afrikanaccentadventures.com/family-holidays</loc>
+
+      <lastmod>2023-06-14</lastmod>
+
+      <changefreq>monthly</changefreq>
+
+      <priority>0.8</priority>
+
+   </url>
+   <url>
+
+      <loc>https://www.afrikanaccentadventures.com/group-holidays</loc>
+
+      <lastmod>2023-06-14</lastmod>
+
+      <changefreq>monthly</changefreq>
+
+      <priority>0.8</priority>
+
+   </url>
+   <url>
+
+      <loc>https://www.afrikanaccentadventures.com/gorilla-trekking</loc>
+
+      <lastmod>2023-06-14</lastmod>
+
+      <changefreq>monthly</changefreq>
+
+      <priority>0.8</priority>
+
+   </url>
+   <url>
+
+      <loc>https://www.afrikanaccentadventures.com/luxury-africa-safaris</loc>
+
+      <lastmod>2023-06-14</lastmod>
+
+      <changefreq>monthly</changefreq>
+
+      <priority>0.8</priority>
+
+   </url>
+    <url>
+
+      <loc>https://www.afrikanaccentadventures.com/honey-moons</loc>
+
+      <lastmod>2023-06-14</lastmod>
+
+      <changefreq>monthly</changefreq>
+
+      <priority>0.8</priority>
+
+   </url>
+    <url>
+
+      <loc>https://www.afrikanaccentadventures.com/fly-in-safaris</loc>
+
+      <lastmod>2023-06-14</lastmod>
+
+      <changefreq>monthly</changefreq>
+
+      <priority>0.8</priority>
+
+   </url>
+    <url>
+
+      <loc>https://www.afrikanaccentadventures.com/success</loc>
+
+      <lastmod>2023-06-14</lastmod>
+
+      <changefreq>monthly</changefreq>
+
+      <priority>0.1</priority>
+
+   </url>
+    <url>
+
+      <loc>https://www.afrikanaccentadventures.com/policy</loc>
+
+      <lastmod>2023-06-14</lastmod>
+
+      <changefreq>monthly</changefreq>
+
+      <priority>0.3</priority>
+
+   </url>
+    <url>
+
+      <loc>https://www.afrikanaccentadventures.com/travel-with-us</loc>
+
+      <lastmod>2023-06-14</lastmod>
+
+      <changefreq>monthly</changefreq>
+
+      <priority>0.7</priority>
+
+   </url>
+    <url>
+
+      <loc>https://www.afrikanaccentadventures.com/travel-guide-kenya</loc>
+
+      <lastmod>2023-06-14</lastmod>
+
+      <changefreq>monthly</changefreq>
+
+      <priority>0.8</priority>
+
+   </url>
+    <url>
+
+      <loc>https://www.afrikanaccentadventures.com/travel-guide-tanzania</loc>
+
+      <lastmod>2023-06-14</lastmod>
+
+      <changefreq>monthly</changefreq>
+
+      <priority>0.8</priority>
+
+   </url>
+    <url>
+
+      <loc>https://www.afrikanaccentadventures.com/travel-guide-uganda</loc>
+
+      <lastmod>2023-06-14</lastmod>
+
+      <changefreq>monthly</changefreq>
+
+      <priority>0.8</priority>
+
+   </url>
+    <url>
+
+      <loc>https://www.afrikanaccentadventures.com/travel-guide-rwanda</loc>
+
+      <lastmod>2023-06-14</lastmod>
+
+      <changefreq>monthly</changefreq>
+
+      <priority>0.8</priority>
+
+   </url>
+    <url>
+
+      <loc>https://www.afrikanaccentadventures.com/travel-guide-namimbia</loc>
+
+      <lastmod>2023-06-14</lastmod>
+
+      <changefreq>monthly</changefreq>
+
+      <priority>0.8</priority>
+
+   </url>
+    <url>
+
+      <loc>https://www.afrikanaccentadventures.com/travel-guide-Botswana</loc>
+
+      <lastmod>2023-06-14</lastmod>
+
+      <changefreq>monthly</changefreq>
+
+      <priority>0.8</priority>
+
+   </url>
+    <url>
+
+      <loc
+    >https://www.afrikanaccentadventures.com/travel-guide-southafrica</loc>
+
+      <lastmod>2023-06-14</lastmod>
+
+      <changefreq>monthly</changefreq>
+
+      <priority>0.8</priority>
+
+   </url>
+
+</urlset>
