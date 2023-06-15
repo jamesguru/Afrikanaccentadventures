@@ -1,6 +1,8 @@
 import "./newProduct.css";
 import { toast, ToastContainer } from "react-toastify";
+import Moment from "react-moment";
 import "react-toastify/dist/ReactToastify.css";
+import { Close } from "@material-ui/icons";
 import { useState } from "react";
 import {
   getStorage,
@@ -12,6 +14,7 @@ import {
 import { useDispatch } from "react-redux";
 import app from "../../firebasestore";
 import { addProduct } from "../../redux/apiCalls";
+import Table from "react-bootstrap/Table";
 import axios from "axios";
 let ItinenaryDay = [];
 let Pricing = [];
@@ -62,8 +65,11 @@ export default function NewProduct() {
   const [room4, setRoom4] = useState(0);
   const [room5, setRoom5] = useState(0);
   const [room6, setRoom6] = useState(0);
-  const [nightstop, setNightStop] = useState("");
+  const [statePrice, setStatePrice] = useState([]);
+  const [stateTransport, setStateTransport] = useState([]);
+  const [stateCategory, setStateCategory] = useState([]);
 
+  const [nightstop, setNightStop] = useState("");
   const [accomodation, setAccomodation] = useState("");
   const [destination, setDestination] = useState("");
   const [similarAccomodation, setSimilarAccomodation] = useState("");
@@ -112,8 +118,6 @@ export default function NewProduct() {
         day,
         Itinenary,
       };
-
-     
 
       ItinenaryDay.push(itinenaryItem);
 
@@ -182,8 +186,10 @@ export default function NewProduct() {
           room: room6,
         },
       };
-      
-      Pricing.push(pricingItem)
+
+      Pricing.push(pricingItem);
+      setStatePrice(Pricing);
+
       setNumberOfPricing(Pricing.length);
       setStartDatePricing("");
       setLastDatePricing("");
@@ -193,12 +199,12 @@ export default function NewProduct() {
       setPricingPrice4(0);
       setPricingPrice5(0);
       setPricingPrice6(0);
-      setRoom1(0)
-      setRoom2(0)
-      setRoom3(0)
-      setRoom4(0)
-      setRoom5(0)
-      setRoom6(0)
+      setRoom1(0);
+      setRoom2(0);
+      setRoom3(0);
+      setRoom4(0);
+      setRoom5(0);
+      setRoom6(0);
 
       toast.success(`You have added pricing ${Pricing.length}`, {
         position: toast.POSITION.BOTTOM_CENTER,
@@ -221,7 +227,17 @@ export default function NewProduct() {
       });
     }
   };
-
+  const handleDeletePrice = (e, index) => {
+    e.preventDefault();
+    console.log(index);
+    if (index < 0 || index >= Pricing.length) {
+      return;
+    }
+    const updatedArray = [...statePrice];
+    updatedArray.splice(index, 1);
+    Pricing.splice(index, 1);
+    setStatePrice(updatedArray);
+  };
   const handleAccomodation = (e) => {
     setAccomodation(e.target.value);
   };
@@ -257,10 +273,26 @@ export default function NewProduct() {
 
   const handleTransport = (transport) => {
     Transport.push(transport);
+
+    setStateTransport(Transport)
+
+    
+  };
+
+  const handleDeleteTransport = (e, index) => {
+    e.preventDefault();
+
+    if (index < 0 || index >= Transport.length) {
+      return;
+    }
+    const updatedArray = [...stateTransport];
+    updatedArray.splice(index, 1);
+    Transport.splice(index, 1);
+    setStateTransport(updatedArray);
   };
 
   const handleNightStops = (e) => {
-    e.preventDefault()
+    e.preventDefault();
     if (nightstop) {
       NightStops.push(nightstop);
       toast.success(`You have added night ${NightStops.length}`, {
@@ -494,15 +526,13 @@ export default function NewProduct() {
       pricing: Pricing,
       accomodation: Accomodation,
       gallery: gallery,
-      transport:Transport,
-      tourfeature:TourFeature,
-      exclusions:Exclusions,
-      inclusions:Inclusions,
-      addedvalue:AddedValue,
-      nightstops:NightStops
-
+      transport: Transport,
+      tourfeature: TourFeature,
+      exclusions: Exclusions,
+      inclusions: Inclusions,
+      addedvalue: AddedValue,
+      nightstops: NightStops,
     };
-
 
     e.preventDefault();
 
@@ -608,6 +638,24 @@ export default function NewProduct() {
           />
         </div>
 
+        {stateTransport.length > 0 && (
+          <div className="transport-added">
+            <label>Added Transport</label>
+
+            <div className="transport-body">
+              {stateTransport.map((item, index) => (
+                <div className="transport-card">
+                  <span>{item}</span>
+                  <Close
+                    className="transport-icon"
+                    onClick={(e) => handleDeleteTransport(e, index)}
+                  />
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
+
         <div className="transport">
           <label>Transport* </label>
 
@@ -619,7 +667,6 @@ export default function NewProduct() {
             />
             <span>4x4 Land Cruiser</span>
           </div>
-
           <div className="transport-item">
             <input
               name="tourguide"
@@ -759,17 +806,11 @@ export default function NewProduct() {
               <span>Family Safaris</span>
             </div>
             <div className="category-checkbox">
-              <input
-                type="checkbox"
-                onClick={() => handleCat("honey-moons")}
-              />
+              <input type="checkbox" onClick={() => handleCat("honey-moons")} />
               <span>Honey Moon</span>
             </div>
             <div className="category-checkbox">
-              <input
-                type="checkbox"
-                onClick={() => handleCat("new")}
-              />
+              <input type="checkbox" onClick={() => handleCat("new")} />
               <span>New</span>
             </div>
           </div>
@@ -835,12 +876,189 @@ export default function NewProduct() {
         </div>
         <hr />
         <div className="nightstops">
-          <input type="text" onChange={(e) => setNightStop(e.target.value)} placeholder="Nakuru"/>
+          <input
+            type="text"
+            onChange={(e) => setNightStop(e.target.value)}
+            placeholder="Nakuru"
+          />
           <button onClick={handleNightStops}>Add Night Stop</button>
         </div>
         <hr />
+
+        <label>Pricing* </label>
+
+        {statePrice.length > 0 && (
+          <Table striped bordered hover responsive>
+            <thead>
+              <tr>
+                <th>Start dates</th>
+                <th>
+                  <div className="header-cell">
+                    <span>Solo/1 person</span>
+                    <span></span>
+                  </div>
+                </th>
+                <th>
+                  <div className="header-cell">
+                    <span>2 people</span>
+                    <span></span>
+                  </div>
+                </th>
+                <th>
+                  <div className="header-cell">
+                    <span>3 people</span>
+                    <span></span>
+                  </div>
+                </th>
+                <th>
+                  <div className="header-cell">
+                    <span>4 people</span>
+                    <span></span>
+                  </div>
+                </th>
+                <th>
+                  <div className="header-cell">
+                    <span>5 people</span>
+                    <span></span>
+                  </div>
+                </th>
+                <th>
+                  <div className="header-cell">
+                    <span>6 people</span>
+                    <span></span>
+                  </div>
+                </th>
+                <th>
+                  <div className="header-cell">
+                    <span>7+ people</span>
+                    <span></span>
+                  </div>
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              {statePrice?.map((item, index) => (
+                <tr>
+                  <td>
+                    {
+                      <div className="dates-cell">
+                        {<Moment date={item.startdate} format="MMM D YYYY" />}
+
+                        <span className="space">-</span>
+
+                        {<Moment date={item.lastdate} format="MMM D YYYY" />}
+                      </div>
+                    }
+                  </td>
+                  <td>
+                    <div className="pricing-cell">
+                      {item.price1.price > 0 ||
+                      item.price1.price === undefined ? (
+                        <span>${item.price1?.price}</span>
+                      ) : (
+                        <span>N/A</span>
+                      )}
+
+                      {item.price1.price > 0 ? (
+                        <span>({item.price1.room} Rooms)</span>
+                      ) : (
+                        ""
+                      )}
+                    </div>
+                  </td>
+                  <td>
+                    <div className="pricing-cell">
+                      {item.price2.price > 0 ||
+                      item.price2.price === undefined ? (
+                        <span>${item.price2?.price}</span>
+                      ) : (
+                        <span>N/A</span>
+                      )}
+
+                      {item.price2.price > 0 ? (
+                        <span>({item.price2.room} Rooms)</span>
+                      ) : (
+                        ""
+                      )}
+                    </div>
+                  </td>
+                  <td>
+                    <div className="pricing-cell">
+                      {item.price3.price > 0 ||
+                      item.price3.price === undefined ? (
+                        <span>${item.price3?.price}</span>
+                      ) : (
+                        <span>N/A</span>
+                      )}
+
+                      {item.price3.price > 0 ? (
+                        <span>({item.price3.room} Rooms)</span>
+                      ) : (
+                        ""
+                      )}
+                    </div>
+                  </td>
+                  <td>
+                    <div className="pricing-cell">
+                      {item.price4.price > 0 ||
+                      item.price4.price === undefined ? (
+                        <span>${item.price4?.price}</span>
+                      ) : (
+                        <span>N/A</span>
+                      )}
+
+                      {item.price4.price > 0 ? (
+                        <span>({item.price4.room} Rooms)</span>
+                      ) : (
+                        ""
+                      )}
+                    </div>
+                  </td>
+                  <td>
+                    <div className="pricing-cell">
+                      {item.price5.price > 0 ||
+                      item.price5.price === undefined ? (
+                        <span>${item.price5?.price}</span>
+                      ) : (
+                        <span>N/A</span>
+                      )}
+
+                      {item.price5.price > 0 ? (
+                        <span>({item.price5.room} Rooms)</span>
+                      ) : (
+                        ""
+                      )}
+                    </div>
+                  </td>
+                  <td>
+                    <div className="pricing-cell">
+                      {item.price6.price > 0 ||
+                      item.price6.price === undefined ? (
+                        <span>${item.price6.price}</span>
+                      ) : (
+                        <span>N/A</span>
+                      )}
+
+                      {item.price6?.price > 0 && item.price6.room > 0 ? (
+                        <span>({item.price6.room} Rooms)</span>
+                      ) : (
+                        ""
+                      )}
+                    </div>
+                  </td>
+                  <td>
+                    <div className="pricing-cell">
+                      <button onClick={(e) => handleDeletePrice(e, index)}>
+                        Delete
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </Table>
+        )}
         <div className="addProductItem">
-          <label>Pricing* </label>
           <span className="itinenary">Pricing {numberOfPricing} Added</span>
 
           <div className="pricing-card">

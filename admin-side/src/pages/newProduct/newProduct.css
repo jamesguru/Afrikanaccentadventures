@@ -138,6 +138,23 @@ width: 50%;
   margin-left: 20px;
 }
 
+.transport-body{
+  display: flex;
+  flex-wrap: wrap;
+}
+.transport-card{
+  background-color: #aaaa;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 20px;
+}
+
+
+.transport-icon{
+  margin-left: 25px;
+  cursor: pointer;
+}
+
 .inclusion-item{
 
   display: flex;
@@ -174,4 +191,12 @@ margin: 10px;
 .nightstops button{
   padding: 10px;
   margin-top: 20px;
+}
+.pricing-cell{
+
+  width: 110px;
+}
+
+.pricing-cell button{
+  background-color: red;
 }
