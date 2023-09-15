@@ -17,7 +17,7 @@ const Team = () => {
                     <img src="https://res.cloudinary.com/dap91fhxh/image/upload/v1694774972/hellen2_nni3vx.jpg" alt="Our Director" className='profile'/>
                 </div>
                 <div className="name">
-                    <h4>Nick Asiko</h4>
+                    <h4>Hellen Asiko</h4>
                     <span>Director</span>
                 </div>
             </div>
