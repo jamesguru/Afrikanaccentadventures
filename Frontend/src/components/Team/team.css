@@ -1,6 +1,6 @@
 .team{
 
-    height: 100vh;
+    height: 50vh;
     width: 100vw;
     margin-bottom: 30px;
 }
@@ -30,7 +30,7 @@ margin: 50px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between;
+   
     margin: 0px 50px;
 }
 
@@ -39,6 +39,7 @@ margin: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 20px;
 }
 
 .image{
