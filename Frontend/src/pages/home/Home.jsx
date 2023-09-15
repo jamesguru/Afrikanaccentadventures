@@ -27,7 +27,7 @@ const Home = () => {
       <Whyus />
       <ShortSafari />
       <Newsletter />
-
+      <Team />
       <Partner />
       <Footer />
     </div>

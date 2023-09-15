@@ -14,30 +14,30 @@ const Team = () => {
 
             <div className="team-item">
                 <div className="image">
-                    <img src="https://cdn.pixabay.com/photo/2018/07/11/23/01/black-man-3532185_960_720.jpg" alt="" className='profile'/>
+                    <img src="https://res.cloudinary.com/dap91fhxh/image/upload/v1694774972/hellen2_nni3vx.jpg" alt="Our Director" className='profile'/>
                 </div>
                 <div className="name">
-                    <h4>Jason Stratham</h4>
-                    <span>Tourism expert</span>
+                    <h4>Nick Asiko</h4>
+                    <span>Director</span>
                 </div>
             </div>
             <div className="team-item">
                 <div className="image">
-                    <img src="https://cdn.pixabay.com/photo/2017/02/16/23/10/smile-2072907__340.jpg" alt="" className='profile'/>
+                    <img src="https://res.cloudinary.com/dap91fhxh/image/upload/v1694774973/nick_dcekek.jpg" alt="Our Driver" className='profile'/>
                 </div>
                 <div className="name">
-                    <h4>Cleona Tropez</h4>
-                    <span>Adventure Guru</span>
+                    <h4>Nick Wangithi</h4>
+                    <span>Driver Guide</span>
                 </div>
             </div>
 
             <div className="team-item">
                 <div className="image">
-                    <img src="https://cdn.pixabay.com/photo/2019/12/16/14/46/black-man-4699506__340.jpg" alt="" className='profile'/>
+                    <img src="https://res.cloudinary.com/dap91fhxh/image/upload/v1694774972/james_m0udid.jpg" alt="IT manager" className='profile'/>
                 </div>
                 <div className="name">
-                    <h4>Martin Blake</h4>
-                    <span>Trekking guide</span>
+                    <h4>James Mwathi</h4>
+                    <span>IT Manager</span>
                 </div>
             </div>
         </div>
