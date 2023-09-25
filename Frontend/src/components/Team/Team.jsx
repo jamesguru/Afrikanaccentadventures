@@ -30,6 +30,16 @@ const Team = () => {
                     <span>Driver Guide</span>
                 </div>
             </div>
+            <div className="team-item">
+                <div className="image">
+                    <img src="https://res.cloudinary.com/dap91fhxh/image/upload/v1695637191/Peter_payycs.jpg" alt="Our Driver" className='profile'/>
+                </div>
+                <div className="name">
+                    <h4>Peter King'ori</h4>
+                    <span>Driver Guide(Spanish Speaking)</span>
+                </div>
+            </div>
+
 
             <div className="team-item">
                 <div className="image">

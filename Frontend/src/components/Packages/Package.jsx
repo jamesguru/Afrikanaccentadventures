@@ -21,7 +21,7 @@ const Package = () => {
     getPackages();
   }, []);
 
-  console.log(packages);
+
   return (
     <div className="package">
       <h2 className="package-head"> Best Sellers</h2>
