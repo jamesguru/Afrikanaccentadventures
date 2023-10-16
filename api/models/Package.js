@@ -16,26 +16,24 @@ const PackageSchema = mongoose.Schema(
 
     duration: { type: String },
 
-    originalPrice: { type: Number,require:true },
+    originalPrice: { type: Number, require: true },
 
     tourtype: { type: String },
     groupsize: { type: Number },
 
     tourguide: { type: Number },
-
     overview: { type: String },
-
-    itinenary: { type: Array,require:true },
-    transport: { type: Array,require:true },
-    tourfeature: { type: Array,require:true },
-    exclusions: { type: Array,require:true },
-    inclusions: { type: Array,require:true},
-    addedvalue: { type: Array,require:true },
-    nightstops: { type: Array,require:true },
-    pricing: { type: Array,require:true },
-    accomodation: { type: Array,require:true },
+    itinenary: { type: Array, require: true},
+    transport: { type: Array, require: true },
+    tourfeature: { type: Array, require: true },
+    exclusions: { type: Array, require: true },
+    inclusions: { type: Array, require: true },
+    addedvalue: { type: Array, require: true },
+    nightstops: { type: Array, require: true },
+    pricing: { type: Array },
+    accomodation: { type: Array, require: true },
     gallery: { type: Array },
-    categories: { type: Array,require:true },
+    categories: { type: Array, require: true },
 
     active: { type: Boolean, default: true },
 

@@ -27,7 +27,7 @@ const newsletterEmail = async () => {
 
       try {
         await axios.put(
-          `http://localhost:5000/api/newsletter/${newsletter._id}`,
+          `https://api.afrikanaccentadventures.com/api/newsletter/${newsletter._id}`,
           {
             status: newsletter.status + 1,
           }

@@ -1,36 +1,78 @@
-import React from 'react';
-import './team.css'
+import React from "react";
+import "./team.css";
+import Slider from "infinite-react-carousel";
+import "swiper/swiper.min.css";
+import "swiper/modules/pagination/pagination.min.css";
+import { Swiper, SwiperSlide } from "swiper/react/swiper-react";
+import SwiperCore, { Autoplay, Navigation, Pagination } from "swiper";
 
 const Team = () => {
   return (
-    <div className='team'>
+    <div className="team">
+      <div className="team-header">
+        <h1>GUIDES TEAM</h1>
+        <span>Our highly trained efficient guides.</span>
+      </div>
+      <Swiper
+        spaceBetween={0}
+        slidesPerView={4}
+        modules={[Pagination, Navigation]}
+        autoplay={{ delay: 2500 }}
+        navigation={true}
+        loopFillGroupWithBlank={true}
+        loop={true}
+        breakpoints={{
+          1400: {
+            slidesPerView: 4,
+          },
 
-        <div className="team-header">
-            <h1>GUIDES TEAM</h1>
-            <span>Our highly trained efficient guides.</span>
-        </div>
-        <div className="team-body">
+          1024: {
+            slidesPerView: 3,
+          },
 
-
-            <div className="team-item">
-                <div className="image">
-                    <img src="https://res.cloudinary.com/dap91fhxh/image/upload/v1694774972/hellen2_nni3vx.jpg" alt="Our Director" className='profile'/>
-                </div>
-                <div className="name">
-                    <h4>Hellen Asiko</h4>
-                    <span>Director</span>
-                </div>
+          576: {
+            // width: 576,
+            slidesPerView: 2,
+          },
+          350: {
+            // width: 768,
+            slidesPerView: 1,
+          },
+        }}
+      >
+        <SwiperSlide>
+          <div className="team-item">
+            <div className="image">
+              <img
+                src="https://res.cloudinary.com/dap91fhxh/image/upload/v1694774972/hellen2_nni3vx.jpg"
+                alt="Our Director"
+                className="profile"
+              />
             </div>
-            <div className="team-item">
-                <div className="image">
-                    <img src="https://res.cloudinary.com/dap91fhxh/image/upload/v1694774973/nick_dcekek.jpg" alt="Our Driver" className='profile'/>
-                </div>
-                <div className="name">
-                    <h4>Nick Wangithi</h4>
-                    <span>Driver Guide</span>
-                </div>
+            <div className="name">
+              <h4>Hellen Asiko</h4>
+              <span>Director</span>
             </div>
-            <div className="team-item">
+          </div>
+        </SwiperSlide>
+
+        <SwiperSlide>
+          <div className="team-item">
+            <div className="image">
+              <img
+                src="https://res.cloudinary.com/dap91fhxh/image/upload/v1694774973/nick_dcekek.jpg"
+                alt="Our Driver"
+                className="profile"
+              />
+            </div>
+            <div className="name">
+              <h4>Nick Wangithi</h4>
+              <span>Driver Guide</span>
+            </div>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className="team-item">
                 <div className="image">
                     <img src="https://res.cloudinary.com/dap91fhxh/image/upload/v1695637191/Peter_payycs.jpg" alt="Our Driver" className='profile'/>
                 </div>
@@ -39,22 +81,26 @@ const Team = () => {
                     <span>Driver Guide(Spanish Speaking)</span>
                 </div>
             </div>
+        </SwiperSlide>
 
-
-            <div className="team-item">
-                <div className="image">
-                    <img src="https://res.cloudinary.com/dap91fhxh/image/upload/v1694774972/james_m0udid.jpg" alt="IT manager" className='profile'/>
-                </div>
-                <div className="name">
-                    <h4>James Mwathi</h4>
-                    <span>IT Manager</span>
-                </div>
+        <SwiperSlide>
+          <div className="team-item">
+            <div className="image">
+              <img
+                src="https://res.cloudinary.com/dap91fhxh/image/upload/v1694774972/james_m0udid.jpg"
+                alt="IT manager"
+                className="profile"
+              />
             </div>
-        </div>
-
-
+            <div className="name">
+              <h4>James Mwathi</h4>
+              <span>Chief Technology Officer</span>
+            </div>
+          </div>
+        </SwiperSlide>
+      </Swiper>
     </div>
-  )
-}
+  );
+};
 
-export default Team
+export default Team;

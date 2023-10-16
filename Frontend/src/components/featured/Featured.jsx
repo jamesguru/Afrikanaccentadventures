@@ -1,6 +1,7 @@
 import {
   InfoOutlined,
   PlayArrow,
+  SearchRounded,
   SettingsInputAntennaTwoTone,
 } from "@material-ui/icons";
 import { AnimatePresence, motion } from "framer-motion/dist/framer-motion";
@@ -55,15 +56,19 @@ export default function Featured({ type }) {
 
         <Carousel.Caption>
           <div className="slide-detail">
-            <span className="slide-header">YOUR DREAM SAFARI. LET'S BUILD IT </span>
-              <span className="slide-header"></span>
-              <div className="slide-buttons">
-              <button className="take-tour">Go to shop</button>
-              <button className="take-tour">Explore Tour</button>
+            <div className="featured-search">
+            <SearchRounded className="search-icon" />
+              <input
+                type="text"
+                className="destination-search"
+                placeholder="Search destination"
+              />
 
-              <button className="take-tour">Discover Safaris</button>
-              
+              <button className="search-button">Search </button>
+               
             </div>
+            <span className="slide-header"></span>
+            <div className="slide-buttons"></div>
           </div>
         </Carousel.Caption>
       </Carousel.Item>
@@ -72,11 +77,11 @@ export default function Featured({ type }) {
 
         <Carousel.Caption>
           <div className="slide-detail">
-          <span className="slide-header">HOME OF BEAUTY SCENARIES</span>
+            <span className="slide-header">HOME OF BEAUTY SCENARIES</span>
             <span className="slide-header">KENYA</span>
 
             <div className="slide-buttons">
-            <button className="take-tour">Go to shop</button>
+              <button className="take-tour">Go to shop</button>
               <button className="take-tour">Explore Kenya</button>
 
               <button className="take-tour">Discover Kenya</button>
@@ -93,7 +98,7 @@ export default function Featured({ type }) {
             <span className="slide-header">UGANDA</span>
 
             <div className="slide-buttons">
-            <button className="take-tour">Go to shop</button>
+              <button className="take-tour">Go to shop</button>
               <button className="take-tour">Explore Uganda</button>
 
               <button className="take-tour">View Uganda</button>
@@ -110,7 +115,7 @@ export default function Featured({ type }) {
             <span className="slide-header">TANZANIA & ZANZIBAR</span>
 
             <div className="slide-buttons">
-            <button className="take-tour">Go to shop</button>
+              <button className="take-tour">Go to shop</button>
               <button className="take-tour">Explore Tanzania</button>
 
               <button className="take-tour">View Tanzania</button>
@@ -127,7 +132,7 @@ export default function Featured({ type }) {
             <span className="slide-header">RWANDA</span>
 
             <div className="slide-buttons">
-            <button className="take-tour">Go to shop</button>
+              <button className="take-tour">Go to shop</button>
               <button className="take-tour">View Rwanda</button>
 
               <button className="take-tour">Discover Rwanda</button>
@@ -144,7 +149,7 @@ export default function Featured({ type }) {
             <span className="slide-header">NAMIMBIA</span>
 
             <div className="slide-buttons">
-            <button className="take-tour">Go to shop</button>
+              <button className="take-tour">Go to shop</button>
               <button className="take-tour">Explore Namibia</button>
 
               <button className="take-tour">View Namimbia</button>
@@ -161,7 +166,7 @@ export default function Featured({ type }) {
             <span className="slide-header">BOTSWANA</span>
 
             <div className="slide-buttons">
-            <button className="take-tour">Go to shop</button>
+              <button className="take-tour">Go to shop</button>
               <button className="take-tour">Explore Botswana</button>
 
               <button className="take-tour">View Botswana</button>
@@ -178,7 +183,7 @@ export default function Featured({ type }) {
             <span className="slide-header">ZAMBIA & ZIMBABWE</span>
 
             <div className="slide-buttons">
-            <button className="take-tour">Go to shop</button>
+              <button className="take-tour">Go to shop</button>
               <button className="take-tour">Explore Zambia</button>
 
               <button className="take-tour">View Zambia</button>
@@ -186,7 +191,7 @@ export default function Featured({ type }) {
           </div>
         </Carousel.Caption>
       </Carousel.Item>
-      
+
       <Carousel.Item>
         <div className="slide-item3"></div>
 
@@ -196,7 +201,7 @@ export default function Featured({ type }) {
             <span className="slide-header">SOUTH AFRICA</span>
 
             <div className="slide-buttons">
-            <button className="take-tour">Go to shop</button>
+              <button className="take-tour">Go to shop</button>
               <button className="take-tour">Explore South Africa</button>
 
               <button className="take-tour">View South Africa</button>
@@ -204,7 +209,6 @@ export default function Featured({ type }) {
           </div>
         </Carousel.Caption>
       </Carousel.Item>
-      
     </Carousel>
   );
 }

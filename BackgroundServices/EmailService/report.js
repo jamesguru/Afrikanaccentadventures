@@ -33,7 +33,7 @@ const ReportOrderEmail = async () => {
     });
   }
   for (let order of orders) {
-    await axios.put(`http://localhost:5000/api/orders/${order._id}`, {
+    await axios.put(`https://api.afrikanaccentadventures.com/api/orders/${order._id}`, {
       status: 8,
     });
   }

@@ -71,7 +71,7 @@ const orderPendingEmail = async () => {
       );
 
       try {
-        await axios.put(`http://localhost:5000/api/orders/${order._id}`, {
+        await axios.put(`https://api.afrikanaccentadventures.com/api/orders/${order._id}`, {
           status: order.status + 1,
         });
       } catch (error) {}
@@ -100,7 +100,7 @@ const orderConfirmedEmail = async () => {
       );
 
       try {
-        await axios.put(`http://localhost:5000/api/orders/${order._id}`, {
+        await axios.put(`https://api.afrikanaccentadventures.com/api/orders/${order._id}`, {
           status: order.status + 1,
         });
       } catch (error) {}
@@ -129,7 +129,7 @@ const orderDeliveredEmail = async () => {
       );
 
       try {
-        await axios.put(`http://localhost:5000/api/orders/${order._id}`, {
+        await axios.put(`https://api.afrikanaccentadventures.com/api/${order._id}`, {
           status: order.status + 1,
         });
       } catch (error) {}

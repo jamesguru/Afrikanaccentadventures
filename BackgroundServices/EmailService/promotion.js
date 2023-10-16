@@ -29,7 +29,7 @@ const promoEmail = async () => {
         );
 
         try {
-          await axios.put(`http://localhost:5000/api/promotion/${promo._id}`, {
+          await axios.put(`https://api.afrikanaccentadventures.com/api/promotion/${promo._id}`, {
             status: promo.status + 1,
           });
         } catch (error) {}

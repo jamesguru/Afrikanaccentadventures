@@ -720,7 +720,7 @@ const PackageDetail = () => {
 
       <Footer />
 
-      {open && (
+      {open && Package.pricing.length > 0(
         <div className="pricing-modal" ref={topRef}>
           <div className="pricing-container">
             <span className="select-price">
