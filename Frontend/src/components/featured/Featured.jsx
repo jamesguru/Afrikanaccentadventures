@@ -56,8 +56,9 @@ export default function Featured({ type }) {
 
         <Carousel.Caption>
           <div className="slide-detail">
+            <span className="slide-header">Where do you want to tour?</span>
             <div className="featured-search">
-            <SearchRounded className="search-icon" />
+              <SearchRounded className="search-icon" />
               <input
                 type="text"
                 className="destination-search"
@@ -65,7 +66,6 @@ export default function Featured({ type }) {
               />
 
               <button className="search-button">Search </button>
-               
             </div>
             <span className="slide-header"></span>
             <div className="slide-buttons"></div>
