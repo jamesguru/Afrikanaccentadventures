@@ -27,6 +27,7 @@ export default function Featured({ type }) {
   const [company, setCompany] = useState("");
   const [bronchure, setBronchure] = useState(false);
   const [companyName, setCompanyName] = useState("");
+  const [destination, setDestination] = useState("");
 
   const download = () => {
     setClose(!close);
@@ -63,9 +64,12 @@ export default function Featured({ type }) {
                 type="text"
                 className="destination-search"
                 placeholder="Search destination"
+                onChange={(e) => setDestination(e.target.value)}
               />
 
-              <button className="search-button">Search </button>
+              <button className="search-button">
+                <Link to={`/safaris/${destination}`}>Search</Link>
+              </button>
             </div>
             <span className="slide-header"></span>
             <div className="slide-buttons"></div>

@@ -3,6 +3,7 @@ import Footer from "../../components/Footer/Footer";
 import Navbar from "../../components/navbar/Navbar";
 import Tab from "react-bootstrap/Tab";
 import Tabs from "react-bootstrap/Tabs";
+import "./activitydetail.css"
 import Moment from "react-moment";
 import { BsCheckLg, BsXLg } from "react-icons/bs";
 import {
@@ -263,6 +264,8 @@ const ActivityDetail = () => {
           </div>
 
           <h1 className="big_title">{Activity.title}</h1>
+
+
           <div className="package-inclusions">
             <h3>Price Inclusions:</h3>
             <div className="inclusions-item">
@@ -471,8 +474,7 @@ const ActivityDetail = () => {
                       <tbody>
                         <tr>
                           <td>
-                            USD ${Activity.originalPrice} per adult in a twin
-                            share room{" "}
+                            USD ${Activity.originalPrice} per person in the vehicle{" "}
                           </td>
                           <td>
                             {" "}

@@ -2,3 +2,9 @@
 
     text-align: justify;
 }
+
+.package-inclusions{
+
+    display: flex;
+    flex-direction: column;
+}

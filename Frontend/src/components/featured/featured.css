@@ -1,5 +1,4 @@
 .slide-item {
-  
   height: 100vh;
   background-image: linear-gradient(
       to left,
@@ -10,7 +9,10 @@
   background-size: cover;
   background-position: center;
 }
-
+a{
+  text-decoration: none;
+  color: inherit;
+}
 .slide-item1 {
   height: 100vh;
   background-image: linear-gradient(
@@ -23,9 +25,7 @@
   background-position: center;
 }
 
-
-.slide-header{
-
+.slide-header {
   font-size: 10px;
 }
 
@@ -118,36 +118,32 @@
 }
 
 .slide-header {
-  font-size: 35px;
+  font-size: 37px;
   margin: 0;
   padding: 11px 0;
   line-height: 1;
-font-weight: 700;
+  font-weight: 700;
   color: #e1d8d8;
   letter-spacing: 1px;
-  font-family: 'Cookie', cursive;
+  font-family: "Cookie", cursive;
 }
 .slide-cont {
-  
   width: 80%;
   padding: 5px;
-  
+
   color: #ff4838;
   text-align: center;
   margin: 10px;
 }
 
-.slide-cont h4{
-
+.slide-cont h4 {
   font-size: 35px;
   font-weight: 900;
 }
 
-.slide-cont span{
-
+.slide-cont span {
   font-size: 20px;
 }
-
 
 .slide-buttons {
   display: flex;
@@ -189,25 +185,24 @@ a {
   color: #fff;
 }
 
-.featured-search{
+.featured-search {
   width: 50%;
   background-color: white;
   padding: 15px;
-  
+  margin-top: 25px;
 }
-.destination-search{
+.destination-search {
   outline: none;
   border: none;
   width: 50%;
   padding: 10px;
   font-size: 16px;
- 
 }
-.search-icon{
+.search-icon {
   color: black;
   font-size: 25px;
 }
-.search-button{
+.search-button {
   background-color: #ff4838;
   outline: none;
   padding: 10px;
@@ -217,27 +212,23 @@ a {
   cursor: pointer;
   width: 100px;
   font-size: 15px;
-  
 }
 
 @media (max-width: 768px) {
-
   .slide-header {
     font-size: 27px;
-   
-    
+
     line-height: 1;
-  font-weight: 700;
+    font-weight: 700;
     color: #e1d8d8;
     letter-spacing: 1px;
-    font-family: 'Cookie', cursive;
+    font-family: "Cookie", cursive;
   }
 
   .slide-cont {
-  
     width: 100%;
     padding: 5px;
-    
+
     color: #ff4838;
     text-align: center;
     margin: 10px;
@@ -245,12 +236,24 @@ a {
   .slide-buttons {
     display: flex;
     flex-direction: column;
-   
   }
   .slide-detail {
     margin-bottom: 5%;
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+
+  .featured-search {
+    width: 100%;
+    background-color: white;
+    padding: 15px;
+  }
+  .destination-search {
+    outline: none;
+    border: none;
+    width: 50%;
+    padding: 10px;
+    font-size: 16px;
   }
 }

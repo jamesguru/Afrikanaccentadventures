@@ -72,7 +72,7 @@ const App = () => {
         <Route exact path="/activities">
           <Activities />
         </Route>
-        <Route exact path="/safaris">
+        <Route exact path="/safaris/:destination">
           <PackageList />
         </Route>
 

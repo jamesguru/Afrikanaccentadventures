@@ -359,6 +359,11 @@ a {
  
 }
 
+.package-inclusions{
+  display:flex;
+  flex-direction: column;
+}
+
 .package-inclusions-item{
 
   width: 30%;
@@ -384,9 +389,10 @@ text-align: justify;
   padding: 20px;
   margin: 20px;
   display: flex;
-
-  
+  flex-direction: column; 
 }
+
+
 .inclusions-item {
   display: flex;
   padding: 10px;

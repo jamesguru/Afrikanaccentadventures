@@ -12,7 +12,7 @@ const PackageList = () => {
   const [Packages, setPackages] = React.useState([]);
   const [filteredPackages, setfilteredPackages] = React.useState([]);
   const location = useLocation();
-  const cat = location.pathname.split("/")[2];
+  const destination = location.pathname.split("/")[2];
  
   const [loading, setLoading] = React.useState(false);
   
@@ -31,12 +31,8 @@ const PackageList = () => {
 
     const getPackages = async () => {
       try {
-        if (cat) {
-          const res = await publicRequest.get(`/packages?category=${cat}`);
-
-          setPackages(res.data);
-        } else if (query) {
-          const res = await publicRequest.get(`/packages?search=${query}`);
+     if (destination) {
+          const res = await publicRequest.get(`/packages?search=${destination}`);
 
           setPackages(res.data);
         } else {
@@ -52,12 +48,12 @@ const PackageList = () => {
     getPackages();
 
     setLoading(false);
-  }, [cat, query]);
+  }, [destination]);
 
   useEffect(() => {
     setLoading(true);
 
-    cat &&
+    filters &&
       setfilteredPackages(
         Packages.filter((item) =>
           Object.entries(filters).every(([key, value]) =>
@@ -67,7 +63,7 @@ const PackageList = () => {
       );
 
     setLoading(false);
-  }, [Packages, filters, query, cat]);
+  }, [Packages, filters, query,destination]);
 
   useEffect(() => {
     setLoading(true);
@@ -82,7 +78,7 @@ const PackageList = () => {
       );
 
     setLoading(false);
-  }, [Packages, filters, query, cat]);
+  }, [Packages, filters, query,destination]);
 
   useEffect(() => {
     setLoading(true);
@@ -121,7 +117,8 @@ const PackageList = () => {
           <input
             type="text"
             className="package-search"
-            placeholder="Search package"
+            placeholder={destination}
+            value={destination}
             onChange={(e) => setQuery(e.target.value)}
           />
         </div>
@@ -165,7 +162,7 @@ const PackageList = () => {
         </div>
       </div>
       <div className="package-body">
-        {cat || query
+        {destination || query
           ? filteredPackages?.map((item, index) => (
               <div className="package-item">
                 <div className="package-container">

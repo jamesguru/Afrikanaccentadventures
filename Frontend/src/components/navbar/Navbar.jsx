@@ -146,9 +146,9 @@ const NavBar = () => {
           </Navbar>
         </div>
 
-        <Link to="/safaris">
+        {/* <Link to="/safaris">
           <SearchRounded className="search" />
-        </Link>
+        </Link> */}
 
         <div className="right">
           <Link to="/cart">
