@@ -148,7 +148,17 @@ width: 50%;
   margin: 10px;
   border-radius: 20px;
 }
+.hide-pricing{
 
+  display: flex;
+  align-items: center;
+}
+
+.hide-pricing span{
+  margin-left: 20px;
+  font-weight: 500;
+  font-size: 20px;
+}
 
 .transport-icon{
   margin-left: 25px;

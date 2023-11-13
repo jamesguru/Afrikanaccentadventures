@@ -58,13 +58,12 @@ const PackageDetail = () => {
         const res = await publicRequest.get("/packages/find/" + id);
 
         setPackage(res.data);
+
       } catch (error) {}
     };
 
     getPackage();
   }, [id]);
-
-  console.log(Package);
 
   const handleClick = () => {
     if (price === 0) {
@@ -190,8 +189,6 @@ const PackageDetail = () => {
   const handleExtraRoom = () => {
     setExtraRoom(!extraRoom);
   };
-  console.log(id);
-
   return (
     <div>
       <Navbar />
@@ -719,8 +716,7 @@ const PackageDetail = () => {
       </div>
 
       <Footer />
-
-      {open && Package.pricing.length > 0(
+      {open && (
         <div className="pricing-modal" ref={topRef}>
           <div className="pricing-container">
             <span className="select-price">

@@ -38,7 +38,7 @@ export default function NewProduct() {
   const [file3, setFile3] = useState(null);
   const [file4, setFile4] = useState(null);
   const [file5, setFile5] = useState(null);
-
+  const [pricing, setPricing] = useState(false);
   const [video, setVideo] = useState("");
   const [image, setImage] = useState("");
   const [image1, setImage1] = useState("");
@@ -274,10 +274,13 @@ export default function NewProduct() {
   const handleTransport = (transport) => {
     Transport.push(transport);
 
-    setStateTransport(Transport)
-
-    
+    setStateTransport(Transport);
   };
+
+
+  const handleHidePrice = () => {
+    setPricing(!pricing)
+  }
 
   const handleDeleteTransport = (e, index) => {
     e.preventDefault();
@@ -884,331 +887,339 @@ export default function NewProduct() {
           <button onClick={handleNightStops}>Add Night Stop</button>
         </div>
         <hr />
-
+       
         <label>Pricing* </label>
-
-        {statePrice.length > 0 && (
-          <Table striped bordered hover responsive>
-            <thead>
-              <tr>
-                <th>Start dates</th>
-                <th>
-                  <div className="header-cell">
-                    <span>Solo/1 person</span>
-                    <span></span>
-                  </div>
-                </th>
-                <th>
-                  <div className="header-cell">
-                    <span>2 people</span>
-                    <span></span>
-                  </div>
-                </th>
-                <th>
-                  <div className="header-cell">
-                    <span>3 people</span>
-                    <span></span>
-                  </div>
-                </th>
-                <th>
-                  <div className="header-cell">
-                    <span>4 people</span>
-                    <span></span>
-                  </div>
-                </th>
-                <th>
-                  <div className="header-cell">
-                    <span>5 people</span>
-                    <span></span>
-                  </div>
-                </th>
-                <th>
-                  <div className="header-cell">
-                    <span>6 people</span>
-                    <span></span>
-                  </div>
-                </th>
-                <th>
-                  <div className="header-cell">
-                    <span>7+ people</span>
-                    <span></span>
-                  </div>
-                </th>
-              </tr>
-            </thead>
-            <tbody>
-              {statePrice?.map((item, index) => (
-                <tr>
-                  <td>
-                    {
-                      <div className="dates-cell">
-                        {<Moment date={item.startdate} format="MMM D YYYY" />}
-
-                        <span className="space">-</span>
-
-                        {<Moment date={item.lastdate} format="MMM D YYYY" />}
-                      </div>
-                    }
-                  </td>
-                  <td>
-                    <div className="pricing-cell">
-                      {item.price1.price > 0 ||
-                      item.price1.price === undefined ? (
-                        <span>${item.price1?.price}</span>
-                      ) : (
-                        <span>N/A</span>
-                      )}
-
-                      {item.price1.price > 0 ? (
-                        <span>({item.price1.room} Rooms)</span>
-                      ) : (
-                        ""
-                      )}
-                    </div>
-                  </td>
-                  <td>
-                    <div className="pricing-cell">
-                      {item.price2.price > 0 ||
-                      item.price2.price === undefined ? (
-                        <span>${item.price2?.price}</span>
-                      ) : (
-                        <span>N/A</span>
-                      )}
-
-                      {item.price2.price > 0 ? (
-                        <span>({item.price2.room} Rooms)</span>
-                      ) : (
-                        ""
-                      )}
-                    </div>
-                  </td>
-                  <td>
-                    <div className="pricing-cell">
-                      {item.price3.price > 0 ||
-                      item.price3.price === undefined ? (
-                        <span>${item.price3?.price}</span>
-                      ) : (
-                        <span>N/A</span>
-                      )}
-
-                      {item.price3.price > 0 ? (
-                        <span>({item.price3.room} Rooms)</span>
-                      ) : (
-                        ""
-                      )}
-                    </div>
-                  </td>
-                  <td>
-                    <div className="pricing-cell">
-                      {item.price4.price > 0 ||
-                      item.price4.price === undefined ? (
-                        <span>${item.price4?.price}</span>
-                      ) : (
-                        <span>N/A</span>
-                      )}
-
-                      {item.price4.price > 0 ? (
-                        <span>({item.price4.room} Rooms)</span>
-                      ) : (
-                        ""
-                      )}
-                    </div>
-                  </td>
-                  <td>
-                    <div className="pricing-cell">
-                      {item.price5.price > 0 ||
-                      item.price5.price === undefined ? (
-                        <span>${item.price5?.price}</span>
-                      ) : (
-                        <span>N/A</span>
-                      )}
-
-                      {item.price5.price > 0 ? (
-                        <span>({item.price5.room} Rooms)</span>
-                      ) : (
-                        ""
-                      )}
-                    </div>
-                  </td>
-                  <td>
-                    <div className="pricing-cell">
-                      {item.price6.price > 0 ||
-                      item.price6.price === undefined ? (
-                        <span>${item.price6.price}</span>
-                      ) : (
-                        <span>N/A</span>
-                      )}
-
-                      {item.price6?.price > 0 && item.price6.room > 0 ? (
-                        <span>({item.price6.room} Rooms)</span>
-                      ) : (
-                        ""
-                      )}
-                    </div>
-                  </td>
-                  <td>
-                    <div className="pricing-cell">
-                      <button onClick={(e) => handleDeletePrice(e, index)}>
-                        Delete
-                      </button>
-                    </div>
-                  </td>
-                </tr>
-              ))}
-            </tbody>
-          </Table>
-        )}
-        <div className="addProductItem">
-          <span className="itinenary">Pricing {numberOfPricing} Added</span>
-
-          <div className="pricing-card">
-            <div className="pricing-item">
-              <span>Enter start date for pricing</span>
-
-              <input
-                name="startdatepricing"
-                type="date"
-                placeholder="Fri 21 APR 2023"
-                value={startDatePricing}
-                onChange={(e) => setStartDatePricing(e.target.value)}
-              />
-            </div>
-
-            <div className="pricing-item">
-              <span>Enter last date for pricing</span>
-
-              <input
-                name="lastdatepricing"
-                type="date"
-                placeholder="Wed 1 JUN 2023"
-                value={lastDatePricing}
-                onChange={(e) => setLastDatePricing(e.target.value)}
-              />
-            </div>
-
-            <div className="pricing-item">
-              <span>1. Price(solo)</span>
-
-              <input
-                name="pricingprice"
-                type="number"
-                placeholder="300"
-                value={pricingPrice1}
-                onChange={(e) => setPricingPrice1(e.target.value)}
-              />
-              <span htmlFor="">Number of rooms</span>
-
-              <input
-                type="number"
-                value={room1}
-                onChange={(e) => setRoom1(e.target.value)}
-              />
-            </div>
-
-            <hr />
-
-            <div className="pricing-item">
-              <span>2. Price(2 people)</span>
-
-              <input
-                name="pricingprice"
-                type="number"
-                placeholder="500"
-                value={pricingPrice2}
-                onChange={(e) => setPricingPrice2(e.target.value)}
-              />
-              <span htmlFor="">Number of rooms</span>
-
-              <input
-                type="number"
-                value={room2}
-                onChange={(e) => setRoom2(e.target.value)}
-              />
-            </div>
-
-            <hr />
-
-            <div className="pricing-item">
-              <span>3. Price(3 people)</span>
-
-              <input
-                name="pricingprice"
-                type="number"
-                placeholder="670"
-                value={pricingPrice3}
-                onChange={(e) => setPricingPrice3(e.target.value)}
-              />
-              <span htmlFor="">Number of rooms</span>
-
-              <input
-                type="number"
-                value={room3}
-                onChange={(e) => setRoom3(e.target.value)}
-                placeholder="0"
-              />
-            </div>
-            <hr />
-
-            <div className="pricing-item">
-              <span>4. Price(4 people)</span>
-
-              <input
-                name="pricingprice"
-                type="number"
-                placeholder="700"
-                value={pricingPrice4}
-                onChange={(e) => setPricingPrice4(e.target.value)}
-              />
-              <span htmlFor="">Number of rooms</span>
-
-              <input
-                type="number"
-                value={room4}
-                onChange={(e) => setRoom4(e.target.value)}
-              />
-            </div>
-
-            <div className="pricing-item">
-              <span>5. Price(5 people)</span>
-
-              <input
-                name="pricingprice"
-                type="number"
-                placeholder="880"
-                value={pricingPrice5}
-                onChange={(e) => setPricingPrice5(e.target.value)}
-              />
-              <span htmlFor="">Number of rooms</span>
-
-              <input
-                type="number"
-                value={room5}
-                onChange={(e) => setRoom5(e.target.value)}
-              />
-            </div>
-
-            <div className="pricing-item">
-              <span>6. Price(6 people)</span>
-
-              <input
-                name="pricingprice"
-                type="number"
-                placeholder="1200"
-                value={pricingPrice6}
-                onChange={(e) => setPricingPrice6(e.target.value)}
-              />
-              <span htmlFor="">Number of rooms</span>
-
-              <input
-                type="number"
-                value={room6}
-                onChange={(e) => setRoom6(e.target.value)}
-              />
-            </div>
-          </div>
-          <button onClick={handlePricing}>add pricing</button>
-          <hr />
+        <div className="hide-pricing">
+          <input type="checkbox" onClick={handleHidePrice}/>
+          <span>Hide Pricing</span>
         </div>
+
+        {pricing && (<div className="show-price">
+          {statePrice.length > 0 && (
+            <Table striped bordered hover responsive>
+              <thead>
+                <tr>
+                  <th>Start dates</th>
+                  <th>
+                    <div className="header-cell">
+                      <span>Solo/1 person</span>
+                      <span></span>
+                    </div>
+                  </th>
+                  <th>
+                    <div className="header-cell">
+                      <span>2 people</span>
+                      <span></span>
+                    </div>
+                  </th>
+                  <th>
+                    <div className="header-cell">
+                      <span>3 people</span>
+                      <span></span>
+                    </div>
+                  </th>
+                  <th>
+                    <div className="header-cell">
+                      <span>4 people</span>
+                      <span></span>
+                    </div>
+                  </th>
+                  <th>
+                    <div className="header-cell">
+                      <span>5 people</span>
+                      <span></span>
+                    </div>
+                  </th>
+                  <th>
+                    <div className="header-cell">
+                      <span>6 people</span>
+                      <span></span>
+                    </div>
+                  </th>
+                  <th>
+                    <div className="header-cell">
+                      <span>7+ people</span>
+                      <span></span>
+                    </div>
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                {statePrice?.map((item, index) => (
+                  <tr>
+                    <td>
+                      {
+                        <div className="dates-cell">
+                          {<Moment date={item.startdate} format="MMM D YYYY" />}
+
+                          <span className="space">-</span>
+
+                          {<Moment date={item.lastdate} format="MMM D YYYY" />}
+                        </div>
+                      }
+                    </td>
+                    <td>
+                      <div className="pricing-cell">
+                        {item.price1.price > 0 ||
+                        item.price1.price === undefined ? (
+                          <span>${item.price1?.price}</span>
+                        ) : (
+                          <span>N/A</span>
+                        )}
+
+                        {item.price1.price > 0 ? (
+                          <span>({item.price1.room} Rooms)</span>
+                        ) : (
+                          ""
+                        )}
+                      </div>
+                    </td>
+                    <td>
+                      <div className="pricing-cell">
+                        {item.price2.price > 0 ||
+                        item.price2.price === undefined ? (
+                          <span>${item.price2?.price}</span>
+                        ) : (
+                          <span>N/A</span>
+                        )}
+
+                        {item.price2.price > 0 ? (
+                          <span>({item.price2.room} Rooms)</span>
+                        ) : (
+                          ""
+                        )}
+                      </div>
+                    </td>
+                    <td>
+                      <div className="pricing-cell">
+                        {item.price3.price > 0 ||
+                        item.price3.price === undefined ? (
+                          <span>${item.price3?.price}</span>
+                        ) : (
+                          <span>N/A</span>
+                        )}
+
+                        {item.price3.price > 0 ? (
+                          <span>({item.price3.room} Rooms)</span>
+                        ) : (
+                          ""
+                        )}
+                      </div>
+                    </td>
+                    <td>
+                      <div className="pricing-cell">
+                        {item.price4.price > 0 ||
+                        item.price4.price === undefined ? (
+                          <span>${item.price4?.price}</span>
+                        ) : (
+                          <span>N/A</span>
+                        )}
+
+                        {item.price4.price > 0 ? (
+                          <span>({item.price4.room} Rooms)</span>
+                        ) : (
+                          ""
+                        )}
+                      </div>
+                    </td>
+                    <td>
+                      <div className="pricing-cell">
+                        {item.price5.price > 0 ||
+                        item.price5.price === undefined ? (
+                          <span>${item.price5?.price}</span>
+                        ) : (
+                          <span>N/A</span>
+                        )}
+
+                        {item.price5.price > 0 ? (
+                          <span>({item.price5.room} Rooms)</span>
+                        ) : (
+                          ""
+                        )}
+                      </div>
+                    </td>
+                    <td>
+                      <div className="pricing-cell">
+                        {item.price6.price > 0 ||
+                        item.price6.price === undefined ? (
+                          <span>${item.price6.price}</span>
+                        ) : (
+                          <span>N/A</span>
+                        )}
+
+                        {item.price6?.price > 0 && item.price6.room > 0 ? (
+                          <span>({item.price6.room} Rooms)</span>
+                        ) : (
+                          ""
+                        )}
+                      </div>
+                    </td>
+                    <td>
+                      <div className="pricing-cell">
+                        <button onClick={(e) => handleDeletePrice(e, index)}>
+                          Delete
+                        </button>
+                      </div>
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </Table>
+          )}
+          <div className="addProductItem">
+            <span className="itinenary">Pricing {numberOfPricing} Added</span>
+
+            <div className="pricing-card">
+              <div className="pricing-item">
+                <span>Enter start date for pricing</span>
+
+                <input
+                  name="startdatepricing"
+                  type="date"
+                  placeholder="Fri 21 APR 2023"
+                  value={startDatePricing}
+                  onChange={(e) => setStartDatePricing(e.target.value)}
+                />
+              </div>
+
+              <div className="pricing-item">
+                <span>Enter last date for pricing</span>
+
+                <input
+                  name="lastdatepricing"
+                  type="date"
+                  placeholder="Wed 1 JUN 2023"
+                  value={lastDatePricing}
+                  onChange={(e) => setLastDatePricing(e.target.value)}
+                />
+              </div>
+
+              <div className="pricing-item">
+                <span>1. Price(solo)</span>
+
+                <input
+                  name="pricingprice"
+                  type="number"
+                  placeholder="300"
+                  value={pricingPrice1}
+                  onChange={(e) => setPricingPrice1(e.target.value)}
+                />
+                <span htmlFor="">Number of rooms</span>
+
+                <input
+                  type="number"
+                  value={room1}
+                  onChange={(e) => setRoom1(e.target.value)}
+                />
+              </div>
+
+              <hr />
+
+              <div className="pricing-item">
+                <span>2. Price(2 people)</span>
+
+                <input
+                  name="pricingprice"
+                  type="number"
+                  placeholder="500"
+                  value={pricingPrice2}
+                  onChange={(e) => setPricingPrice2(e.target.value)}
+                />
+                <span htmlFor="">Number of rooms</span>
+
+                <input
+                  type="number"
+                  value={room2}
+                  onChange={(e) => setRoom2(e.target.value)}
+                />
+              </div>
+
+              <hr />
+
+              <div className="pricing-item">
+                <span>3. Price(3 people)</span>
+
+                <input
+                  name="pricingprice"
+                  type="number"
+                  placeholder="670"
+                  value={pricingPrice3}
+                  onChange={(e) => setPricingPrice3(e.target.value)}
+                />
+                <span htmlFor="">Number of rooms</span>
+
+                <input
+                  type="number"
+                  value={room3}
+                  onChange={(e) => setRoom3(e.target.value)}
+                  placeholder="0"
+                />
+              </div>
+              <hr />
+
+              <div className="pricing-item">
+                <span>4. Price(4 people)</span>
+
+                <input
+                  name="pricingprice"
+                  type="number"
+                  placeholder="700"
+                  value={pricingPrice4}
+                  onChange={(e) => setPricingPrice4(e.target.value)}
+                />
+                <span htmlFor="">Number of rooms</span>
+
+                <input
+                  type="number"
+                  value={room4}
+                  onChange={(e) => setRoom4(e.target.value)}
+                />
+              </div>
+
+              <div className="pricing-item">
+                <span>5. Price(5 people)</span>
+
+                <input
+                  name="pricingprice"
+                  type="number"
+                  placeholder="880"
+                  value={pricingPrice5}
+                  onChange={(e) => setPricingPrice5(e.target.value)}
+                />
+                <span htmlFor="">Number of rooms</span>
+
+                <input
+                  type="number"
+                  value={room5}
+                  onChange={(e) => setRoom5(e.target.value)}
+                />
+              </div>
+
+              <div className="pricing-item">
+                <span>6. Price(6 people)</span>
+
+                <input
+                  name="pricingprice"
+                  type="number"
+                  placeholder="1200"
+                  value={pricingPrice6}
+                  onChange={(e) => setPricingPrice6(e.target.value)}
+                />
+                <span htmlFor="">Number of rooms</span>
+
+                <input
+                  type="number"
+                  value={room6}
+                  onChange={(e) => setRoom6(e.target.value)}
+                />
+              </div>
+            </div>
+            <button onClick={handlePricing}>add pricing</button>
+            
+          </div>
+        </div>)}
+
+        <hr />
         <div className="addProductItem">
           <label>Add Accomodation*</label>
 

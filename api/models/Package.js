@@ -3,24 +3,17 @@ const mongoose = require("mongoose");
 const PackageSchema = mongoose.Schema(
   {
     title: { type: String },
-
     desc: { type: String, required: true },
-
     img: { type: String, required: true },
     img1: { type: String },
     img2: { type: String },
     img3: { type: String },
     img4: { type: String },
-
     video: { type: String },
-
     duration: { type: String },
-
     originalPrice: { type: Number, require: true },
-
     tourtype: { type: String },
     groupsize: { type: Number },
-
     tourguide: { type: Number },
     overview: { type: String },
     itinenary: { type: Array, require: true},
@@ -30,13 +23,11 @@ const PackageSchema = mongoose.Schema(
     inclusions: { type: Array, require: true },
     addedvalue: { type: Array, require: true },
     nightstops: { type: Array, require: true },
-    pricing: { type: Array },
+    pricing:{ type: Array },
     accomodation: { type: Array, require: true },
     gallery: { type: Array },
     categories: { type: Array, require: true },
-
     active: { type: Boolean, default: true },
-
     ratings: [
       {
         star: Number,
@@ -54,5 +45,4 @@ const PackageSchema = mongoose.Schema(
 );
 
 PackageSchema.index({ "$**": "text" });
-
 module.exports = mongoose.model("Package", PackageSchema);
