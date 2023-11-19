@@ -24,14 +24,12 @@ import { BsCheckLg, BsXLg } from "react-icons/bs";
 
 const PackageDetail = () => {
   const location = useLocation();
-
   const id = location.pathname.split("/")[2];
   const topRef = useRef(null);
   const priceRef = useRef(null);
   const [Package, setPackage] = React.useState({});
   const [quantity, setQuantity] = React.useState(1);
   const [selectdates, setSelectDates] = React.useState(false);
-
   const [adults, setAdults] = React.useState(1);
   const [children, setChildren] = React.useState(0);
   const [fullname, setFullName] = React.useState("");
@@ -44,21 +42,16 @@ const PackageDetail = () => {
   const scrollToTop = () => {
     topRef.current.scrollIntoView({ behavior: "smooth" });
   };
-
   const scrollToPrice = () => {
     priceRef.current.scrollIntoView({ behavior: "smooth" });
   };
   const dispatch = useDispatch();
   let price = 0;
-
-  const history = useHistory();
   React.useEffect(() => {
     const getPackage = async () => {
       try {
         const res = await publicRequest.get("/packages/find/" + id);
-
         setPackage(res.data);
-
       } catch (error) {}
     };
 
@@ -165,6 +158,10 @@ const PackageDetail = () => {
     setDate(e.target.value);
   };
 
+  const handleViewBtn =() =>{
+    setOpen(false)
+  }
+
   const {
     register,
     handleSubmit,
@@ -189,6 +186,9 @@ const PackageDetail = () => {
   const handleExtraRoom = () => {
     setExtraRoom(!extraRoom);
   };
+
+
+  
   return (
     <div>
       <Navbar />
@@ -275,7 +275,8 @@ const PackageDetail = () => {
               <span className="red">$ {Package.originalPrice}</span> Per Person
             </span>
           </div>
-
+          {Package.pricing?.length > 0 ?
+          
           <form action="" onSubmit={handleSubmit(handleClick)}>
             <div className="package-input">
               <input
@@ -325,40 +326,8 @@ const PackageDetail = () => {
               />
               {errors.date && (
                 <span className="error-message">This field is required</span>
-              )}
-
-              {/* <div className="select-type">
-                <label htmlFor="">Adults *</label>
-                <select name="" id="" onChange={handleAdults}>
-                  <option value="">1</option>
-                  <option value="">2</option>
-                  <option value="">3</option>
-                  <option value="">4</option>
-                  <option value="">5</option>
-                  <option value="">6</option>
-                  <option value="">7</option>
-                  <option value="">8</option>
-                  <option value="">9</option>
-                  <option value="">10</option>
-                </select>
-                <label htmlFor="">Children(under 18yrs)*</label>
-                <select name="" id="" onChange={handleChildren}>
-                  <option value="">0</option>
-                  <option value="">1</option>
-                  <option value="">2</option>
-                  <option value="">3</option>
-                  <option value="">4</option>
-                  <option value="">5</option>
-                  <option value="">6</option>
-                  <option value="">7</option>
-                  <option value="">8</option>
-                  <option value="">9</option>
-                  <option value="">10</option>
-                </select>
-              </div> */}
-
+              )}    
               <h4>How many of this package do you want?</h4>
-
               <div className="handle-quantity">
                 <Remove
                   className="remove-icon"
@@ -380,6 +349,19 @@ const PackageDetail = () => {
               </button>
             </div>
           </form>
+
+          :
+          
+          <Link to='/booking'>
+          
+          <button className="package-booking-btn">
+            Book Now
+          </button>
+          
+          </Link>
+          
+          }
+          
         </div>
       </div>
 
@@ -718,11 +700,13 @@ const PackageDetail = () => {
       <Footer />
       {open && (
         <div className="pricing-modal" ref={topRef}>
-          <div className="pricing-container">
+          {Package.pricing?.length > 0 ? <>
+          
+            <div className="pricing-container">
             <span className="select-price">
               Please select the price depending on dates you want to travel.
             </span>
-
+           
             {selectdates && (
               <span className="select-dates">
                 Make sure you have selected price before you proceed.
@@ -1161,6 +1145,19 @@ const PackageDetail = () => {
               Continue
             </button>*/}
           </div>
+          
+          </> :
+          
+          <div className="pricing-container-norates">
+            <h5>Please select: if you want view package or book right a way.</h5>
+            <button className="btn-view" onClick={handleViewBtn}>View</button>
+            <Link to="/booking">
+            <button className="btn-booknow">Book Now</button>
+            </Link>
+          </div>
+          
+          }
+          
         </div>
       )}
     </div>

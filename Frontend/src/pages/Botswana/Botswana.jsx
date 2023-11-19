@@ -29,32 +29,7 @@ const Botswana = () => {
       <div className="tours-tanzania">
         <h2 className="tanzania-tour-header">Tours in Botswana</h2>
         <div className="package-body">
-          <div className="package-item">
-            <div className="package-container">
-              <img
-                src="	https://res.cloudinary.com/dap91fhxh/image/upload/v1677758073/boat-in-the-sea_q9c27c.jpg"
-                alt=""
-              />
-
-              <div className="package-duration">2 days</div>
-
-              <div className="package-info">
-                <div className="package-info-button">
-                  <span>from $88 Per person.</span>
-                  <Link to="/package/details">
-                    <button className="package-expore">Explore</button>
-                  </Link>
-                </div>
-              </div>
-            </div>
-            <div className="package-desc">
-              <h2>Hiking Trip to Mountain</h2>
-              <span>
-                Son agreed others exeter period myself few yet nature. Mention
-                mr manners opinion.
-              </span>
-            </div>
-          </div>
+      
           <div className="package-item">
             <div className="package-container">
               <img
@@ -63,94 +38,9 @@ const Botswana = () => {
               />
 
               <div className="package-duration">2 days</div>
-
               <div className="package-info">
                 <div className="package-info-button">
                   <span>from $88 Per person.</span>
-
-                  <Link to="/package/details">
-                    <button className="package-expore">Explore</button>
-                  </Link>
-                </div>
-              </div>
-            </div>
-            <div className="package-desc">
-              <h2>Hiking Trip to Mountain</h2>
-              <span>
-                Son agreed others exeter period myself few yet nature. Mention
-                mr manners opinion.
-              </span>
-            </div>
-          </div>
-
-          <div className="package-item">
-            <div className="package-container">
-              <img
-                src="https://res.cloudinary.com/dap91fhxh/image/upload/v1677758073/boat-in-the-sea_q9c27c.jpg"
-                alt=""
-              />
-
-              <div className="package-duration">2 days</div>
-
-              <div className="package-info">
-                <div className="package-info-button">
-                  <span>from $88 Per person.</span>
-
-                  <Link to="/package/details">
-                    <button className="package-expore">Explore</button>
-                  </Link>
-                </div>
-              </div>
-            </div>
-            <div className="package-desc">
-              <h2>Hiking Trip to Mountain</h2>
-              <span>
-                Son agreed others exeter period myself few yet nature. Mention
-                mr manners opinion.
-              </span>
-            </div>
-          </div>
-
-          <div className="package-item">
-            <div className="package-container">
-              <img
-                src="https://res.cloudinary.com/dap91fhxh/image/upload/v1677758073/boat-in-the-sea_q9c27c.jpg"
-                alt=""
-              />
-
-              <div className="package-duration">2 days</div>
-
-              <div className="package-info">
-                <div className="package-info-button">
-                  <span>from $88 Per person.</span>
-
-                  <Link to="/package/details">
-                    <button className="package-expore">Explore</button>
-                  </Link>
-                </div>
-              </div>
-            </div>
-            <div className="package-desc">
-              <h2>Hiking Trip to Mountain</h2>
-              <span>
-                Son agreed others exeter period myself few yet nature. Mention
-                mr manners opinion.
-              </span>
-            </div>
-          </div>
-          <div className="package-item">
-            <div className="package-container">
-              <img
-                src="https://res.cloudinary.com/dap91fhxh/image/upload/v1677758073/boat-in-the-sea_q9c27c.jpg"
-                alt=""
-              />
-
-              <div className="package-duration">2 days</div>
-
-              <div className="package-info">
-                <div className="package-info-button">
-                  <span>from $88 Per person.</span>
-
                   <Link to="/package/details">
                     <button className="package-expore">Explore</button>
                   </Link>

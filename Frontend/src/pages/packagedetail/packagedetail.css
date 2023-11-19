@@ -435,6 +435,39 @@ text-align: justify;
   
 }
 
+.pricing-container-norates{
+  height: auto;
+  width: 60%;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  margin:25%;
+}
+
+.btn-view{
+ width: 30%;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ margin:10px 25%;
+ background-color: #162b32;
+ color: white;
+ border: none;
+ padding: 10px;
+}
+.btn-booknow{
+  width: 30%;
+  display: flex;
+ align-items: center;
+ justify-content: center;
+ margin:10px 25%;
+ background-color: #ff4838;
+ color: white;
+ border: none;
+ padding: 10px;
+}
+
 .select-price{
 
   width: 70%;
@@ -442,6 +475,7 @@ text-align: justify;
   font-family: 'Poppins';
   font-weight: bold;
   color: #162b32;
+  
 }
 
 .select-price:first-child{
