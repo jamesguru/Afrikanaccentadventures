@@ -189,10 +189,11 @@ td {
   font-weight: 900;
   color: #fff;
   font-size: 19px;
-  width: 100%;
+  width: 90%;
   cursor: pointer;
-  margin-right: 30px;
+  margin-right: 50px;
   margin-bottom: 30px;
+  margin-top: 20px;
 }
 
 table,
@@ -444,30 +445,6 @@ text-align: justify;
   padding: 20px;
   margin:25%;
 }
-
-.btn-view{
- width: 30%;
- display: flex;
- align-items: center;
- justify-content: center;
- margin:10px 25%;
- background-color: #162b32;
- color: white;
- border: none;
- padding: 10px;
-}
-.btn-booknow{
-  width: 30%;
-  display: flex;
- align-items: center;
- justify-content: center;
- margin:10px 25%;
- background-color: #ff4838;
- color: white;
- border: none;
- padding: 10px;
-}
-
 .select-price{
 
   width: 70%;

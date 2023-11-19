@@ -58,10 +58,8 @@ const Booking = () => {
 
           <div className="book">
             <div className="book-info">
-              Afrikan Accent adventures allows you to make a booking for
-              yourself and then they will get in touch with you the shortest
-              time possible. Add additional information that you think is
-              relevant to us so make your trip your imagination.
+              
+                Embark on an adventure with Afrikan Accent Adventures, where you can book your trip and expect a prompt response to tailor your experience. Additional relevant information is provided to enhance your imaginative journey.
             </div>
 
             <div className="book_item">

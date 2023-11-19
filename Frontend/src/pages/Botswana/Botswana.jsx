@@ -1,7 +1,6 @@
 import React from "react";
 import Footer from "../../components/Footer/Footer";
 import Navbar from "../../components/navbar/Navbar";
-
 import { FaClock, FaArrowRight } from "react-icons/fa";
 import { Link } from "react-router-dom";
 

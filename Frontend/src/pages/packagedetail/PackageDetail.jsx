@@ -698,10 +698,8 @@ const PackageDetail = () => {
       </div>
 
       <Footer />
-      {open && (
-        <div className="pricing-modal" ref={topRef}>
-          {Package.pricing?.length > 0 ? <>
-          
+      {open && Package.pricing?.length > 0 &&(
+        <div className="pricing-modal" ref={topRef}>   
             <div className="pricing-container">
             <span className="select-price">
               Please select the price depending on dates you want to travel.
@@ -1137,26 +1135,13 @@ const PackageDetail = () => {
                 Do you want proceed before you select price?
               </span>
             </div>
-
             <button className="package-pricing-btn" onClick={handleProceed} >
               <span className="total-cost">
                 (Total cost: ${totalCost(adults, children)})
               </span>
               Continue
             </button>*/}
-          </div>
-          
-          </> :
-          
-          <div className="pricing-container-norates">
-            <h5>Please select: if you want view package or book right a way.</h5>
-            <button className="btn-view" onClick={handleViewBtn}>View</button>
-            <Link to="/booking">
-            <button className="btn-booknow">Book Now</button>
-            </Link>
-          </div>
-          
-          }
+          </div>    
           
         </div>
       )}
