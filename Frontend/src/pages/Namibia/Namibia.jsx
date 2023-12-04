@@ -69,8 +69,7 @@ const Namibia = () => {
             <div className="package-desc">
               <h2>{item.title}</h2>
               <span>
-                Son agreed others exeter period myself few yet nature. Mention
-                mr manners opinion.
+              {item.overview}
               </span>
             </div>
           </div>
