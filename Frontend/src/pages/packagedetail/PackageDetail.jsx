@@ -379,27 +379,9 @@ const PackageDetail = () => {
               {Package.overview}
 
               <div className="image-route">
-                <img
-                  src="https://www.intrepidtravel.com/sites/intrepid/files/elements/product/map/tmpb_2021.jpg"
-                  alt=""
-                />
-                <div className="night-st">
-                  <span>Night stops</span>
-                  {Package.nightstops?.map((nightstop, index) => (
-                    <div className="schedule-item">
-                      <div className="day-circle">
-                        <div className="price-circle">
-                          <span>Day {index + 1}</span>{" "}
-                        </div>
-                      </div>
-
-                      <div className="day-overview">{nightstop}</div>
-                    </div>
-                  ))}
-                </div>
+        
+                
               </div>
-
-              <hr />
 
               <div className="tour-feature">
                 <h3>Tour Features</h3>
@@ -411,6 +393,20 @@ const PackageDetail = () => {
                         <span className="feature-header">{tour.feature}</span>
                         <span>{tour.desc}</span>
                       </div>
+                    </div>
+                  ))}
+                </div>
+                <div className="night-st">
+                  <span>Night stops</span>
+                  {Package.nightstops?.map((nightstop, index) => (
+                    <div className="schedule-item">
+                      <div className="day-circle">
+                        <div className="price-circle">
+                          <span>Day {index + 1}</span>{" "}
+                        </div>
+                      </div>
+
+                      <div className="day-overview">{nightstop}</div>
                     </div>
                   ))}
                 </div>
@@ -623,33 +619,9 @@ const PackageDetail = () => {
               </Table>
             </div>
           </Tab>
-          <Tab eventKey="Accomodation" title="Accomodation" className="tab">
+          <Tab eventKey="Inclusion" title="Inclusion" className="tab">
             <div className="package-hotel">
-              <Table striped bordered hover>
-                <thead>
-                  <tr>
-                    <th>Day</th>
-                    <th>Destination</th>
-                    <th>Accomodation</th>
-                    <th>Similar Accomodation</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {Package.accomodation?.map((accomodation, index) => (
-                    <tr>
-                      <td>{index + 1}</td>
-                      <td>{accomodation.destination}</td>
-                      <td>{accomodation.accomodation}</td>
-                      <td>{accomodation.similarAccomodation}</td>
-                    </tr>
-                  ))}
-                </tbody>
-              </Table>
-            </div>
-          </Tab>
-          <Tab eventKey="inclusions" title="Inclusions" className="tab">
-            <div className="package-inclusions">
-              <div className="package-inclusions-item">
+            <div className="package-inclusions-item">
                 <h3>Price Inclusions:</h3>
 
                 {Package.addedvalue?.map((inclusion, index) => (
@@ -660,10 +632,12 @@ const PackageDetail = () => {
                   </div>
                 ))}
               </div>
-
+            </div>
+          </Tab>
+          <Tab eventKey="Exclusions" title="Exclusions" className="tab">
+            <div className="package-inclusions">
               <div className="package-inclusions-item">
                 <h3>Added Value:</h3>
-
                 {Package.exclusions?.map((addedvalue, index) => (
                   <div className="inclusions-item">
                     <BsCheckLg className="icon" />
@@ -675,7 +649,6 @@ const PackageDetail = () => {
 
               <div className="package-inclusions-item">
                 <h3>Price Exclusions:</h3>
-
                 {Package.exclusions?.map((exclusion) => (
                   <div className="inclusions-item">
                     <BsXLg className="icon" />
