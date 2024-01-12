@@ -32,6 +32,12 @@
     object-fit: contain;
 }
 
+.badge-tour{
+    height: 100px;
+    width: 100px;
+    object-fit: contain;
+}
+
 .s-container{
     display: flex;
     align-items: center;

@@ -78,6 +78,15 @@ const Partner = () => {
               
             />
           </SwiperSlide>
+          <SwiperSlide>
+            <img
+              src="https://res.cloudinary.com/dap91fhxh/image/upload/v1705069714/tourbadge_u2gcjo.png"
+              alt=""
+              height="150px"
+              width="150px"
+              className="badge-tour"
+            />
+          </SwiperSlide>
 
           <SwiperSlide>
             <img

@@ -627,7 +627,6 @@ const PackageDetail = () => {
                 {Package.addedvalue?.map((inclusion, index) => (
                   <div className="inclusions-item">
                     <BsCheckLg className="icon" />
-
                     <span>{inclusion}</span>
                   </div>
                 ))}

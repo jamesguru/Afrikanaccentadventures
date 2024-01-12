@@ -88,6 +88,18 @@ const Footer = () => (
               </a>
             </div>
           </div>
+          <div className="review-item">
+         
+
+            <div className="review">
+              <a href="https://www.touristlink.com/user/hellen-ombima.html?sereferer=0A8559F9">
+                <img
+                  src="https://res.cloudinary.com/dap91fhxh/image/upload/v1705069714/tourbadge_u2gcjo.png"
+                  alt=""
+                />
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
