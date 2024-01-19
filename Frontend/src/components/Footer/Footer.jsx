@@ -40,20 +40,20 @@ const Footer = () => (
       <div className="footer-header-item">
         <h1>OFFICE HOURS</h1>
         <ul>
-          <li>Monday – Friday: — 9:00 am – 18:00 pm</li>
-          <li>Saturday: ————- 9:00 am – 16:00 pm</li>
+          <li>Monday – Friday: — 9:00 am – 6:00 pm</li>
+          <li>Saturday: ————- 9:00 am – 4:00 pm</li>
           <li>Sunday —————- Closed</li>
         </ul>
       </div>
       <div className="footer-header-item">
         <h1>CONTACT INFO</h1>
         <ul>
-          <li>AACC Building,</li>
+          <li>Venus Complex, Northern By-pass</li>
           <li>+254-20-200-1410</li>
-          <li>+1- 770 835 -4608</li>
+          <li>+254-711-417-516</li>
           <li>+254-771-197-810</li>
           <li>jambo@aa-adventures.net</li>
-          <li>www.aa-adventures.net</li>
+          <li>www.afrikanaccentadventures.com</li>
         </ul>
       </div>
       <div className="footer-header-item">
@@ -131,15 +131,16 @@ const Footer = () => (
         {" "}
         <FaYoutube className="social-icon" />
       </a>
-
+      <a href="https://wa.me/254711417516">
       <FaWhatsapp className="social-icon" />
+      </a>
     </div>
 
     <div className="madeby">
       <div className="details">
         <span>
           {" "}
-          &copy; 2023 Afrikan Accent Adventures| All rights reserved{" "}
+          &copy; 2024 Afrikan Accent Adventures| All rights reserved{" "}
           <Link to="/policy">Terms & Conditions | Privacy policy</Link>
           Design By James
         </span>
