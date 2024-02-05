@@ -19,8 +19,7 @@ const Login = () => {
 
   const handleLogin = (e) => {
     e.preventDefault();
-
-    username === "james25" && login(dispatch, { username, password });
+    login(dispatch, { username, password });
   };
 
   return (
