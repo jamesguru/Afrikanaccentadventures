@@ -98,6 +98,21 @@ const Team = () => {
             </div>
           </div>
         </SwiperSlide>
+        <SwiperSlide>
+          <div className="team-item">
+            <div className="image">
+              <img
+                src="https://res.cloudinary.com/dap91fhxh/image/upload/v1707295649/tour_ajzvad.jpg"
+                alt="Spanish speaking guide"
+                className="profile"
+              />
+            </div>
+            <div className="name">
+              <h4>John Kabuga</h4>
+              <span>Spanish speaking guide</span>
+            </div>
+          </div>
+        </SwiperSlide>
       </Swiper>
     </div>
   );
