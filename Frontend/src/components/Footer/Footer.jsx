@@ -49,9 +49,9 @@ const Footer = () => (
         <h1>CONTACT INFO</h1>
         <ul>
           <li>Venus Complex, Northern By-pass</li>
-          <li>+254-20-200-1410</li>
-          <li>+254-711-417-516</li>
-          <li>+254-771-197-810</li>
+          <li>Safaricom: +254748118818</li>
+          <li>Airtel: +254782247247</li>
+          <li>Telkom: 0202001410</li>
           <li>jambo@aa-adventures.net</li>
           <li>www.afrikanaccentadventures.com</li>
         </ul>

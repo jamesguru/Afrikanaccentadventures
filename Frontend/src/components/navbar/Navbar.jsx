@@ -32,7 +32,6 @@ const NavBar = () => {
           <span> jambo@afrikanaccentadventures.com</span>
         </div>
         <div className="navbar-phone">
-          <span>TOLL FREE: +1- 770 835 -4608!</span>
           <Phone />
           <span>+254-20-200-1410</span>
         </div>
