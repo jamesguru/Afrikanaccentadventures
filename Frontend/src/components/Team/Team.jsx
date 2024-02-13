@@ -11,11 +11,11 @@ const Team = () => {
     <div className="team">
       <div className="team-header">
         <h1>GUIDES TEAM</h1>
-        <span>Our highly trained efficient guides.</span>
+        <span>Our highly trained efficient staffs.</span>
       </div>
       <Swiper
         spaceBetween={0}
-        slidesPerView={4}
+        slidesPerView={5}
         modules={[Pagination, Navigation]}
         autoplay={{ delay: 2500 }}
         navigation={true}
