@@ -26,21 +26,21 @@ const Contact = () => {
           <div className="contact-item">
             <div className="contact-telephone">
               <Phone className="contact-icon" />
-              <span>+1- 770 835 -4608</span>
+              <span>+254748118818</span>
             </div>
             <h2>Booking Enquiries</h2>
           </div>
           <div className="contact-item">
             <div className="contact-telephone">
               <Phone className="contact-icon" />
-              <span> +254-20-200-1410</span>
+              <span> +254782247247</span>
             </div>
             <h2>Post Booking Questions</h2>
           </div>
           <div className="contact-item">
             <div className="contact-telephone">
               <Phone className="contact-icon" />
-              <span>+254-771-197-810</span>
+              <span>0202001410</span>
             </div>
             <h2>Payment Queries</h2>
           </div>
