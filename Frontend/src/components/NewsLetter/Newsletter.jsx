@@ -32,7 +32,7 @@ const Newsletter = () => {
       <div className="newsletter">
         <div className="newsletter-detail">
           <h1 className="newleter-header">
-            SUBSCRIBE OUR <span className="newsletter-span">NEWSLETTER</span>
+            SUBSCRIBE TO OUR <span className="newsletter-span">NEWSLETTER</span>
           </h1>
           <span className="signup">
             Sign up to receive the best offers on promotion and coupons. Don’t

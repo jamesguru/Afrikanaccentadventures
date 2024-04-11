@@ -47,10 +47,10 @@ transition: all 0.5s ease;
   top: 0;
   right: 0;
   width: 100px;
-  background-color: #ff4838;
+  background-color: #1c1c1c;
   padding: 5px;
   margin: 10px 0px;
-  color: #fff;
+  color: #eac27a;;
   font-weight: 900;
 }
 
@@ -107,8 +107,8 @@ transition: all 0.5s ease;
 
   border: none;
   cursor: pointer;
-  background-color: #ff4838;
-  color: #fff;
+  background-color: #1c1c1c;
+  color: #eac27a;;
   font-weight: 900;
   padding: 5px;
   margin-left: 230%;
@@ -132,10 +132,11 @@ a {
 
  padding: 10px;
  border: none;
+ margin: 30px 0px;
  width: 150px;
  font-size: 20px;
-background-color: #ff4838;
-color: #fff;
+background-color: #1c1c1c;;
+color: #eac27a;
 cursor: pointer;
 }
 

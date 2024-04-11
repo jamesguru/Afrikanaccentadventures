@@ -39,13 +39,13 @@ a {
 .category-group-holidays {
   background-image: linear-gradient(
       to left,
-      rgba(0, 0, 0, 0.2),
-      rgba(0, 0, 0, 0.2)
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.4)
     ),
     url("https://res.cloudinary.com/dap91fhxh/image/upload/v1679467349/WhatsApp_Image_2023-03-21_at_23.28.39_kdcxpo.jpg");
   background-size: cover;
   background-position: center;
-  color: #fff;
+  color: #eac27a;
   font-size: 25px;
   font-weight: 900;
   height: 500px;
@@ -56,13 +56,13 @@ a {
 .category-cultural-safaris {
   background-image: linear-gradient(
       to left,
-      rgba(0, 0, 0, 0.2),
-      rgba(0, 0, 0, 0.2)
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.4)
     ),
     url("https://res.cloudinary.com/dap91fhxh/image/upload/v1679467346/WhatsApp_Image_2023-03-21_at_23.28.37_rtxdx0.jpg");
   background-size: cover;
   background-position: center;
-  color: #fff;
+  color: #eac27a;
   font-size: 25px;
   font-weight: 900;
   height: 500px;
@@ -73,8 +73,8 @@ a {
 .category-family-holidays {
   background-image: linear-gradient(
       to left,
-      rgba(0, 0, 0, 0.2),
-      rgba(0, 0, 0, 0.2)
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.4)
     ),
     url("https://res.cloudinary.com/dap91fhxh/image/upload/v1679653194/IMG-20230323-WA0009_fz7elm.jpg");
   background-size: cover;
@@ -90,13 +90,13 @@ a {
 .category-gorilla-trekking {
   background-image: linear-gradient(
       to left,
-      rgba(0, 0, 0, 0.2),
-      rgba(0, 0, 0, 0.2)
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.4)
     ),
     url("https://res.cloudinary.com/dap91fhxh/image/upload/v1677758074/gorilla1_xgetee.jpg");
   background-size: cover;
   background-position: center;
-  color: #fff;
+  color: #eac27a;;
   font-size: 25px;
   font-weight: 900;
   height: 500px;
@@ -107,13 +107,13 @@ a {
 .category-honey-moon{
   background-image: linear-gradient(
       to left,
-      rgba(0, 0, 0, 0.2),
-      rgba(0, 0, 0, 0.2)
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.4)
     ),
     url("https://res.cloudinary.com/dap91fhxh/image/upload/v1678261499/cruser13_n6acrv.jpg");
   background-size: cover;
   background-position: center;
-  color: #fff;
+  color: #eac27a;
   font-size: 25px;
   font-weight: 900;
   height: 500px;
@@ -125,13 +125,13 @@ a {
 .category-luxury-safaris{
   background-image: linear-gradient(
       to left,
-      rgba(0, 0, 0, 0.2),
-      rgba(0, 0, 0, 0.2)
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.4)
     ),
     url("https://res.cloudinary.com/dap91fhxh/image/upload/v1679654849/luxury_holiday_s8xvxm.jpg");
   background-size: cover;
   background-position: center;
-  color: #fff;
+  color: #eac27a;
   font-size: 25px;
   font-weight: 900;
   height: 500px;
@@ -142,13 +142,13 @@ a {
 .category-fly-in-safaris{
   background-image: linear-gradient(
     to left,
-    rgba(0, 0, 0, 0.2),
-    rgba(0, 0, 0, 0.2)
+    rgba(0, 0, 0, 0.4),
+    rgba(0, 0, 0, 0.4)
   ),
   url("https://res.cloudinary.com/dap91fhxh/image/upload/v1679656526/flying_tntqxl.jpg");
 background-size: cover;
 background-position: center;
-color: #fff;
+color: #eac27a;;
 font-size: 25px;
 font-weight: 900;
 height: 500px;
@@ -164,7 +164,7 @@ width: 90%;
   justify-content: center;
   margin-top: 50%;
   text-decoration: none;
-  color: #fff;
+  color: #eac27a;;
 }
 
 a {

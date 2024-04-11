@@ -31,7 +31,7 @@
 .newleter-header {
   font-weight: 900;
   font-size: 50px;
-  color: aliceblue;
+  color: #eac27a;
   font-family: "Roboto";
 }
 
@@ -49,15 +49,15 @@
 
 .newsletter-input button {
   border: none;
-  background-color: #ff4838;
-  color: #fff;
+  background-color: #1c1c1c;;
+  color: #eac27a;
   font-weight: 900;
   padding: 7px;
   width: 40%;
 }
 
 .newsletter-span {
-  color: #ff4838;
+  color: #fff;
   font-family: "Roboto";
 }
 .newsletter-card {
@@ -71,7 +71,7 @@
 .newletter-card-item {
   height: 30%;
   width: 30%;
-  border: 3px solid #ff4838;
+  border: 3px solid #eac27a;;
   margin: 20px;
   font-weight: 900;
   color: #fff;
@@ -86,7 +86,7 @@
 
 .newsletter-icon {
   font-size: 40px;
-  color: #ff4838;
+  color: #eac27a;;
 }
 
 .newsletter-success {

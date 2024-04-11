@@ -1,7 +1,7 @@
 .navbar-normal {
   width: 100%;
-  color: white;
-  font-size: 15px;
+  color: #eac27a;
+  font-size: 20px;
   height: 200px;
   position: fixed;
   top: 0;
@@ -41,8 +41,8 @@
       padding: 10px;
       object-fit: cover;
       cursor: pointer;
-      height: 130px;
-      width: 130px;
+      height: 150px;
+      width: 150px;
       border-radius: 50%;
     }
     .left {
@@ -71,14 +71,14 @@
       }
 
       .link-nav {
-        color: #ffffff;
+        color: #eac27a;
 
         transition: all 0.2s linear;
 
         padding-left: 10px;
         font-family: "Poppins";
-        font-size: 17px;
-        
+        font-size: 18px;
+
         text-transform: none !important;
       }
 
@@ -163,7 +163,6 @@
 
   .container {
     padding-top: 30px;
-    
 
     .left {
       background-color: red;
@@ -185,7 +184,7 @@
       height: 50px;
       width: 50px;
     }
-    
+
     .logo {
       padding: 10px;
       object-fit: cover;

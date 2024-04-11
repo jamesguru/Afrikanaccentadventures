@@ -21,16 +21,15 @@ const Package = () => {
     getPackages();
   }, []);
 
-
   return (
     <div className="package">
       <h2 className="package-head"> Best Sellers</h2>
 
       <div className="package-body">
-        {packages.slice(0,6)?.map((item, index) => (
-          <div className="package-item">
+        {packages.slice(0, 6)?.map((item, index) => (
+          <div className="package-item" key={index}>
             <div className="package-container">
-              <img src={item.img} alt={item.title} className="package-img"/>
+              <img src={item.img} alt={item.title} className="package-img" />
 
               <div className="package-duration">{item.duration}</div>
 
@@ -46,20 +45,16 @@ const Package = () => {
             </div>
             <div className="package-desc">
               <h2>{item.title}</h2>
-              <span>
-                {item.overview}
-              </span>
+              <span>{item.overview}</span>
             </div>
           </div>
         ))}
       </div>
 
       <Link to="/safaris">
-
-      <div className="view">
-        <button className="view-all">View All</button>
-      </div>
-      
+        <div className="view">
+          <button className="view-all">View All</button>
+        </div>
       </Link>
     </div>
   );

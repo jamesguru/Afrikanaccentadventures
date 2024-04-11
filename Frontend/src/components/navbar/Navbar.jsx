@@ -39,7 +39,7 @@ const NavBar = () => {
       <div className="container">
         <Link to="/">
           <img
-            src="https://res.cloudinary.com/dap91fhxh/image/upload/v1677878911/fotor_2023-3-3_13_24_38_seemzg.png"
+            src="https://res.cloudinary.com/dap91fhxh/image/upload/v1712814222/1712813298642_ybr2e9.jpg"
             alt="main logo for afrikan accent adventures"
             className="logo"
           />
@@ -152,7 +152,7 @@ const NavBar = () => {
         <div className="right">
           <Link to="/cart">
             <Badge badgeContent={quantity} color="primary">
-              <ShoppingBasket style={{ color: "#fff" }} />
+              <ShoppingBasket style={{ color: "#eac27a" }} />
             </Badge>
           </Link>
         </div>
