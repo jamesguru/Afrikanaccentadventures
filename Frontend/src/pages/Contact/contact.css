@@ -10,7 +10,6 @@
 
   background-size: cover;
   background-position: center;
-
   margin-bottom: 50px;
 }
 
@@ -25,9 +24,7 @@
   margin-top: 100px;
   font-family: "Roboto";
   font-weight: 900;
-
-  color: #ff4838;
-  
+  color: #eac27a;;
   padding: 20px;
   display: flex;
   align-items: center;
@@ -53,8 +50,8 @@
   margin: 20px;
 }
 .contact-telephone {
-  background-color: #1f2933;
-  color: #fff;
+  background-color: #1c1c1c;
+  color: #eac27a;
   padding: 20px;
   font-size: 20px;
 }
@@ -84,10 +81,10 @@ textarea {
 }
 
 .contact-form button {
-  background-color: #ff4838;
+  background-color:#1c1c1c;
   border: none;
   cursor: pointer;
-  color: #fff;
+  color:#eac27a;
   font-weight: 900;
   padding: 10px;
   width: 100%;
@@ -123,8 +120,7 @@ textarea {
 
   .contact-form input,
   textarea {
-    width: 100%;
-   
+    width: 100%; 
     margin: 20px 0px;
   }
 
@@ -144,9 +140,7 @@ textarea {
     margin-top: 180px;
     font-family: "Roboto";
     font-weight: 900;
-  
-    color: #ff4838;
-    
+    color: #eac27a; 
     padding: 20px;
     display: flex;
     align-items: center;

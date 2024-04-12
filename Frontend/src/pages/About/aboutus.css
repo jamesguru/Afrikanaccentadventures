@@ -1,9 +1,6 @@
-.about{
-
+.about {
   text-align: justify;
 }
-
-
 .about-background {
   height: 50vh;
   width: 100vw;
@@ -26,9 +23,7 @@
   margin-top: 100px;
   font-family: "Roboto";
   font-weight: 900;
-
-  color: #ff4838;
-
+  color: #eac27a;
   padding: 20px;
   display: flex;
   align-items: center;
@@ -37,7 +32,6 @@
 
 .about-upper {
   display: flex;
-
   justify-content: space-between;
 }
 .about-video {
@@ -62,7 +56,7 @@
 }
 
 .red {
-  color: #ff4838;
+  color: #eac27a;
   font-size: 50px;
   font-weight: 900;
   font-family: "Roboto";
@@ -84,7 +78,7 @@
 }
 
 .stats-item:first-child {
-  color: #ff4838;
+  color: #eac27a;
   font-family: "Roboto";
 }
 
@@ -102,10 +96,8 @@
 
 .reason-stats {
   display: flex;
-
   width: 80%;
-
-  border: 1px solid #ff4838;
+  border: 1px solid #eac27a;
   margin: 30px;
   padding: 20px;
   border-radius: 10px;
@@ -115,16 +107,15 @@
   margin-right: 30px;
 }
 
-.stat h1 {
+.stat h1{
   font-family: "Roboto";
-  color: #ff4838;
+  color: #eac27a;
   font-weight: 900;
 }
 
 .stat span {
-  color: #ff4838;
+  color: #eac27a;
 }
-
 .why-image {
   display: flex;
   flex-wrap: wrap;

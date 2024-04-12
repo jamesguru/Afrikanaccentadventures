@@ -43,7 +43,7 @@
   font-family: "Roboto";
   font-weight: 900;
 
-  color: #ff4838;
+  color: #eac27a;
 font-size: 35px;
   padding: 20px;
   display: flex;
@@ -89,7 +89,7 @@ font-size: 35px;
 .desc-top h3 {
   font-size: 15px;
   font-weight: 900;
-  color: #162b32;
+  color: #1c1c1c;
 }
 .icon {
   font-size: 20px;
@@ -103,7 +103,7 @@ font-size: 35px;
 .big_title {
   font-size: 30px;
   font-family: "Roboto";
-  color: #162b32;
+  color: #1c1c1c;
   font-weight: 900;
   margin: 20px 0px;
 }
@@ -113,7 +113,7 @@ font-size: 35px;
   text-align: justify;
 }
 .package-maindetails h2 {
-  color: #162b32;
+  color: #1c1c1c;
   font-family: "Roboto";
   font-size: 25px;
 }
@@ -130,7 +130,7 @@ font-size: 35px;
 table,
 th,
 td {
-  border: 1px solid #162b32;
+  border: 1px solid #1c1c1c;;
   border-collapse: collapse;
 }
 
@@ -143,7 +143,7 @@ td {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #162b32;
+  background-color: #1c1c1c;
   color: #fff;
   padding: 10px;
   margin: 20px;
@@ -183,11 +183,11 @@ td {
 }
 
 .package-booking-btn {
-  background-color: #ff4838;
+  background-color: #1c1c1c;
   border: none;
   padding: 10px;
   font-weight: 900;
-  color: #fff;
+  color: #eac27a;
   font-size: 19px;
   width: 90%;
   cursor: pointer;
@@ -240,8 +240,8 @@ td {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 2px solid #162b32;
-  color: #ff4838;
+  border: 2px solid #1c1c1c;
+  color: #eac27a;
   font-weight: 900;
 
   transform: rotate(45deg);
@@ -305,10 +305,10 @@ a {
 }
 
 .add-icon {
-  background-color: #ff4838;
+  background-color: #1c1c1c;
   height: 100px;
   width: 100px;
-  color: #fff;
+  color: #eac27a;
   font-weight: 900;
   font-size: 25px;
 }
@@ -318,10 +318,10 @@ a {
 }
 
 .remove-icon {
-  background-color: #ff4838;
+  background-color: #eac27a;
   height: 100px;
   width: 100px;
-  color: #fff;
+  color: #1c1c1c;
   font-weight: 900;
   font-size: 25px;
 }
@@ -597,14 +597,14 @@ text-align: justify;
 
 .nav-pills{
 
-  background-color: #162b32;
-color: #ff4838;
+  background-color: #1c1c1c;
+color: #eac27a;
 padding: 20px;
 }
 
 .nav.nav-pills .nav-link.active {
-  background-color: #162b32;
-  color: #ff4838;
+  background-color: #1c1c1c;
+  color: #eac27a;
   
 }
 
@@ -678,7 +678,7 @@ padding: 20px;
     font-family: "Roboto";
     font-weight: 900;
   
-    color: #ff4838;
+    color: #1c1c1c;;
   font-size: 25px;
    
     display: flex;

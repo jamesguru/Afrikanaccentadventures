@@ -6,11 +6,9 @@
       rgba(0, 0, 0, 0.6),
       rgba(0, 0, 0, 0.6)
     ),
-    url("https://www.intrepidtravel.com/sites/intrepid/files/styles/1920w/public/elements/product/banner/YGOK-Intrepid%20Travel-KTB-kenya_masai-mara_cheetah_chasing-banner-ss-1920x500.jpg");
-
+  url("https://www.intrepidtravel.com/sites/intrepid/files/styles/1920w/public/elements/product/banner/YGOK-Intrepid%20Travel-KTB-kenya_masai-mara_cheetah_chasing-banner-ss-1920x500.jpg");
   background-size: cover;
   background-position: center;
-
   margin-bottom: 50px;
 }
 
@@ -25,7 +23,7 @@
   padding-top: 150px;
   font-family: "Roboto";
   font-weight: 900;
-  color: #ff4838;
+  color: #eac27a;
   font-size: 40px;
   font-family: "Roboto";
   display: flex;
@@ -44,9 +42,6 @@
 .activity-info {
   display: flex;
   flex-direction: column;
-}
-
-.activity-image {
 }
 .activity-image img {
   height: 350px;
@@ -68,15 +63,14 @@
 }
 
 .activity-overview{
-
   text-align: justify;
 }
 .activity-explore {
-  background-color: #ff4838;
+  background-color: #1c1c1c;
   border: none;
   padding: 10px;
   cursor: pointer;
-  color: #fff;
+  color: #eac27a;
   font-family: "Roboto";
   font-weight: 900;
   font-size: 18px;
@@ -85,17 +79,16 @@
 }
 
 .activity-viewall {
-  background-color: #ff4838;
+  background-color: #1c1c1c;
   border: none;
   padding: 10px;
   cursor: pointer;
-  color: #fff;
+  color:#eac27a;
   font-family: "Roboto";
   font-weight: 900;
   font-size: 18px;
   margin: 20px;
   width: 30%;
-
   display: flex;
   align-items: center;
   justify-content: center;
@@ -108,11 +101,11 @@
   }
 
   .activity-explore {
-    background-color: #ff4838;
+    background-color: #1c1c1c;
     border: none;
     padding: 10px;
     cursor: pointer;
-    color: #fff;
+    color:#eac27a;
     font-family: "Roboto";
     font-weight: 900;
     font-size: 18px;
@@ -123,7 +116,7 @@
     padding-top: 200px;
     font-family: "Roboto";
     font-weight: 900;
-    color: #ff4838;
+    color: #eac27a;
     font-size: 30px;
     font-family: "Roboto";
     display: flex;
@@ -131,7 +124,7 @@
     justify-content: center;
   }
   .activity-viewall {
-    background-color: #ff4838;
+    background-color: #eac27a;
     border: none;
     padding: 10px;
     cursor: pointer;
@@ -157,7 +150,3 @@
   }
 }
 
-@media (max-width: 1200px) {
-
-  
-}

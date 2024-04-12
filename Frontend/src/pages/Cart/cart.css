@@ -23,9 +23,7 @@
   font-family: "Roboto";
   font-weight: 900;
   font-size: 40px;
-
-  color: #ff4838;
-
+  color: #eac27a;;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -106,11 +104,11 @@
 }
 
 .coupon button {
-  background-color: #ff4838;
+  background-color:#1c1c1c;
   border: none;
   padding: 5px;
   cursor: pointer;
-  color: #fff;
+  color: #eac27a;
   font-weight: bold;
   margin-left: 30px;
 }
@@ -205,11 +203,11 @@ text-align: justify;
 .policy button {
   padding: 5px;
   border: none;
-  background-color: #ff4838;
+  background-color: #1c1c1c;
   font-weight: bold;
   cursor: pointer;
   margin: 20px;
-  color: #fff;
+  color:#eac27a;
 }
 
 .close-terms {
@@ -223,7 +221,7 @@ a {
   margin-top: 10px;
 }
 .close-icon {
-  color: #ff4838;
+  color: #eac27a;
   cursor: pointer;
   display: flex;
   justify-content: flex-end;
@@ -333,8 +331,8 @@ hr {
 
 .cart-subtotal button {
   width: 90%;
-  background-color: #ff4838;
-  color: #fff;
+  background-color: #1c1c1c;
+  color: #eac27a;
   font-size: 20px;
   padding: 10px;
   border: none;

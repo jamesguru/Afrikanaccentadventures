@@ -59,7 +59,7 @@ const Booking = () => {
           <div className="book">
             <div className="book-info">
               
-                Embark on an adventure with Afrikan Accent Adventures, where you can book your trip and expect a prompt response to tailor your experience. Additional relevant information is provided to enhance your imaginative journey.
+                
             </div>
 
             <div className="book_item">

@@ -24,7 +24,7 @@ const About = () => {
           <div className="about-text">
             <div className="about-header">
               <span className="black">
-                About AfriKan Accent Adventures,
+                About African Accent Adventures
                 <span className="red">Who We Are</span> , and what we Offer.
               </span>
             </div>
