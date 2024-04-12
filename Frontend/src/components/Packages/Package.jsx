@@ -28,6 +28,7 @@ const Package = () => {
       <div className="package-body">
         {packages.slice(0, 6)?.map((item, index) => (
           <div className="package-item" key={index}>
+            <Link to={`/package/${item._id}`}>
             <div className="package-container">
               <img src={item.img} alt={item.title} className="package-img" />
 
@@ -47,6 +48,8 @@ const Package = () => {
               <h2>{item.title}</h2>
               <span>{item.overview}</span>
             </div>
+            
+            </Link>
           </div>
         ))}
       </div>
