@@ -1,20 +1,9 @@
-import {
-  ArrowDropDown,
-  Email,
-  Notifications,
-  Phone,
-  Search,
-  SearchOutlined,
-  SearchRounded,
-  ShoppingBasket,
-} from "@material-ui/icons";
-import { BrowserRouter, Route, Link } from "react-router-dom";
+import { Email, Phone, ShoppingBasket } from "@material-ui/icons";
+import {Link } from "react-router-dom";
 import Badge from "@material-ui/core/Badge";
 import { useState } from "react";
 import "./navbar.scss";
-
-import Container from "react-bootstrap/Container";
-import { useSelector, useDispatch } from "react-redux";
+import { useSelector} from "react-redux";
 import { Navbar, Nav, NavDropdown } from "react-bootstrap";
 const NavBar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
