@@ -113,8 +113,8 @@ position: relative;
 
     display: flex;
     justify-content: flex-end;
-    background-color: #ff4838;
-    color: #fff;
+    background-color: #1c1c1c;
+    color: #eac27a;
     border: none;
     cursor: pointer;
     position: absolute;
@@ -151,7 +151,7 @@ position: relative;
   .newletter-card-item {
     height: 40%;
     width: 40%;
-    border: 3px solid #ff4838;
+    border: 3px solid #eac27a;
     margin: 10px;
     font-weight: 900;
     color: #fff;
