@@ -18,7 +18,7 @@ const NavBar = () => {
       <div className="uppercontainer">
         <div className="navbar-email">
           <Email />
-          <span> jambo@afrikanaccentadventures.com</span>
+          <span>booking@afrikanaccentadventures.com</span>
         </div>
         <div className="navbar-phone">
           <Phone />

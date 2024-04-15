@@ -52,7 +52,7 @@ const Footer = () => (
           <li>Safaricom: +254748118818</li>
           <li>Airtel: +254782247247</li>
           <li>Telkom: 0202001410</li>
-          <li>jambo@aa-adventures.net</li>
+          <li>booking@afrikanaccentadventures.com</li>
           <li>www.afrikanaccentadventures.com</li>
         </ul>
       </div>
