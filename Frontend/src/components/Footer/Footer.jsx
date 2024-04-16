@@ -27,13 +27,29 @@ const Footer = () => (
       <div className="footer-header-item">
         <h1>TRAVEL GUIDES</h1>
         <ul>
-          <li><Link to='/travel-guide-kenya'> Travel Guide – Kenya</Link></li>
-          <li><Link to='/travel-guide-tanzania'>Travel Guide – Tanzania</Link></li>
-          <li><Link to='/travel-guide-uganda'>Travel Guide – Uganda</Link></li>
-          <li><Link to='/travel-guide-rwanda'>Travel Guide – Rwanda</Link></li>
-          <li><Link to='/travel-guide-namibia'>Travel Guide – Namibia</Link></li>
-          <li><Link to='/travel-guide-botswana'>Travel Guide – Botswana</Link></li>
-          <li><Link to='/travel-guide-southafrica'>Travel Guide – South Africa</Link></li>
+          <li>
+            <Link to="/travel-guide-kenya"> Travel Guide – Kenya</Link>
+          </li>
+          <li>
+            <Link to="/travel-guide-tanzania">Travel Guide – Tanzania</Link>
+          </li>
+          <li>
+            <Link to="/travel-guide-uganda">Travel Guide – Uganda</Link>
+          </li>
+          <li>
+            <Link to="/travel-guide-rwanda">Travel Guide – Rwanda</Link>
+          </li>
+          <li>
+            <Link to="/travel-guide-namibia">Travel Guide – Namibia</Link>
+          </li>
+          <li>
+            <Link to="/travel-guide-botswana">Travel Guide – Botswana</Link>
+          </li>
+          <li>
+            <Link to="/travel-guide-southafrica">
+              Travel Guide – South Africa
+            </Link>
+          </li>
         </ul>
       </div>
 
@@ -66,8 +82,6 @@ const Footer = () => (
         <h1>What they say about us.</h1>
         <div className="review-container">
           <div className="review-item">
-         
-
             <div className="review">
               <a href="https://www.tripadvisor.com/UserReviewEdit-g294207-d20871189-AA_Adventures-Nairobi.html?ReviewTitle=&qid10=0">
                 <img
@@ -78,7 +92,6 @@ const Footer = () => (
             </div>
           </div>
           <div className="review-item">
-           
             <div className="review">
               <a href="https://www.safaribookings.com/reviews/p3146">
                 <img
@@ -89,18 +102,28 @@ const Footer = () => (
             </div>
           </div>
           <div className="review-item">
-         
-
             <div className="review">
               <a href="https://www.touristlink.com/user/hellen-ombima.html?sereferer=0A8559F9">
                 <img
-                  src="https://res.cloudinary.com/dap91fhxh/image/upload/v1705069714/tourbadge_u2gcjo.png"
+                  src="https://res.cloudinary.com/dap91fhxh/image/upload/v1713248033/touristlink1_pzgkza.jpg"
                   alt=""
                 />
               </a>
             </div>
           </div>
         </div>
+
+
+        <div className="review-item">
+            <div className="review">
+              <a href="https://www.safarigo.com/review?agency_id=1478">
+                <img
+                  src="https://res.cloudinary.com/dap91fhxh/image/upload/v1713249949/safarigo_mq5yx3.png"
+                  alt=""
+                />
+              </a>
+            </div>
+          </div>
       </div>
     </div>
 
@@ -132,7 +155,7 @@ const Footer = () => (
         <FaYoutube className="social-icon" />
       </a>
       <a href="https://wa.me/254711417516">
-      <FaWhatsapp className="social-icon" />
+        <FaWhatsapp className="social-icon" />
       </a>
     </div>
 

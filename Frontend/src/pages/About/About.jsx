@@ -24,8 +24,8 @@ const About = () => {
           <div className="about-text">
             <div className="about-header">
               <span className="black">
-                About African Accent Adventures
-                <span className="red">Who We Are</span> , and what we Offer.
+                About Afrikan Accent Adventures
+                <span className="red">  Who We Are</span> , and what we Offer.
               </span>
             </div>
 
@@ -64,8 +64,8 @@ const About = () => {
 
         <div className="why">
           <h1 className="black">
-            Why Package Book{" "}
-            <span className="red"> AfriKan Accent Adventures?</span>
+            Why Package Book
+            <span className="red">    AfriKan Accent Adventures?</span>
           </h1>
 
           <div className="why-detail">
@@ -156,15 +156,15 @@ const About = () => {
 
             <div className="why-image">
               <div className="why-activies-item">
-                <img src="images/cruser5.jpg" alt="" />
+                <img src="https://res.cloudinary.com/dap91fhxh/image/upload/v1713248621/1713248475582_t8tfjf.jpg" alt="" />
               </div>
 
               <div className="why-activies-item">
-                <img src="images/cruser7.jpg" />
+                <img src="https://res.cloudinary.com/dap91fhxh/image/upload/v1713248621/1713248475600_ctg7aj.jpg" />
               </div>
 
               <div className="why-activies-item">
-                <img src="images/cruser9.jpg" />
+                <img src="https://res.cloudinary.com/dap91fhxh/image/upload/v1713248622/1713248475590_l57yjd.jpg" />
               </div>
 
               <div className="why-activies-item">

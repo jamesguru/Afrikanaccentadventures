@@ -21,7 +21,9 @@
   margin: 50px;
   color: #333;
 }
-
+.team-header span{
+  color: #fff;
+}
 .team-body {
   display: flex;
   flex-wrap: wrap;
@@ -59,3 +61,5 @@
   width: 90%;
   object-fit: cover;
 }
+
+
