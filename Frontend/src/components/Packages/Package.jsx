@@ -53,7 +53,7 @@ const Package = () => {
         ))}
       </div>
 
-      <Link to="/safaris">
+      <Link to="/safaris/nairobi">
         <div className="view">
           <button className="view-all">View All</button>
         </div>

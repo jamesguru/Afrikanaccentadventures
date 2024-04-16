@@ -6,7 +6,6 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Redirect,
 } from "react-router-dom";
 import Booking from "./pages/booking/Booking";
 import Gallery from "./pages/gallery/Gallery";
