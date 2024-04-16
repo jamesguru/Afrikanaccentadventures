@@ -111,10 +111,8 @@ const Footer = () => (
               </a>
             </div>
           </div>
-        </div>
 
-
-        <div className="review-item">
+          <div className="review-item">
             <div className="review">
               <a href="https://www.safarigo.com/review?agency_id=1478">
                 <img
@@ -124,6 +122,10 @@ const Footer = () => (
               </a>
             </div>
           </div>
+        </div>
+
+
+       
       </div>
     </div>
 
