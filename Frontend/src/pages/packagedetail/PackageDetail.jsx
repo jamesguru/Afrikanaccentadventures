@@ -6,20 +6,18 @@ import Tabs from "react-bootstrap/Tabs";
 import PetsRounded from "@material-ui/icons/PetsRounded";
 import "./packagedetail.css";
 import Moment from "react-moment";
-import { FaClock, FaTag, FaPeopleCarry, FaBed, FaCamera } from "react-icons/fa";
+import { FaClock, FaTag, FaPeopleCarry } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import { useLocation, Prompt } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import { publicRequest } from "../../requestMethods";
 import { Remove, Add } from "@material-ui/icons";
 import { useDispatch } from "react-redux";
-import { addPackage, removePackage } from "../../redux/cartRedux";
+import { addPackage } from "../../redux/cartRedux";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { useForm } from "react-hook-form";
-import { useHistory } from "react-router-dom";
 import Table from "react-bootstrap/Table";
-import Accordion from "react-bootstrap/Accordion";
-import { FaCar, FaHotel, FaUtensilSpoon } from "react-icons/fa";
+import { FaCar } from "react-icons/fa";
 import { BsCheckLg, BsXLg } from "react-icons/bs";
 
 const PackageDetail = () => {
@@ -158,9 +156,9 @@ const PackageDetail = () => {
     setDate(e.target.value);
   };
 
-  const handleViewBtn =() =>{
-    setOpen(false)
-  }
+  const handleViewBtn = () => {
+    setOpen(false);
+  };
 
   const {
     register,
@@ -187,8 +185,6 @@ const PackageDetail = () => {
     setExtraRoom(!extraRoom);
   };
 
-
-  
   return (
     <div>
       <Navbar />
@@ -275,93 +271,84 @@ const PackageDetail = () => {
               <span className="red">$ {Package.originalPrice}</span> Per Person
             </span>
           </div>
-          {Package.pricing?.length > 0 ?
-          
-          <form action="" onSubmit={handleSubmit(handleClick)}>
-            <div className="package-input">
-              <input
-                type="text"
-                placeholder="Your full name"
-                id="fullname"
-                {...register("fullname", { required: true })}
-                className={errors.fullname ? "invalid" : ""}
-                onChange={handleFullName}
-              />
-              {errors.fullname && (
-                <span className="error-message">This field is required</span>
-              )}
-
-              <input
-                type="text"
-                placeholder="Your Email"
-                id="email"
-                {...register("email", { required: true })}
-                className={errors.email ? "invalid" : ""}
-                onChange={handleEmail}
-              />
-              {errors.email && (
-                <span className="error-message">This field is required</span>
-              )}
-
-              <input
-                type="text"
-                placeholder="Whatsapp number"
-                id="phone"
-                {...register("phone", { required: true })}
-                className={errors.phone ? "invalid" : ""}
-                onChange={handlePhone}
-              />
-              {errors.email && (
-                <span className="error-message">This field is required</span>
-              )}
-
-              <label htmlFor="">Arrival Date*</label>
-              <input
-                type="date"
-                placeholder="Date of arrival"
-                id="date"
-                {...register("date", { required: true })}
-                className={errors.date ? "invalid" : ""}
-                onChange={handleDate}
-              />
-              {errors.date && (
-                <span className="error-message">This field is required</span>
-              )}    
-              <h4>How many of this package do you want?</h4>
-              <div className="handle-quantity">
-                <Remove
-                  className="remove-icon"
-                  onClick={() => handleQuantity("dec")}
+          {Package.pricing?.length > 0 ? (
+            <form action="" onSubmit={handleSubmit(handleClick)}>
+              <div className="package-input">
+                <input
+                  type="text"
+                  placeholder="Your full name"
+                  id="fullname"
+                  {...register("fullname", { required: true })}
+                  className={errors.fullname ? "invalid" : ""}
+                  onChange={handleFullName}
                 />
-                <span className="quantity">{quantity}</span>
+                {errors.fullname && (
+                  <span className="error-message">This field is required</span>
+                )}
 
-                <Add
-                  className="add-icon"
-                  onClick={() => handleQuantity("inc")}
+                <input
+                  type="text"
+                  placeholder="Your Email"
+                  id="email"
+                  {...register("email", { required: true })}
+                  className={errors.email ? "invalid" : ""}
+                  onChange={handleEmail}
                 />
+                {errors.email && (
+                  <span className="error-message">This field is required</span>
+                )}
+
+                <input
+                  type="text"
+                  placeholder="Whatsapp number"
+                  id="phone"
+                  {...register("phone", { required: true })}
+                  className={errors.phone ? "invalid" : ""}
+                  onChange={handlePhone}
+                />
+                {errors.email && (
+                  <span className="error-message">This field is required</span>
+                )}
+
+                <label htmlFor="">Arrival Date*</label>
+                <input
+                  type="date"
+                  placeholder="Date of arrival"
+                  id="date"
+                  {...register("date", { required: true })}
+                  className={errors.date ? "invalid" : ""}
+                  onChange={handleDate}
+                />
+                {errors.date && (
+                  <span className="error-message">This field is required</span>
+                )}
+                <h4>How many of this package do you want?</h4>
+                <div className="handle-quantity">
+                  <Remove
+                    className="remove-icon"
+                    onClick={() => handleQuantity("dec")}
+                  />
+                  <span className="quantity">{quantity}</span>
+
+                  <Add
+                    className="add-icon"
+                    onClick={() => handleQuantity("inc")}
+                  />
+                </div>
+
+                <button className="package-booking-btn">
+                  <span className="total-cost">
+                    Total cost: ${totalCost(adults, children)}
+                  </span>
+                  Add to bucket
+                </button>
               </div>
-
-              <button className="package-booking-btn">
-                <span className="total-cost">
-                  Total cost: ${totalCost(adults, children)}
-                </span>
-                Add to bucket
-              </button>
-            </div>
-          </form>
-
-          :
-          
-          <Link to='/booking'>
-          
-          <button className="package-booking-btn">
-            Book Now
-          </button>
-          
-          </Link>
-          
-          }
-          
+            </form>
+          ) : (
+            <Link to="/booking">
+              <button className="package-booking-btn">Book Now</button>
+            </Link>
+          )}
         </div>
       </div>
 
@@ -378,10 +365,7 @@ const PackageDetail = () => {
             <div className="package-map">
               {Package.overview}
 
-              <div className="image-route">
-        
-                
-              </div>
+              <div className="image-route"></div>
 
               <div className="tour-feature">
                 <h3>Tour Features</h3>
@@ -419,7 +403,6 @@ const PackageDetail = () => {
                 <>
                   <div className="schedule-item">
                     <div className="day-number">
-                      {" "}
                       <div className="price-item">
                         <span>Day {index + 1}</span>{" "}
                       </div>
@@ -427,7 +410,6 @@ const PackageDetail = () => {
 
                     <div className="day-overview">
                       <h5>{item.day}</h5>
-
                       {item.Itinenary}
                     </div>
                   </div>
@@ -621,7 +603,7 @@ const PackageDetail = () => {
           </Tab>
           <Tab eventKey="Inclusion" title="Inclusion" className="tab">
             <div className="package-hotel">
-            <div className="package-inclusions-item">
+              <div className="package-inclusions-item">
                 <h3>Price Inclusions:</h3>
 
                 {Package.addedvalue?.map((inclusion, index) => (
@@ -638,7 +620,7 @@ const PackageDetail = () => {
               <div className="package-inclusions-item">
                 <h3>Added Value:</h3>
                 {Package.exclusions?.map((addedvalue, index) => (
-                  <div className="inclusions-item">
+                  <div>
                     <BsCheckLg className="icon" />
 
                     <span>{addedvalue}</span>
@@ -660,7 +642,7 @@ const PackageDetail = () => {
           </Tab>
           <Tab eventKey="gallery" title="Gallery">
             <div className="package-gallery">
-              <img src={Package.img1} alt=""/>
+              <img src={Package.img1} alt="" />
               <img src={Package.img2} alt="" />
               <img src={Package.img3} alt="" />
               <img src={Package.img4} alt="" />
@@ -670,13 +652,13 @@ const PackageDetail = () => {
       </div>
 
       <Footer />
-      {open && Package.pricing?.length > 0 &&(
-        <div className="pricing-modal" ref={topRef}>   
-            <div className="pricing-container">
+      {open && Package.pricing?.length > 0 && (
+        <div className="pricing-modal" ref={topRef}>
+          <div className="pricing-container">
             <span className="select-price">
               Please select the price depending on dates you want to travel.
             </span>
-           
+
             {selectdates && (
               <span className="select-dates">
                 Make sure you have selected price before you proceed.
@@ -1113,8 +1095,7 @@ const PackageDetail = () => {
               </span>
               Continue
             </button>*/}
-          </div>    
-          
+          </div>
         </div>
       )}
     </div>

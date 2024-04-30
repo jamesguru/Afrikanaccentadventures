@@ -1,25 +1,9 @@
-import {
-  InfoOutlined,
-  PlayArrow,
-  SearchRounded,
-  SettingsInputAntennaTwoTone,
-} from "@material-ui/icons";
-import { AnimatePresence, motion } from "framer-motion/dist/framer-motion";
+import { SearchRounded } from "@material-ui/icons";
 import { Link } from "react-router-dom";
 import Carousel from "react-bootstrap/Carousel";
-import {
-  FaSearch,
-  FaSearchLocation,
-  FaFacebook,
-  FaInstagramSquare,
-  FaTwitter,
-  FaYoutube,
-  FaLinkedin,
-  FaWhatsapp,
-  FaFileDownload,
-} from "react-icons/fa";
 import "./featured.css";
 import { useState } from "react";
+
 export default function Featured({ type }) {
   const transition = { duration: 8, type: "spring" };
 

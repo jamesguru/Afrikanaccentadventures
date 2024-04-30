@@ -9,7 +9,7 @@ const ShortSafari = () => {
   useEffect(() => {
     const getPackages = async () => {
       try {
-        const res = await publicRequest.get("/packages");
+        const res = await publicRequest.get(`/packages?search="short-safari"`);
         setPackages(res.data);
       } catch (error) {
         console.log(error);

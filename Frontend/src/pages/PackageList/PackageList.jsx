@@ -33,7 +33,6 @@ const PackageList = () => {
       try {
      if (destination) {
           const res = await publicRequest.get(`/packages?search=${destination}`);
-
           setPackages(res.data);
         } else {
           const res = await publicRequest.get(`/packages`);

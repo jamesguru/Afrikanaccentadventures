@@ -124,11 +124,11 @@ router.get("/", async (req, res) => {
           $caseSensitive: false,
           $diacriticSensitive: false,
         },
-      })
+      }).sort({ createdAt: -1 })
         .limit(limit * 1)
         .skip((page - 1) * limit);
     } else {
-      Packages = await Package.find();
+      Packages = await Package.find().sort({ createdAt: -1 });
     }
 
     res.status(200).json(Packages);
