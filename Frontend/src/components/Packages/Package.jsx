@@ -10,8 +10,7 @@ const Package = () => {
   useEffect(() => {
     const getPackages = async () => {
       try {
-        const res = await publicRequest.get("/packages");
-
+        const res = await publicRequest.get(`/packages?search="best-seller"`);
         setPackages(res.data);
       } catch (error) {
         console.log(error);
