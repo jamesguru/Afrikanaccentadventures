@@ -45,11 +45,11 @@ import Namibia from "./pages/Namibia/Namibia";
 import SouthAfrica from "./pages/South Africa/SouthAfrica";
 import Botswana from "./pages/Botswana/Botswana";
 import SingleBlog from "./pages/SingleBlog/SingleBlog";
+import Shop from "./pages/Shop/Shop";
 
 const App = () => {
   return (
     <div>
-
       <Router>
       <ScrollToTop />
       <Switch>
@@ -77,6 +77,9 @@ const App = () => {
 
         <Route exact path="/blog">
           <Blog />
+        </Route>
+        <Route exact path="/shop">
+          <Shop />
         </Route>
 
         <Route exact path="/package/:id">

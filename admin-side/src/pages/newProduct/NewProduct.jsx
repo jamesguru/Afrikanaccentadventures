@@ -550,7 +550,7 @@ export default function NewProduct() {
       draggable: true,
       progress: undefined,
     });
-    window.location.reload();
+
   };
 
   return (

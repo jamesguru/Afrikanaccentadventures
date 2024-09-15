@@ -5,10 +5,8 @@ const mongoose = require("mongoose");
 const dotenv = require("dotenv");
 
 const cors = require("cors");
-
-
 const app = express();
-app.use(cors());
+
 const userRoute = require("./routes/user");
 const promoRoute = require("./routes/promo");
 const orderRoute = require("./routes/order");
@@ -24,6 +22,18 @@ const mpesaRoute = require("./routes/mpesa");
 const pesapalRoute = require("./routes/pesapal");
 
 dotenv.config();
+app.use(
+  cors({
+    origin: "*", // Allows all origins
+    methods: "GET,POST,PUT,DELETE,OPTIONS", // Allows all methods
+    allowedHeaders: "Content-Type,Authorization", // Allows all headers
+    credentials: true, // Optional if you’re working with credentials/cookies
+    preflightContinue: false,
+    optionsSuccessStatus: 204, // Prevents issues with older browsers and preflight
+  })
+);
+
+app.use(express.json());
 
 mongoose
   .connect(process.env.DB_CONNECTION)
@@ -33,9 +43,6 @@ mongoose
   .catch((e) => {
     console.log(e);
   });
-
-app.use(express.json());
-
 
 app.use("/api/carts", cartRoute);
 app.use("/api/newsletter", newsletterRoute);
@@ -49,6 +56,7 @@ app.use("/api/blogs", blogRoute);
 app.use("/api/payment/mpesa", mpesaRoute);
 app.use("/api/pesapal", pesapalRoute);
 app.use("/api/checkout", stripeRoute);
+
 
 app.listen(process.env.PORT || 5000, () => {
   process.env.PORT

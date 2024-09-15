@@ -18,6 +18,7 @@ const Login = () => {
   const dispatch = useDispatch();
 
   const handleLogin = (e) => {
+    console.log(username,password)
     e.preventDefault();
     login(dispatch, { username, password });
   };
